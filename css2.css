@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk6jFO_G&skey=c397ded15edc0853&v=v20) format('woff');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_G&skey=c397ded15edc0853&v=v20) format('woff');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk7PFO_G&skey=c397ded15edc0853&v=v20) format('woff');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4jE-_G&skey=c397ded15edc0853&v=v20) format('woff');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE-_G&skey=c397ded15edc0853&v=v20) format('woff');
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=QGYyz_MVcBeNP4NjuGObqx1XmO1I4W61C4I&skey=bafc0b239d492b2c&v=v15) format('woff');
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC1C4I&skey=bafc0b239d492b2c&v=v15) format('woff');
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=QGYyz_MVcBeNP4NjuGObqx1XmO1I4QK1C4I&skey=bafc0b239d492b2c&v=v15) format('woff');
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=QGYyz_MVcBeNP4NjuGObqx1XmO1I4e6yC4I&skey=bafc0b239d492b2c&v=v15) format('woff');
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=QGYyz_MVcBeNP4NjuGObqx1XmO1I4deyC4I&skey=bafc0b239d492b2c&v=v15) format('woff');
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=QGYyz_MVcBeNP4NjuGObqx1XmO1I4bCyC4I&skey=bafc0b239d492b2c&v=v15) format('woff');
+}

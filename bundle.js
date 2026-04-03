@@ -4004,6 +4004,42 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Hide Emergent badge */
   display: none !important;
 }
 
+/* Hero photo responsive sizing */
+.hero-photo-container {
+  width: 420px;
+  height: 510px;
+}
+@media (max-width: 768px) {
+  .hero-photo-container {
+    width: 280px;
+    height: 340px;
+  }
+}
+@media (max-width: 480px) {
+  .hero-photo-container {
+    width: 240px;
+    height: 290px;
+  }
+}
+
+/* RTL support */
+[dir="rtl"] .navbar-glass {
+  direction: rtl;
+}
+[dir="rtl"] .flex {
+  direction: rtl;
+}
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] p {
+  text-align: right;
+}
+[dir="rtl"] .section-label {
+  text-align: right;
+}
+[dir="rtl"] .hero-photo-container {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -4333,7 +4369,7 @@ html {
   transform: scale(1.1);
   box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
 }
-`, "",{"version":3,"sources":["webpack://./src/App.css"],"names":[],"mappings":"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","sourcesContent":["/* Hide Emergent badge */\n#emergent-badge {\n  display: none !important;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: 'Manrope', sans-serif;\n  background-color: #ffffff;\n  color: #334155;\n  overflow-x: hidden;\n}\n\nh1, h2, h3, h4, h5, h6 {\n  font-family: 'Outfit', sans-serif;\n}\n\nhtml {\n  scroll-behavior: smooth;\n}\n\n/* Navbar */\n.navbar-glass {\n  background: rgba(255, 255, 255, 0.85);\n  backdrop-filter: blur(20px);\n  -webkit-backdrop-filter: blur(20px);\n  border-bottom: 1px solid rgba(226, 232, 240, 0.8);\n}\n\n/* Hero gradient background */\n.hero-bg {\n  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 40%, #f1f5f9 100%);\n}\n\n.hero-bg::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background: radial-gradient(ellipse at 70% 50%, rgba(15, 45, 92, 0.06) 0%, transparent 60%);\n  pointer-events: none;\n}\n\n/* Section backgrounds */\n.section-white {\n  background-color: #ffffff;\n}\n\n.section-light {\n  background-color: #f8fafc;\n}\n\n.section-navy {\n  background-color: #0f2d5c;\n  color: white;\n}\n\n/* Card hover animations */\n.card-hover {\n  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;\n}\n\n.card-hover:hover {\n  transform: translateY(-4px);\n  box-shadow: 0 20px 40px rgba(15, 45, 92, 0.12);\n}\n\n/* Timeline */\n.timeline-line {\n  position: absolute;\n  left: 20px;\n  top: 0;\n  bottom: 0;\n  width: 2px;\n  background: linear-gradient(to bottom, #0f2d5c, #3b82f6);\n}\n\n.timeline-dot {\n  position: absolute;\n  left: -5px;\n  top: 4px;\n  width: 12px;\n  height: 12px;\n  border-radius: 50%;\n  background: #0f2d5c;\n  border: 2px solid white;\n  box-shadow: 0 0 0 3px rgba(15, 45, 92, 0.2);\n}\n\n/* Fade-in animation */\n@keyframes fadeInUp {\n  from {\n    opacity: 0;\n    transform: translateY(24px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n\n.fade-in-up {\n  animation: fadeInUp 0.6s ease forwards;\n}\n\n.fade-in-delay-1 { animation-delay: 0.1s; opacity: 0; }\n.fade-in-delay-2 { animation-delay: 0.2s; opacity: 0; }\n.fade-in-delay-3 { animation-delay: 0.3s; opacity: 0; }\n.fade-in-delay-4 { animation-delay: 0.4s; opacity: 0; }\n\n/* Button styles */\n.btn-primary {\n  background-color: #0f2d5c;\n  color: white;\n  padding: 12px 28px;\n  border-radius: 10px;\n  font-family: 'Outfit', sans-serif;\n  font-weight: 600;\n  font-size: 15px;\n  transition: all 0.3s ease;\n  border: 2px solid #0f2d5c;\n  cursor: pointer;\n  display: inline-flex;\n  align-items: center;\n  gap: 8px;\n  text-decoration: none;\n}\n\n.btn-primary:hover {\n  background-color: #0c244a;\n  border-color: #0c244a;\n  transform: translateY(-2px);\n  box-shadow: 0 8px 25px rgba(15, 45, 92, 0.3);\n}\n\n.btn-outline {\n  background-color: transparent;\n  color: #0f2d5c;\n  padding: 12px 28px;\n  border-radius: 10px;\n  font-family: 'Outfit', sans-serif;\n  font-weight: 600;\n  font-size: 15px;\n  transition: all 0.3s ease;\n  border: 2px solid #0f2d5c;\n  cursor: pointer;\n  display: inline-flex;\n  align-items: center;\n  gap: 8px;\n  text-decoration: none;\n}\n\n.btn-outline:hover {\n  background-color: #0f2d5c;\n  color: white;\n  transform: translateY(-2px);\n  box-shadow: 0 8px 25px rgba(15, 45, 92, 0.2);\n}\n\n/* Badge */\n.badge-navy {\n  background-color: rgba(15, 45, 92, 0.08);\n  color: #0f2d5c;\n  padding: 4px 12px;\n  border-radius: 100px;\n  font-size: 12px;\n  font-weight: 600;\n  letter-spacing: 0.05em;\n  text-transform: uppercase;\n  font-family: 'Manrope', sans-serif;\n}\n\n.badge-blue {\n  background-color: rgba(59, 130, 246, 0.1);\n  color: #2563eb;\n  padding: 4px 12px;\n  border-radius: 100px;\n  font-size: 12px;\n  font-weight: 600;\n}\n\n/* Section label */\n.section-label {\n  font-family: 'Manrope', sans-serif;\n  font-size: 12px;\n  font-weight: 700;\n  letter-spacing: 0.15em;\n  text-transform: uppercase;\n  color: #3b82f6;\n  margin-bottom: 8px;\n}\n\n/* Divider */\n.divider-navy {\n  width: 60px;\n  height: 3px;\n  background: linear-gradient(90deg, #0f2d5c, #3b82f6);\n  border-radius: 2px;\n  margin: 12px 0 24px 0;\n}\n\n/* Mobile menu */\n.mobile-menu {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background: rgba(15, 45, 92, 0.97);\n  z-index: 999;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  gap: 32px;\n}\n\n/* Accordion custom */\n.accordion-trigger {\n  font-family: 'Outfit', sans-serif;\n  font-weight: 600;\n  color: #0f2d5c;\n}\n\n/* Spec card icon bg */\n.icon-bg {\n  width: 56px;\n  height: 56px;\n  border-radius: 14px;\n  background: rgba(15, 45, 92, 0.07);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-bottom: 16px;\n  transition: background 0.3s ease;\n}\n\n.card-hover:hover .icon-bg {\n  background: rgba(15, 45, 92, 0.14);\n}\n\n/* News card image */\n.news-img {\n  width: 100%;\n  height: 200px;\n  object-fit: cover;\n  border-radius: 12px 12px 0 0;\n}\n\n/* Scrollbar */\n::-webkit-scrollbar {\n  width: 6px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f5f9;\n}\n::-webkit-scrollbar-thumb {\n  background: #0f2d5c;\n  border-radius: 3px;\n}\n\n/* Form inputs */\n.form-input {\n  width: 100%;\n  padding: 12px 16px;\n  border: 1px solid #e2e8f0;\n  border-radius: 10px;\n  font-family: 'Manrope', sans-serif;\n  font-size: 15px;\n  color: #334155;\n  background: white;\n  transition: border-color 0.3s ease, box-shadow 0.3s ease;\n  outline: none;\n}\n\n.form-input:focus {\n  border-color: #0f2d5c;\n  box-shadow: 0 0 0 3px rgba(15, 45, 92, 0.1);\n}\n\n.form-input::placeholder {\n  color: #94a3b8;\n}\n\n/* Publication card */\n.pub-card {\n  border-left: 3px solid #0f2d5c;\n  padding: 16px 20px;\n  background: #f8fafc;\n  border-radius: 0 10px 10px 0;\n  transition: all 0.3s ease;\n}\n\n.pub-card:hover {\n  background: white;\n  box-shadow: 0 4px 20px rgba(15, 45, 92, 0.1);\n  transform: translateX(4px);\n}\n\n/* Stats */\n.stat-number {\n  font-family: 'Outfit', sans-serif;\n  font-size: 3rem;\n  font-weight: 800;\n  color: #0f2d5c;\n  line-height: 1;\n}\n\n/* WhatsApp btn */\n.whatsapp-btn {\n  background: #25d366;\n  color: white;\n  border-radius: 50%;\n  width: 56px;\n  height: 56px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);\n  transition: all 0.3s ease;\n  text-decoration: none;\n}\n\n.whatsapp-btn:hover {\n  transform: scale(1.1);\n  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/App.css"],"names":[],"mappings":"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","sourcesContent":["/* Hide Emergent badge */\n#emergent-badge {\n  display: none !important;\n}\n\n/* Hero photo responsive sizing */\n.hero-photo-container {\n  width: 420px;\n  height: 510px;\n}\n@media (max-width: 768px) {\n  .hero-photo-container {\n    width: 280px;\n    height: 340px;\n  }\n}\n@media (max-width: 480px) {\n  .hero-photo-container {\n    width: 240px;\n    height: 290px;\n  }\n}\n\n/* RTL support */\n[dir=\"rtl\"] .navbar-glass {\n  direction: rtl;\n}\n[dir=\"rtl\"] .flex {\n  direction: rtl;\n}\n[dir=\"rtl\"] h1, [dir=\"rtl\"] h2, [dir=\"rtl\"] h3, [dir=\"rtl\"] p {\n  text-align: right;\n}\n[dir=\"rtl\"] .section-label {\n  text-align: right;\n}\n[dir=\"rtl\"] .hero-photo-container {\n  margin-right: 0;\n  margin-left: 0;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: 'Manrope', sans-serif;\n  background-color: #ffffff;\n  color: #334155;\n  overflow-x: hidden;\n}\n\nh1, h2, h3, h4, h5, h6 {\n  font-family: 'Outfit', sans-serif;\n}\n\nhtml {\n  scroll-behavior: smooth;\n}\n\n/* Navbar */\n.navbar-glass {\n  background: rgba(255, 255, 255, 0.85);\n  backdrop-filter: blur(20px);\n  -webkit-backdrop-filter: blur(20px);\n  border-bottom: 1px solid rgba(226, 232, 240, 0.8);\n}\n\n/* Hero gradient background */\n.hero-bg {\n  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 40%, #f1f5f9 100%);\n}\n\n.hero-bg::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background: radial-gradient(ellipse at 70% 50%, rgba(15, 45, 92, 0.06) 0%, transparent 60%);\n  pointer-events: none;\n}\n\n/* Section backgrounds */\n.section-white {\n  background-color: #ffffff;\n}\n\n.section-light {\n  background-color: #f8fafc;\n}\n\n.section-navy {\n  background-color: #0f2d5c;\n  color: white;\n}\n\n/* Card hover animations */\n.card-hover {\n  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;\n}\n\n.card-hover:hover {\n  transform: translateY(-4px);\n  box-shadow: 0 20px 40px rgba(15, 45, 92, 0.12);\n}\n\n/* Timeline */\n.timeline-line {\n  position: absolute;\n  left: 20px;\n  top: 0;\n  bottom: 0;\n  width: 2px;\n  background: linear-gradient(to bottom, #0f2d5c, #3b82f6);\n}\n\n.timeline-dot {\n  position: absolute;\n  left: -5px;\n  top: 4px;\n  width: 12px;\n  height: 12px;\n  border-radius: 50%;\n  background: #0f2d5c;\n  border: 2px solid white;\n  box-shadow: 0 0 0 3px rgba(15, 45, 92, 0.2);\n}\n\n/* Fade-in animation */\n@keyframes fadeInUp {\n  from {\n    opacity: 0;\n    transform: translateY(24px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n\n.fade-in-up {\n  animation: fadeInUp 0.6s ease forwards;\n}\n\n.fade-in-delay-1 { animation-delay: 0.1s; opacity: 0; }\n.fade-in-delay-2 { animation-delay: 0.2s; opacity: 0; }\n.fade-in-delay-3 { animation-delay: 0.3s; opacity: 0; }\n.fade-in-delay-4 { animation-delay: 0.4s; opacity: 0; }\n\n/* Button styles */\n.btn-primary {\n  background-color: #0f2d5c;\n  color: white;\n  padding: 12px 28px;\n  border-radius: 10px;\n  font-family: 'Outfit', sans-serif;\n  font-weight: 600;\n  font-size: 15px;\n  transition: all 0.3s ease;\n  border: 2px solid #0f2d5c;\n  cursor: pointer;\n  display: inline-flex;\n  align-items: center;\n  gap: 8px;\n  text-decoration: none;\n}\n\n.btn-primary:hover {\n  background-color: #0c244a;\n  border-color: #0c244a;\n  transform: translateY(-2px);\n  box-shadow: 0 8px 25px rgba(15, 45, 92, 0.3);\n}\n\n.btn-outline {\n  background-color: transparent;\n  color: #0f2d5c;\n  padding: 12px 28px;\n  border-radius: 10px;\n  font-family: 'Outfit', sans-serif;\n  font-weight: 600;\n  font-size: 15px;\n  transition: all 0.3s ease;\n  border: 2px solid #0f2d5c;\n  cursor: pointer;\n  display: inline-flex;\n  align-items: center;\n  gap: 8px;\n  text-decoration: none;\n}\n\n.btn-outline:hover {\n  background-color: #0f2d5c;\n  color: white;\n  transform: translateY(-2px);\n  box-shadow: 0 8px 25px rgba(15, 45, 92, 0.2);\n}\n\n/* Badge */\n.badge-navy {\n  background-color: rgba(15, 45, 92, 0.08);\n  color: #0f2d5c;\n  padding: 4px 12px;\n  border-radius: 100px;\n  font-size: 12px;\n  font-weight: 600;\n  letter-spacing: 0.05em;\n  text-transform: uppercase;\n  font-family: 'Manrope', sans-serif;\n}\n\n.badge-blue {\n  background-color: rgba(59, 130, 246, 0.1);\n  color: #2563eb;\n  padding: 4px 12px;\n  border-radius: 100px;\n  font-size: 12px;\n  font-weight: 600;\n}\n\n/* Section label */\n.section-label {\n  font-family: 'Manrope', sans-serif;\n  font-size: 12px;\n  font-weight: 700;\n  letter-spacing: 0.15em;\n  text-transform: uppercase;\n  color: #3b82f6;\n  margin-bottom: 8px;\n}\n\n/* Divider */\n.divider-navy {\n  width: 60px;\n  height: 3px;\n  background: linear-gradient(90deg, #0f2d5c, #3b82f6);\n  border-radius: 2px;\n  margin: 12px 0 24px 0;\n}\n\n/* Mobile menu */\n.mobile-menu {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background: rgba(15, 45, 92, 0.97);\n  z-index: 999;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  gap: 32px;\n}\n\n/* Accordion custom */\n.accordion-trigger {\n  font-family: 'Outfit', sans-serif;\n  font-weight: 600;\n  color: #0f2d5c;\n}\n\n/* Spec card icon bg */\n.icon-bg {\n  width: 56px;\n  height: 56px;\n  border-radius: 14px;\n  background: rgba(15, 45, 92, 0.07);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-bottom: 16px;\n  transition: background 0.3s ease;\n}\n\n.card-hover:hover .icon-bg {\n  background: rgba(15, 45, 92, 0.14);\n}\n\n/* News card image */\n.news-img {\n  width: 100%;\n  height: 200px;\n  object-fit: cover;\n  border-radius: 12px 12px 0 0;\n}\n\n/* Scrollbar */\n::-webkit-scrollbar {\n  width: 6px;\n}\n::-webkit-scrollbar-track {\n  background: #f1f5f9;\n}\n::-webkit-scrollbar-thumb {\n  background: #0f2d5c;\n  border-radius: 3px;\n}\n\n/* Form inputs */\n.form-input {\n  width: 100%;\n  padding: 12px 16px;\n  border: 1px solid #e2e8f0;\n  border-radius: 10px;\n  font-family: 'Manrope', sans-serif;\n  font-size: 15px;\n  color: #334155;\n  background: white;\n  transition: border-color 0.3s ease, box-shadow 0.3s ease;\n  outline: none;\n}\n\n.form-input:focus {\n  border-color: #0f2d5c;\n  box-shadow: 0 0 0 3px rgba(15, 45, 92, 0.1);\n}\n\n.form-input::placeholder {\n  color: #94a3b8;\n}\n\n/* Publication card */\n.pub-card {\n  border-left: 3px solid #0f2d5c;\n  padding: 16px 20px;\n  background: #f8fafc;\n  border-radius: 0 10px 10px 0;\n  transition: all 0.3s ease;\n}\n\n.pub-card:hover {\n  background: white;\n  box-shadow: 0 4px 20px rgba(15, 45, 92, 0.1);\n  transform: translateX(4px);\n}\n\n/* Stats */\n.stat-number {\n  font-family: 'Outfit', sans-serif;\n  font-size: 3rem;\n  font-weight: 800;\n  color: #0f2d5c;\n  line-height: 1;\n}\n\n/* WhatsApp btn */\n.whatsapp-btn {\n  background: #25d366;\n  color: white;\n  border-radius: 50%;\n  width: 56px;\n  height: 56px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);\n  transition: all 0.3s ease;\n  text-decoration: none;\n}\n\n.whatsapp-btn:hover {\n  transform: scale(1.1);\n  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -5119,6 +5155,9 @@ video {
 }
 .inline-block {
   display: inline-block;
+}
+.inline {
+  display: inline;
 }
 .flex {
   display: flex;
@@ -5988,9 +6027,6 @@ video {
 }
 .ease-in-out {
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.running {
-  animation-play-state: running;
 }
 
 body {
@@ -6916,10 +6952,6 @@ code {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\\:justify-end {
-    justify-content: flex-end;
-  }
-
   .lg\\:justify-center {
     justify-content: center;
   }
@@ -7134,7 +7166,7 @@ code {
 .\\[\\&_tr\\]\\:border-b tr {
   border-bottom-width: 1px;
 }
-`, "",{"version":3,"sources":["webpack://./src/index.css"],"names":[],"mappings":"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mB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;E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","sourcesContent":["@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\nbody {\n    margin: 0;\n    font-family:\n        -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\",\n        \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\n        sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n}\n\ncode {\n    font-family:\n        source-code-pro, Menlo, Monaco, Consolas, \"Courier New\", monospace;\n}\n\n@layer base {\n    :root {\n        --background: 0 0% 100%;\n        --foreground: 0 0% 3.9%;\n        --card: 0 0% 100%;\n        --card-foreground: 0 0% 3.9%;\n        --popover: 0 0% 100%;\n        --popover-foreground: 0 0% 3.9%;\n        --primary: 0 0% 9%;\n        --primary-foreground: 0 0% 98%;\n        --secondary: 0 0% 96.1%;\n        --secondary-foreground: 0 0% 9%;\n        --muted: 0 0% 96.1%;\n        --muted-foreground: 0 0% 45.1%;\n        --accent: 0 0% 96.1%;\n        --accent-foreground: 0 0% 9%;\n        --destructive: 0 84.2% 60.2%;\n        --destructive-foreground: 0 0% 98%;\n        --border: 0 0% 89.8%;\n        --input: 0 0% 89.8%;\n        --ring: 0 0% 3.9%;\n        --chart-1: 12 76% 61%;\n        --chart-2: 173 58% 39%;\n        --chart-3: 197 37% 24%;\n        --chart-4: 43 74% 66%;\n        --chart-5: 27 87% 67%;\n        --radius: 0.5rem;\n    }\n    .dark {\n        --background: 0 0% 3.9%;\n        --foreground: 0 0% 98%;\n        --card: 0 0% 3.9%;\n        --card-foreground: 0 0% 98%;\n        --popover: 0 0% 3.9%;\n        --popover-foreground: 0 0% 98%;\n        --primary: 0 0% 98%;\n        --primary-foreground: 0 0% 9%;\n        --secondary: 0 0% 14.9%;\n        --secondary-foreground: 0 0% 98%;\n        --muted: 0 0% 14.9%;\n        --muted-foreground: 0 0% 63.9%;\n        --accent: 0 0% 14.9%;\n        --accent-foreground: 0 0% 98%;\n        --destructive: 0 62.8% 30.6%;\n        --destructive-foreground: 0 0% 98%;\n        --border: 0 0% 14.9%;\n        --input: 0 0% 14.9%;\n        --ring: 0 0% 83.1%;\n        --chart-1: 220 70% 50%;\n        --chart-2: 160 60% 45%;\n        --chart-3: 30 80% 55%;\n        --chart-4: 280 65% 60%;\n        --chart-5: 340 75% 55%;\n    }\n}\n\n@layer base {\n    * {\n        @apply border-border;\n    }\n    body {\n        @apply bg-background text-foreground;\n    }\n}\n\n@layer base {\n    [data-debug-wrapper=\"true\"] {\n        display: contents !important;\n    }\n\n    [data-debug-wrapper=\"true\"] > * {\n        margin-left: inherit;\n        margin-right: inherit;\n        margin-top: inherit;\n        margin-bottom: inherit;\n        padding-left: inherit;\n        padding-right: inherit;\n        padding-top: inherit;\n        padding-bottom: inherit;\n        column-gap: inherit;\n        row-gap: inherit;\n        gap: inherit;\n        border-left-width: inherit;\n        border-right-width: inherit;\n        border-top-width: inherit;\n        border-bottom-width: inherit;\n        border-left-style: inherit;\n        border-right-style: inherit;\n        border-top-style: inherit;\n        border-bottom-style: inherit;\n        border-left-color: inherit;\n        border-right-color: inherit;\n        border-top-color: inherit;\n        border-bottom-color: inherit;\n    }\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/index.css"],"names":[],"mappings":"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mB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;EAAA;AAAmB;AAAnB;E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","sourcesContent":["@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\nbody {\n    margin: 0;\n    font-family:\n        -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\",\n        \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\n        sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n}\n\ncode {\n    font-family:\n        source-code-pro, Menlo, Monaco, Consolas, \"Courier New\", monospace;\n}\n\n@layer base {\n    :root {\n        --background: 0 0% 100%;\n        --foreground: 0 0% 3.9%;\n        --card: 0 0% 100%;\n        --card-foreground: 0 0% 3.9%;\n        --popover: 0 0% 100%;\n        --popover-foreground: 0 0% 3.9%;\n        --primary: 0 0% 9%;\n        --primary-foreground: 0 0% 98%;\n        --secondary: 0 0% 96.1%;\n        --secondary-foreground: 0 0% 9%;\n        --muted: 0 0% 96.1%;\n        --muted-foreground: 0 0% 45.1%;\n        --accent: 0 0% 96.1%;\n        --accent-foreground: 0 0% 9%;\n        --destructive: 0 84.2% 60.2%;\n        --destructive-foreground: 0 0% 98%;\n        --border: 0 0% 89.8%;\n        --input: 0 0% 89.8%;\n        --ring: 0 0% 3.9%;\n        --chart-1: 12 76% 61%;\n        --chart-2: 173 58% 39%;\n        --chart-3: 197 37% 24%;\n        --chart-4: 43 74% 66%;\n        --chart-5: 27 87% 67%;\n        --radius: 0.5rem;\n    }\n    .dark {\n        --background: 0 0% 3.9%;\n        --foreground: 0 0% 98%;\n        --card: 0 0% 3.9%;\n        --card-foreground: 0 0% 98%;\n        --popover: 0 0% 3.9%;\n        --popover-foreground: 0 0% 98%;\n        --primary: 0 0% 98%;\n        --primary-foreground: 0 0% 9%;\n        --secondary: 0 0% 14.9%;\n        --secondary-foreground: 0 0% 98%;\n        --muted: 0 0% 14.9%;\n        --muted-foreground: 0 0% 63.9%;\n        --accent: 0 0% 14.9%;\n        --accent-foreground: 0 0% 98%;\n        --destructive: 0 62.8% 30.6%;\n        --destructive-foreground: 0 0% 98%;\n        --border: 0 0% 14.9%;\n        --input: 0 0% 14.9%;\n        --ring: 0 0% 83.1%;\n        --chart-1: 220 70% 50%;\n        --chart-2: 160 60% 45%;\n        --chart-3: 30 80% 55%;\n        --chart-4: 280 65% 60%;\n        --chart-5: 340 75% 55%;\n    }\n}\n\n@layer base {\n    * {\n        @apply border-border;\n    }\n    body {\n        @apply bg-background text-foreground;\n    }\n}\n\n@layer base {\n    [data-debug-wrapper=\"true\"] {\n        display: contents !important;\n    }\n\n    [data-debug-wrapper=\"true\"] > * {\n        margin-left: inherit;\n        margin-right: inherit;\n        margin-top: inherit;\n        margin-bottom: inherit;\n        padding-left: inherit;\n        padding-right: inherit;\n        padding-top: inherit;\n        padding-bottom: inherit;\n        column-gap: inherit;\n        row-gap: inherit;\n        gap: inherit;\n        border-left-width: inherit;\n        border-right-width: inherit;\n        border-top-width: inherit;\n        border-bottom-width: inherit;\n        border-left-style: inherit;\n        border-right-style: inherit;\n        border-top-style: inherit;\n        border-bottom-style: inherit;\n        border-left-color: inherit;\n        border-right-color: inherit;\n        border-top-color: inherit;\n        border-bottom-color: inherit;\n    }\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -8411,44 +8443,6 @@ const __iconNode = [["path", {
   key: "19p75a"
 }]];
 const Gauge = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("gauge", __iconNode);
-
-
-/***/ },
-
-/***/ "./node_modules/lucide-react/dist/esm/icons/globe.js"
-/*!***********************************************************!*\
-  !*** ./node_modules/lucide-react/dist/esm/icons/globe.js ***!
-  \***********************************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
-/* harmony export */   "default": () => (/* binding */ Globe)
-/* harmony export */ });
-/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
-/**
- * @license lucide-react v0.507.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-
-
-const __iconNode = [["circle", {
-  cx: "12",
-  cy: "12",
-  r: "10",
-  key: "1mglay"
-}], ["path", {
-  d: "M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20",
-  key: "13o1zl"
-}], ["path", {
-  d: "M2 12h20",
-  key: "9i4pu4"
-}]];
-const Globe = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("globe", __iconNode);
 
 
 /***/ },
@@ -32925,7 +32919,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   LangContext: () => (/* binding */ LangContext),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   translations: () => (/* binding */ translations),
+/* harmony export */   translations: () => (/* reexport safe */ _translations__WEBPACK_IMPORTED_MODULE_12__.translations),
 /* harmony export */   useLang: () => (/* binding */ useLang)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
@@ -32941,7 +32935,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Appointment__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/Appointment */ "./src/components/Appointment.js");
 /* harmony import */ var _components_Contact__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/Contact */ "./src/components/Contact.js");
 /* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/Footer */ "./src/components/Footer.js");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var _translations__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./translations */ "./src/translations.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
@@ -32961,771 +32956,9 @@ var _jsxFileName = "/app/frontend/src/App.js",
 
 
 
+
 const LangContext = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createContext)({});
-const translations = {
-  tr: {
-    nav: {
-      about: "Hakkımda",
-      specializations: "Uzmanlık Alanları",
-      news: "Haberler",
-      education: "Hasta Bilgilendirme",
-      publications: "Yayınlar",
-      appointment: "Randevu Al",
-      contact: "İletişim"
-    },
-    hero: {
-      label: "Kardiyoloji Uzmanı",
-      title: "Uzm. Dr. İbrahim OĞUZ",
-      subtitle: "Kardiyoloji Uzmanı | Denizli",
-      description: "Girişimsel kardiyoloji, anjiyografi, kalp pili ve kardiyak görüntüleme alanlarında uzmanlaşmış, 10+ yıl deneyimli kardiyoloji doktoru.",
-      cta1: "Randevu Al",
-      cta2: "Özgeçmişi Gör",
-      stat1: "10+",
-      stat1Label: "Yıl Deneyim",
-      stat2: "3000+",
-      stat2Label: "Başarılı Girişimsel İşlem"
-    },
-    about: {
-      label: "Biyografi",
-      title: "Dr. İbrahim OĞUZ Hakkında",
-      description: "Ankara Üniversitesi Tıp Fakültesi mezunu olan Dr. İbrahim OĞUZ, Pamukkale Üniversitesi'nde aldığı uzmanlık eğitiminin ardından girişimsel kardiyoloji alanında uzmanlaşmıştır. Kompleks koroner girişimler, kalp deliği kapatılması, mitral balon valvüloplasti ve kalp pili takılması gibi kritik prosedürleri başarıyla uygulamaktadır. 2024 yılından itibaren Özel Denizli Cerrahi Hastanesi'nde görev yapmaktadır.",
-      educationTitle: "Eğitim & Kariyer",
-      education: [{
-        year: "2024 – Halen",
-        place: "Özel Denizli Cerrahi Hastanesi",
-        role: "Kardiyoloji Uzmanı"
-      }, {
-        year: "2020 – 2024",
-        place: "Denizli Devlet Hastanesi",
-        role: "Kardiyoloji Uzmanı"
-      }, {
-        year: "2015 – 2020",
-        place: "Pamukkale Üniversitesi Kardiyoloji A.B.D.",
-        role: "Uzmanlık Eğitimi"
-      }, {
-        year: "2005 – 2012",
-        place: "Ankara Üniversitesi Tıp Fakültesi",
-        role: "Tıp Doktorluğu"
-      }],
-      certsTitle: "Sertifikalar",
-      certs: ["Türk Kardiyoloji Derneği Yeterlilik Sertifikası", "Deney Hayvanları Kullanım Sertifikası"],
-      membTitle: "Mesleki Üyelikler",
-      memb: ["Türk Kardiyoloji Derneği", "Türk Tabipler Birliği", "Avrupa Kardiyoloji Derneği (ESC)"],
-      langTitle: "Dil Becerileri",
-      langs: ["Türkçe (Anadil)", "İngilizce (İyi düzey)", "İsveççe (Orta düzey)"]
-    },
-    spec: {
-      label: "Uzmanlık Alanları",
-      title: "Girişimsel Kardiyoloji",
-      subtitle: "Kalp hastalıklarının tanı ve tedavisinde ileri düzey prosedürler",
-      items: [{
-        icon: "activity",
-        image: "https://customer-assets.emergentagent.com/job_pulse-portal-3/artifacts/bkbu5hhp_1-%20stent%20.jpg",
-        title: "Anjiyo, Balon & Stent",
-        desc: "Bilekten ve kasıktan girişle koroner anjiyografi yapılması; balon, ilaçlı balon ve stent uygulamalarıyla tedavisi."
-      }, {
-        icon: "heart",
-        image: "https://customer-assets.emergentagent.com/job_pulse-portal-3/artifacts/c4lyp736_2-kalp%20deli%C4%9Fi.jpg",
-        title: "Kalp Deliği Kapama",
-        desc: "Anjiyografi eşliğinde ASD, PFO ve diğer kardiyak septal defektlerin ameliyatsız kapatılması."
-      }, {
-        icon: "zap",
-        image: "https://customer-assets.emergentagent.com/job_pulse-portal-3/artifacts/7wn2l4rg_3-kalp%20pili.jpg",
-        title: "Kalp Pili Uygulamaları",
-        desc: "Her türlü kalp pili takılması ve değiştirilmesi işlemleri; pace maker implantasyonu."
-      }, {
-        icon: "scan",
-        image: "https://customer-assets.emergentagent.com/job_pulse-portal-3/artifacts/3czm02u8_4-eko.jpg",
-        title: "Kardiyak Görüntüleme",
-        desc: "Ekokardiyografi (EKO), transözofageal ekokardiyografi (TEE) ile detaylı kalp görüntüleme."
-      }, {
-        icon: "gauge",
-        image: "https://customer-assets.emergentagent.com/job_pulse-portal-3/artifacts/ok9a80wq_5-efor-testi.jpg",
-        title: "Efor Testi & Holter",
-        desc: "Kalp ritim bozukluklarının tanısı için Holter monitorizasyonu ve efor testi uygulamaları."
-      }, {
-        icon: "shield",
-        image: "https://customer-assets.emergentagent.com/job_pulse-portal-3/artifacts/4is1iau9_6-tavi.jpg",
-        title: "TAVİ – Ameliyatsız Kapak Değiştirilmesi",
-        desc: "Açık kalp ameliyatı olmaksızın anjiyo yöntemiyle aort kapak değiştirilmesi (TAVI) prosedürü."
-      }, {
-        icon: "target",
-        image: "https://customer-assets.emergentagent.com/job_pulse-portal-3/artifacts/jywpuuus_7-cto.jpg",
-        title: "CTO – Tam Tıkalı Damar Açma",
-        desc: "Kronik total oklüzyon (CTO) olarak adlandırılan tam tıkalı koroner damarların özel kateter teknikleriyle açılması."
-      }, {
-        icon: "layers",
-        image: "https://customer-assets.emergentagent.com/job_pulse-portal-3/artifacts/wxw1n3ty_8-evar%20tevar.jpg",
-        title: "EVAR & TEVAR – Endovasküler Aort Tedavisi",
-        desc: "Aort anevrizmaların ameliyatsız, endovasküler stent-greft yöntemiyle (EVAR/TEVAR) tedavisi."
-      }]
-    },
-    news: {
-      label: "Güncel Haberler",
-      title: "Kardiyoloji'de Son Gelişmeler",
-      subtitle: "Kardiyoloji alanındaki güncel gelişmeler ve hasta bilgilendirici makaleler",
-      readMore: "Devamını Oku",
-      articles: [{
-        category: "Girişimsel Kardiyoloji",
-        title: "Minimal İnvaziv Anjiyoplasti: Modern Yaklaşımlar",
-        excerpt: "Günümüz girişimsel kardiyolojisinde minimal invaziv teknikler sayesinde hastalar çok daha kısa sürede iyileşiyor ve hastanede kalış süresi dramatik biçimde azaldı.",
-        date: "Ocak 2026",
-        img: "https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=600"
-      }, {
-        category: "Kalp Pili",
-        title: "Akıllı Kalp Pili Teknolojileri: Yeni Nesil Cihazlar",
-        excerpt: "Uzaktan izleme özellikleri bulunan yeni nesil kalp pilleri, hastaların günlük takibini kolaylaştırırken olası komplikasyonların erken tespitine olanak tanıyor.",
-        date: "Şubat 2026",
-        img: "https://images.pexels.com/photos/4226219/pexels-photo-4226219.jpeg?auto=compress&cs=tinysrgb&w=600"
-      }, {
-        category: "Kardiyak Görüntüleme",
-        title: "3D Ekokardiyografi ile Kapak Hastalıkları Tanısı",
-        excerpt: "Üç boyutlu ekokardiyografi, kalp kapak hastalıklarının değerlendirilmesinde standart 2D görüntülemenin çok ötesine geçen ayrıntılı anatomik bilgiler sunmaktadır.",
-        date: "Mart 2026",
-        img: "https://images.pexels.com/photos/6203473/pexels-photo-6203473.jpeg?auto=compress&cs=tinysrgb&w=600"
-      }]
-    },
-    education: {
-      label: "Hasta Bilgilendirme",
-      title: "Sık Sorulan Sorular",
-      subtitle: "Kardiyoloji ile ilgili merak ettiğiniz konular",
-      items: [{
-        q: "Kalp krizi belirtileri nelerdir?",
-        a: "Kalp krizi genelde göğüste baskı, yanma veya sıkışma hissiyle başlar. Bu ağrı sol kola, boyuna, çeneye veya sırta yayılabilir. Beraberinde nefes darlığı, terleme ve mide bulantısı görülebilir. Özellikle diyabet hastalarında belirtiler daha silik olabilir. Şüphe varsa zaman kaybetmeden hastaneye başvurmak gerekir."
-      }, {
-        q: "Anjiyo nedir, nasıl yapılır?",
-        a: "Anjiyo, kalp damarlarını görüntülemek için yapılan bir işlemdir. Genellikle kasık ya da el bileğinden girilerek ince bir kateter damar içine ilerletilir. Kontrast madde verilerek damarlar görüntülenir. İşlem genelde 15–30 dakika sürer ve hasta aynı gün ayağa kalkabilir. Çoğu zaman düşünüldüğü kadar zor bir işlem değildir."
-      }, {
-        q: "Anjiyo ağrılı bir işlem midir?",
-        a: "Çoğu hasta işlem sırasında ciddi bir ağrı hissetmez. Sadece giriş yerinde hafif bir baskı veya yanma olabilir. İşlem boyunca hasta uyanıktır ama rahatlatıcı ilaçlar verilebilir. Asıl korku genelde işlemden önce olur, işlem sırasında değil. Sonrasında da genellikle hafif bir hassasiyet dışında sorun yaşanmaz."
-      }, {
-        q: "Stent nedir, ne zaman takılır?",
-        a: "Stent, tıkalı ya da daralmış damarları açık tutmak için kullanılan metal bir kafestir. Anjiyo sırasında gerekli görülürse aynı seansta takılabilir. Ama her dar damara stent takılmaz, karar hastaya göre verilir. Uygun hastada hayat kurtarıcıdır. Sonrasında ilaçların düzenli kullanılması çok önemlidir."
-      }, {
-        q: "Kalp çarpıntısı ne zaman tehlikelidir?",
-        a: "Ara sıra olan kısa süreli çarpıntılar genelde zararsızdır. Ancak uzun süren, bayılma hissiyle gelen veya göğüs ağrısı eşlik eden çarpıntılar ciddiye alınmalıdır. Altta ritim bozukluğu olabilir. Özellikle sık tekrar ediyorsa mutlaka değerlendirilmelidir. Basit stresle karıştırılmamalıdır."
-      }, {
-        q: "Tansiyon kaç olursa tehlikelidir?",
-        a: "Genel olarak 140/90 mmHg üzeri değerler yüksek kabul edilir. Ancak risk hastaya göre değişir. Sürekli yüksek seyreden tansiyon kalp, beyin ve böbreğe zarar verir. Tek bir ölçüm yerine düzenli takip önemlidir. Gerektiğinde ilaç tedavisi başlanmalıdır."
-      }, {
-        q: "Kolesterol yüksekliği ne kadar önemlidir?",
-        a: "Yüksek kolesterol damar sertliğinin en önemli nedenlerinden biridir. Özellikle LDL kolesterol yüksekliği risk oluşturur. Uzun vadede kalp krizi riskini artırır. Sadece diyetle değil, gerekirse ilaçla kontrol altına alınmalıdır. \"Bende belirti yok\" demek burada işe yaramaz."
-      }, {
-        q: "Kalp krizi genç yaşta olur mu?",
-        a: "Evet, özellikle son yıllarda daha sık görülüyor. Sigara, stres, obezite ve genetik faktörler önemli rol oynar. Genç hastalar genelde belirtileri ciddiye almadığı için geç başvurur. Bu da riski artırır. Yaş tek başına koruyucu değildir."
-      }, {
-        q: "Efor testi ne işe yarar?",
-        a: "Efor testi, kalbin yük altındaki performansını değerlendirmek için yapılır. Yürüyüş bandında yürürken kalp ritmi ve EKG takip edilir. Gizli kalp damar hastalıklarını ortaya çıkarabilir. Her hastaya yapılmaz, seçilmiş durumlarda kullanılır. Basit ama değerli bir testtir."
-      }, {
-        q: "Kalp hastaları spor yapabilir mi?",
-        a: "Doğru planlandığında çoğu hasta spor yapabilir. Hatta düzenli egzersiz kalp sağlığı için çok faydalıdır. Ancak kontrolsüz ve aşırı spor riskli olabilir. Hangi düzeyde egzersiz yapılacağı hastaya göre belirlenmelidir. Doktor önerisi olmadan yüklenmek akıllıca değil."
-      }, {
-        q: "Sigara kalbi nasıl etkiler?",
-        a: "Sigara damar yapısını bozar ve pıhtı riskini artırır. Aynı zamanda kalp krizini tetikleyen en önemli faktörlerden biridir. \"Az içiyorum\" bahanesi burada geçerli değil. Her miktar zarar verir. Bırakmak kalp sağlığı için yapılabilecek en net hamledir."
-      }, {
-        q: "Diyabet kalp hastalığı riskini artırır mı?",
-        a: "Evet, diyabet kalp hastalığı için büyük bir risk faktörüdür. Damarları zamanla hasara uğratır. Sessiz ilerlediği için fark edilmesi zor olabilir. Bu hastalarda kalp krizi daha sinsi seyreder. Kan şekeri kontrolü bu yüzden hayati önemdedir."
-      }, {
-        q: "Nefes darlığı kalp kaynaklı olabilir mi?",
-        a: "Evet, özellikle eforla artan nefes darlığı kalp yetmezliği belirtisi olabilir. Akciğer hastalıklarıyla karışabilir. Bu yüzden doğru değerlendirme önemlidir. Tek başına \"yorgunluk\" diye geçiştirilmemelidir. Altta ciddi bir durum olabilir."
-      }, {
-        q: "Kalp yetmezliği nedir?",
-        a: "Kalbin vücuda yeterli kan pompalayamaması durumudur. Nefes darlığı, halsizlik ve ödemle kendini gösterebilir. Kronik bir hastalıktır ama tedaviyle kontrol altına alınabilir. Erken tanı önemli fark yaratır. Düzenli takip gerektirir."
-      }, {
-        q: "Stent takıldıktan sonra nelere dikkat edilmeli?",
-        a: "İlaçlar kesinlikle aksatılmamalıdır. Özellikle kan sulandırıcılar hayati önem taşır. Sigara bırakılmalı ve yaşam tarzı düzeltilmelidir. Kontroller ihmal edilmemelidir. \"Stent takıldı, bitti\" diye düşünmek klasik hatadır."
-      }, {
-        q: "Kalp krizi geçiren biri tekrar geçirir mi?",
-        a: "Evet, risk devam eder. Altta yatan nedenler düzeltilmezse tekrar etme ihtimali vardır. Bu yüzden tedavi ve yaşam tarzı değişikliği şarttır. Düzenli takip çok önemlidir. İkinci kriz genelde daha ağır olabilir."
-      }, {
-        q: "Ailede kalp hastalığı olması önemli mi?",
-        a: "Genetik faktörler ciddi rol oynar. Ailede erken yaşta kalp hastalığı varsa risk artar. Bu kişiler daha erken taranmalıdır. Önlem almak için avantajlı bir bilgidir aslında. Görmezden gelmek yerine kullanmak gerekir."
-      }, {
-        q: "Kalp hastalığı tamamen iyileşir mi?",
-        a: "Bazı durumlar tamamen düzelebilir, bazıları kronik seyreder. Ama çoğu hastalık kontrol altına alınabilir. Amaç riski azaltmak ve yaşam kalitesini artırmaktır. Düzenli takip burada kilit rol oynar. \"Tam geçti\" demek çoğu zaman yanıltıcıdır."
-      }, {
-        q: "Strese bağlı kalp hastalığı olur mu?",
-        a: "Stres tek başına neden olmasa da önemli bir tetikleyicidir. Tansiyon ve ritim problemlerini artırabilir. Uzun vadede dolaylı etkileri büyüktür. Özellikle şehir hayatında bu faktör küçümseniyor. Ama etkisi gayet gerçek."
-      }, {
-        q: "Ne zaman kardiyolojiye başvurulmalı?",
-        a: "Göğüs ağrısı, çarpıntı, nefes darlığı gibi belirtiler varsa gecikmeden başvurulmalıdır. Risk faktörleri olan kişiler düzenli kontrol yaptırmalıdır. \"Geçer\" diye beklemek bazen pahalıya patlar. Erken tanı her zaman avantaj sağlar. Kalp işi şansa bırakılmaz."
-      }, {
-        q: "Kalp krizi ile kalp durması aynı şey midir?",
-        a: "Hayır, aynı şey değildir ama insanlar sürekli karıştırır. Kalp krizi, damar tıkanması sonucu kalp kasının zarar görmesidir. Kalp durması ise kalbin tamamen pompa fonksiyonunu kaybetmesidir. Kalp krizi kalp durmasına yol açabilir ama her zaman böyle olmaz. İkisi de acil durumdur ve hızlı müdahale gerekir."
-      }, {
-        q: "Aspirin kalp krizini önler mi?",
-        a: "Aspirin bazı hastalarda pıhtı oluşumunu azaltarak koruyucu olabilir. Ama herkesin kafasına göre kullanacağı bir ilaç değildir. Gereksiz kullanım kanama riskini artırır. Bu yüzden doktor önerisi olmadan başlanmamalıdır. \"Komşuya iyi geldi\" mantığı burada tehlikeli."
-      }, {
-        q: "Nabız kaç olmalı?",
-        a: "İstirahat halindeki nabız genelde 60–100 arası kabul edilir. Sporcularda daha düşük olabilir, bu normaldir. Çok yüksek veya çok düşük nabız altta bir soruna işaret edebilir. Özellikle şikayet eşlik ediyorsa değerlendirilmelidir. Tek ölçümle karar vermek doğru değildir."
-      }, {
-        q: "Kalp pili kimlere takılır?",
-        a: "Kalp pili, kalp ritmi çok yavaş olan hastalara takılır. Bayılma, baş dönmesi gibi belirtiler varsa düşünülür. Pil kalbin ritmini düzenler ve yaşam kalitesini artırır. Küçük bir cerrahi işlemle yerleştirilir. Doğru hastada oldukça etkili bir tedavidir."
-      }, {
-        q: "Ritim bozuklukları tehlikeli midir?",
-        a: "Bazıları tamamen zararsızdır, bazıları ise ciddi risk taşır. Bu yüzden hepsini \"önemsiz\" diye geçiştirmek hatadır. Süresi, sıklığı ve eşlik eden belirtiler önemlidir. Gerekirse ileri tetkik yapılır. Özellikle bayılma ile birlikteyse ciddiye alınmalıdır."
-      }, {
-        q: "Kalp büyümesi ne demektir?",
-        a: "Kalp büyümesi genelde kalbin yük altında kalması sonucu gelişir. Tansiyon, kapak hastalıkları veya kalp yetmezliği neden olabilir. Tek başına bir hastalık değil, bir bulgudur. Altta yatan neden bulunup tedavi edilmelidir. Aksi halde ilerleyebilir."
-      }, {
-        q: "Enerji içecekleri kalbi etkiler mi?",
-        a: "Evet, özellikle aşırı tüketimde ciddi etkiler yapabilir. Nabzı hızlandırır ve ritim bozukluklarını tetikleyebilir. Gençlerde bile ani sorunlara yol açtığı görülüyor. \"Bir şey olmaz\" yaklaşımı burada risklidir. Özellikle kalp hastaları uzak durmalıdır."
-      }, {
-        q: "Kalp hastaları oruç tutabilir mi?",
-        a: "Hastanın durumuna göre değişir. Stabil hastalar genelde tutabilir ama ilaç düzeni önemli bir konudur. İleri kalp yetmezliği veya ciddi hastalıkta riskli olabilir. Bu yüzden kişiye özel değerlendirme yapılmalıdır. Genel geçer cevap vermek doğru değildir."
-      }, {
-        q: "Göğüs ağrısı her zaman kalp krizi midir?",
-        a: "Hayır, çoğu göğüs ağrısı kalp krizi değildir. Kas, mide veya stres kaynaklı olabilir. Ama ayırt etmek her zaman kolay değildir. Özellikle riskli hastalarda dikkatli olunmalıdır. Şüpheli durumlarda kontrol şarttır."
-      }, {
-        q: "Kalp ultrasonu (EKO) nedir?",
-        a: "EKO, kalbin yapısını ve fonksiyonlarını değerlendiren bir ultrason yöntemidir. Ağrısız ve zararsızdır. Kalp kapakları, kasılma gücü ve odacıklar incelenir. Tanıda oldukça önemli bir yer tutar. Birçok hastada ilk başvurulan testlerden biridir."
-      }, {
-        q: "Kalp hastalığı tamamen önlenebilir mi?",
-        a: "Tamamen önlemek her zaman mümkün değildir ama risk ciddi şekilde azaltılabilir. Sağlıklı beslenme, egzersiz ve sigaradan uzak durmak temel faktörlerdir. Genetik risk olsa bile kontrol sağlanabilir. Sorun genelde bilmek değil, uygulamamaktır."
-      }, {
-        q: "Fazla kilo kalbi nasıl etkiler?",
-        a: "Obezite kalp hastalıkları için önemli bir risk faktörüdür. Tansiyon, diyabet ve kolesterolü tetikler. Kalbin iş yükünü artırır. Uzun vadede damar sağlığını bozar. Kilo vermek kalp için ciddi bir kazançtır."
-      }, {
-        q: "Tuz tüketimi neden önemli?",
-        a: "Fazla tuz tansiyonu yükseltir. Bu da kalp ve damar sistemine zarar verir. Özellikle hipertansiyon hastalarında kısıtlama şarttır. Günlük tüketim genelde gereğinden fazladır. Azaltmak düşündüğünden daha etkili bir adımdır."
-      }, {
-        q: "Kalp hastaları kahve içebilir mi?",
-        a: "Çoğu hasta için makul miktarda kahve sorun yaratmaz. Ama aşırı tüketim çarpıntıyı artırabilir. Hassas kişilerde dikkatli olunmalıdır. Herkesin toleransı farklıdır. Ölçüyü kaçırmamak yeterli olur."
-      }, {
-        q: "Kalp hastalığında genetik test gerekli mi?",
-        a: "Her hastaya gerekli değildir. Ancak bazı özel durumlarda faydalı olabilir. Ailevi hastalık şüphesi varsa değerlendirilir. Tanı ve risk belirlemede yardımcı olur. Rutin bir test değildir."
-      }, {
-        q: "Kan sulandırıcı ilaçlar ne kadar süre kullanılır?",
-        a: "Bu tamamen hastaya ve hastalığa bağlıdır. Bazı durumlarda kısa süreli, bazılarında ömür boyu kullanılır. Kendi kendine kesilmesi ciddi risk oluşturur. Özellikle stent sonrası kritik öneme sahiptir. Takip mutlaka yapılmalıdır."
-      }, {
-        q: "Kalp hastaları uçak yolculuğu yapabilir mi?",
-        a: "Çoğu hasta uygun şartlarda seyahat edebilir. Ancak yeni geçirilmiş kalp krizi veya ciddi durumlarda ertelenmelidir. Uzun uçuşlarda hareket etmek önemlidir. Riskli hastalar önceden değerlendirilmelidir. Plansız hareket etmek doğru değildir."
-      }, {
-        q: "Yüksek tansiyon belirtiler verir mi?",
-        a: "Çoğu zaman vermez, bu yüzden \"sessiz katil\" denir. Baş ağrısı veya baş dönmesi olabilir ama şart değildir. Bu yüzden ölçmeden anlamak zordur. Düzenli takip önemlidir. Belirti beklemek hatalı bir yaklaşımdır."
-      }, {
-        q: "Kalp hastalığına hangi beslenme iyi gelir?",
-        a: "Akdeniz tipi beslenme önerilir. Sebze, meyve, zeytinyağı ve balık ağırlıklı diyet faydalıdır. İşlenmiş gıdalar ve aşırı yağdan kaçınılmalıdır. Tek bir mucize besin yoktur. Önemli olan genel alışkanlıktır."
-      }, {
-        q: "Düzenli kontrol ne sıklıkla yapılmalı?",
-        a: "Bu hastaya göre değişir. Sağlıklı bireylerde yıllık kontrol yeterli olabilir. Riskli veya hastalığı olan kişilerde daha sık takip gerekir. Kontrol aralığı doktor tarafından belirlenmelidir. \"İyiyim\" deyip bırakmak genelde klasik hatadır."
-      }]
-    },
-    publications: {
-      label: "Akademik Çalışmalar",
-      title: "Bilimsel Çalışmalar",
-      subtitle: "Ulusal ve uluslararası kongrelerde sunumlar ve bilimsel yayınlar",
-      presentationsTitle: "Bilimsel Sunumlar",
-      papersTitle: "Bilimsel Yayınlar",
-      presentations: [{
-        title: "\"Fulminant Takotsubo cardiomyopathy by Covid19-Delta Variant (L452R)\"",
-        venue: "Turkish Cardiology Congress, Antalya",
-        year: "2021",
-        type: "Poster Sunum"
-      }, {
-        title: "\"Effect of empaglifozin on the diastolic fonctions\"",
-        venue: "International Turkish Congress of Cardiology, Digital",
-        year: "2020",
-        type: "Sözlü Sunum"
-      }, {
-        title: "\"Single Coronary Artery Anomaly\"",
-        venue: "35. Turkish Cardiology Congress, Antalya",
-        year: "2019",
-        type: "Poster Sunum"
-      }, {
-        title: "\"Unexpected radial angiography complication\"",
-        venue: "26. National Applied Interventional Cardiology Meeting, Antalya",
-        year: "2019",
-        type: "Poster Sunum"
-      }, {
-        title: "\"3D reconstruction of the Accordion Phenomenon\"",
-        venue: "26. National Applied Interventional Cardiology Meeting, Antalya",
-        year: "2019",
-        type: "Poster Sunum"
-      }],
-      papers: [{
-        title: "Evaluation of Cardiac Findings in People With Human Immunodeficiency Virus",
-        authors: "Sevgi Özan Köse, Yalın Tolga Yaylalı, Yiğit Davutoğlu, Gürsel Şen, İbrahim Oğuz, Selda Sayın Kutlu.",
-        journal: "Anatol J Cardiol.",
-        year: "2025",
-        doi: "10.14744/AnatolJCardiol.2025.5271",
-        type: "Araştırma Makalesi"
-      }, {
-        title: "Heart Failure Awareness Survey in a Turkish Population: HFAS-TR",
-        authors: "Dilay Karabulut, Şeyda Günay, Sena Sert Şekerci, Ertan Aydın, Kerem Köz, İbrahim Oguz, et al.",
-        journal: "Turk Kardiyol Dern Ars.",
-        year: "2024",
-        doi: "10.5543/tkda.2024.49280",
-        type: "Araştırma Makalesi"
-      }, {
-        title: "Telomerase activity and hTERT gene expression in patients with acute coronary syndrome and stable coronary artery disease",
-        authors: "Mehmet Kilinc, Oguz Kilic, Mucahit Secme, Cihan Ilyas Sevgican, Ibrahim Oguz, Hande Senol, Yavuz Dodurga, Gokay Nar, Ismail Dogu Kilic.",
-        journal: "Bratisl Lek Listy.",
-        year: "2024",
-        doi: "10.4149/BLL_2024_35",
-        type: "Araştırma Makalesi"
-      }, {
-        title: "Baseline Characteristics and Clinical Insights from the ARTEMIS Registry: A Comprehensive Study of Peripartum Cardiomyopathy in Türkiye",
-        authors: "Meral Kayıkçıoğlu, Murat Biteker, Ferit Onur Mutluer, Tuncay Güzel, İbrahim Oguz et al.",
-        journal: "Turk Kardiyol Dern Ars.",
-        year: "2024",
-        doi: "10.5543/tkda.2024.63367",
-        type: "Araştırma Makalesi"
-      }, {
-        title: "Comparison of current guidelines in the treatment of heart failure.",
-        authors: "Mehdi Zoghi (Ed.).",
-        journal: "Kitap Bölümü: Heart failure: treatment approaches from past to present. Nobel Yayıncı. ISBN: 978-605-335-681-3",
-        year: "2022",
-        doi: "",
-        type: "Kitap Bölümü"
-      }, {
-        title: "Interarm blood pressure differences and 2-year mortality in acute coronary syndrome patients",
-        authors: "Kilic ID, Kilci H, Sevgican CI, Oguz İbrahim, et al.",
-        journal: "Blood Press Monit.",
-        year: "2021",
-        doi: "PMID: 33734120",
-        type: "Araştırma Makalesi"
-      }, {
-        title: "In pregnancy Cardiovascular Diseases From the Perspective of a Family Physician Approach",
-        authors: "Erhan Okuyan (Ed.).",
-        journal: "Kitap Bölümü: Practice for Family Physicians Gynecology and Obstetrics Information",
-        year: "2021",
-        doi: "10.37609/akya.39",
-        type: "Kitap Bölümü"
-      }, {
-        title: "A Male Patient Presented with Anterior Myocardial Infarction with Left Main Coronary Artery Aneurysm",
-        authors: "Cihan İlyas Sevgican, İbrahim Oğuz et al.",
-        journal: "Turkiye Klinikleri J Cardiovasc Sci. 2018;30(1):29-33",
-        year: "2018",
-        doi: "10.5336/cardiosci.2018-60492",
-        type: "Olgu Sunumu"
-      }, {
-        title: "PAC-MAN Endocarditis: Atypical Vegetation on the Mitral Valve",
-        authors: "Cihan İlyas Sevgican, İbrahim Oğuz et al.",
-        journal: "Turkiye Klinikleri J Cardiovasc Sci. 2018;30(3):143-4",
-        year: "2018",
-        doi: "10.5336/cardiosci.2018-62409",
-        type: "Olgu Sunumu"
-      }]
-    },
-    appointment: {
-      label: "Randevu",
-      title: "Randevu Alın",
-      subtitle: "Hızlı randevu için formu doldurun, en kısa sürede sizi arayalım",
-      namePlaceholder: "Adınız Soyadınız",
-      phonePlaceholder: "Telefon Numaranız",
-      emailPlaceholder: "E-posta Adresiniz (İsteğe Bağlı)",
-      messagePlaceholder: "Şikayetiniz veya mesajınız...",
-      submitBtn: "Randevu Talebi Gönder",
-      successMsg: "Randevu talebiniz alınmıştır. En kısa sürede sizi arayacağız.",
-      orCall: "hemen arayın",
-      phone: "444 4 324",
-      info: "Özel Denizli Cerrahi Hastanesi'nde hafta içi ve hafta sonu randevu hizmeti sunulmaktadır."
-    },
-    contact: {
-      label: "İletişim",
-      title: "Bize Ulaşın",
-      subtitle: "Sorularınız için iletişime geçebilirsiniz",
-      hospital: "Özel Denizli Cerrahi Hastanesi",
-      address: "Denizli, Türkiye",
-      phone: "444 4 324",
-      workHours: "Çalışma Saatleri",
-      weekdays: "Pazartesi – Cuma: 09:00 – 17:00",
-      sunday: "Cumartesi: 09:00 – 12:00",
-      mapLabel: "Hastane Konumu",
-      sendMsg: "Mesaj Gönder",
-      namePh: "Adınız Soyadınız",
-      emailPh: "E-posta Adresiniz",
-      subjectPh: "Konu",
-      messagePh: "Mesajınız...",
-      sendBtn: "Gönder",
-      successMsg: "Mesajınız alındı. En kısa sürede yanıt vereceğiz."
-    },
-    footer: {
-      tagline: "Kalp Sağlığında Güvenilir Adresiniz",
-      quickLinks: "Hızlı Bağlantılar",
-      contactInfo: "İletişim Bilgileri",
-      copyright: "© 2026 Uzm. Dr. İbrahim OĞUZ. Tüm hakları saklıdır."
-    }
-  },
-  en: {
-    nav: {
-      about: "About",
-      specializations: "Specializations",
-      news: "News",
-      education: "Patient Education",
-      publications: "Publications",
-      appointment: "Appointment",
-      contact: "Contact"
-    },
-    hero: {
-      label: "Cardiologist",
-      title: "Uzm. Dr. İbrahim OĞUZ",
-      subtitle: "Cardiologist | Denizli",
-      description: "Specialist cardiologist with 10+ years of experience in interventional cardiology, angiography, cardiac pacing, and cardiac imaging.",
-      cta1: "Book Appointment",
-      cta2: "View CV",
-      stat1: "10+",
-      stat1Label: "Years Experience",
-      stat2: "3000+",
-      stat2Label: "Successful Interventions"
-    },
-    about: {
-      label: "Biography",
-      title: "About Dr. İbrahim OĞUZ",
-      description: "A graduate of Ankara University Faculty of Medicine, Dr. İbrahim OĞUZ specialized in interventional cardiology after his residency training at Pamukkale University. He successfully performs complex coronary interventions, closure of cardiac septal defects, mitral balloon valvuloplasty, and pacemaker implantation. Since 2024, he has been serving at Özel Denizli Cerrahi Hospital.",
-      educationTitle: "Education & Career",
-      education: [{
-        year: "2024 – Present",
-        place: "Özel Denizli Cerrahi Hastanesi",
-        role: "Cardiologist"
-      }, {
-        year: "2020 – 2024",
-        place: "Denizli Devlet Hastanesi",
-        role: "Cardiologist"
-      }, {
-        year: "2015 – 2020",
-        place: "Pamukkale University, Cardiology Dept.",
-        role: "Cardiology Residency"
-      }, {
-        year: "2005 – 2012",
-        place: "Ankara University Faculty of Medicine",
-        role: "Medical Degree (MD)"
-      }],
-      certsTitle: "Certifications",
-      certs: ["Turkish Society of Cardiology Competency Certificate", "Laboratory Animal Use Certificate"],
-      membTitle: "Professional Memberships",
-      memb: ["Turkish Society of Cardiology", "Turkish Medical Association", "European Society of Cardiology (ESC)"],
-      langTitle: "Language Skills",
-      langs: ["Turkish (Native)", "English (Proficient)", "Swedish (Intermediate)"]
-    },
-    spec: {
-      label: "Specializations",
-      title: "Interventional Cardiology",
-      subtitle: "Advanced cardiac procedures for diagnosis and treatment of heart diseases",
-      items: [{
-        icon: "activity",
-        title: "Angiography, Balloon & Stent",
-        desc: "Coronary angiography for vascular assessment and treatment via balloon, drug-coated balloon, and stent placement."
-      }, {
-        icon: "heart",
-        title: "Cardiac Septal Closure",
-        desc: "Percutaneous closure of ASD, PFO and other cardiac septal defects under angiographic guidance."
-      }, {
-        icon: "zap",
-        title: "Pacemaker Implantation",
-        desc: "Implantation and replacement of all types of permanent pacemakers and cardiac rhythm devices."
-      }, {
-        icon: "scan",
-        title: "Cardiac Imaging",
-        desc: "Echocardiography (Echo) and transesophageal echocardiography (TEE) for detailed cardiac assessment."
-      }, {
-        icon: "gauge",
-        title: "Holter & Stress Testing",
-        desc: "Holter monitoring and exercise stress testing for the diagnosis of arrhythmias and coronary artery disease."
-      }, {
-        icon: "shield",
-        title: "TAVI – Transcatheter Aortic Valve Implantation",
-        desc: "Replacement of the aortic valve via catheter without open-heart surgery for patients with severe valve disease."
-      }, {
-        icon: "target",
-        title: "CTO – Chronic Total Occlusion",
-        desc: "Opening of completely blocked coronary arteries (chronic total occlusion) using advanced catheter techniques."
-      }, {
-        icon: "layers",
-        title: "EVAR & TEVAR – Endovascular Aortic Repair",
-        desc: "Treatment of aortic aneurysms and dissections without surgery using endovascular stent-graft techniques (EVAR/TEVAR)."
-      }]
-    },
-    news: {
-      label: "Latest News",
-      title: "Recent Developments in Cardiology",
-      subtitle: "Current advances in cardiology and patient-focused informational articles",
-      readMore: "Read More",
-      articles: [{
-        category: "Interventional Cardiology",
-        title: "Minimally Invasive Angioplasty: Modern Approaches",
-        excerpt: "Thanks to minimally invasive techniques in today's interventional cardiology, patients recover much faster and hospital stays have been dramatically reduced.",
-        date: "January 2026",
-        img: "https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=600"
-      }, {
-        category: "Pacemaker",
-        title: "Smart Pacemaker Technologies: Next-Generation Devices",
-        excerpt: "Next-generation pacemakers with remote monitoring allow for easy daily follow-up and early detection of potential complications.",
-        date: "February 2026",
-        img: "https://images.pexels.com/photos/4226219/pexels-photo-4226219.jpeg?auto=compress&cs=tinysrgb&w=600"
-      }, {
-        category: "Cardiac Imaging",
-        title: "3D Echocardiography in Valvular Heart Disease Diagnosis",
-        excerpt: "Three-dimensional echocardiography provides detailed anatomical information far beyond standard 2D imaging in the evaluation of valvular heart diseases.",
-        date: "March 2026",
-        img: "https://images.pexels.com/photos/6203473/pexels-photo-6203473.jpeg?auto=compress&cs=tinysrgb&w=600"
-      }]
-    },
-    education: {
-      label: "Patient Education",
-      title: "Frequently Asked Questions",
-      subtitle: "Information about cardiology and common cardiac procedures",
-      items: [{
-        q: "What are the symptoms of a heart attack?",
-        a: "A heart attack usually begins with a feeling of pressure, burning, or tightness in the chest. This pain may radiate to the left arm, neck, jaw, or back. It may be accompanied by shortness of breath, sweating, and nausea. Symptoms can be subtler in diabetic patients. If suspected, do not delay seeking medical attention."
-      }, {
-        q: "What is angiography and how is it performed?",
-        a: "Angiography is a procedure to visualize the coronary arteries. A thin catheter is advanced into the vessel through the groin or wrist, contrast dye is injected, and the arteries are imaged. The procedure typically takes 15–30 minutes and the patient can get up the same day. It is usually not as difficult as people imagine."
-      }, {
-        q: "Is angiography painful?",
-        a: "Most patients do not feel significant pain during the procedure. There may be mild pressure or burning at the insertion site. The patient is awake throughout but may be given mild sedatives. The real fear usually comes before the procedure, not during it. Afterwards, there is generally only mild tenderness, nothing more."
-      }, {
-        q: "What is a stent and when is it placed?",
-        a: "A stent is a metal mesh cage used to keep blocked or narrowed arteries open. It can be placed in the same session if deemed necessary during angiography. However, not every narrowed artery receives a stent — the decision is made on a patient-by-patient basis. It can be life-saving in suitable patients. Regular medication use afterwards is very important."
-      }, {
-        q: "When is palpitation dangerous?",
-        a: "Occasional, brief palpitations are generally harmless. However, prolonged palpitations, those accompanied by a feeling of fainting, or those with chest pain should be taken seriously. There may be an underlying arrhythmia. If they recur frequently, evaluation is essential. They should not be confused with simple stress."
-      }, {
-        q: "At what blood pressure level is it dangerous?",
-        a: "Generally, values above 140/90 mmHg are considered high. However, risk varies by patient. Persistently high blood pressure damages the heart, brain, and kidneys. Regular monitoring is more important than a single measurement. Medication should be started when necessary."
-      }, {
-        q: "How important is high cholesterol?",
-        a: "High cholesterol is one of the most important causes of arterial hardening. LDL cholesterol elevation in particular creates risk. It increases the risk of heart attack in the long term. It must be controlled not only by diet, but with medication if necessary. Saying 'I have no symptoms' doesn't work here."
-      }, {
-        q: "Can heart attacks happen at a young age?",
-        a: "Yes, they are being seen more frequently in recent years. Smoking, stress, obesity, and genetic factors play important roles. Young patients tend to delay seeking help because they don't take symptoms seriously. This increases risk. Age alone is not protective."
-      }, {
-        q: "What does a stress test do?",
-        a: "A stress test evaluates the heart's performance under load. Heart rhythm and ECG are monitored while the patient walks on a treadmill. It can reveal hidden cardiovascular disease. It is not performed on every patient — it is used in selected situations. It is a simple but valuable test."
-      }, {
-        q: "Can heart patients exercise?",
-        a: "With proper planning, most patients can exercise. In fact, regular exercise is very beneficial for heart health. However, uncontrolled or excessive exercise can be risky. The level of exercise should be determined individually. Loading oneself without medical advice is unwise."
-      }, {
-        q: "How does smoking affect the heart?",
-        a: "Smoking damages vascular structure and increases clot risk. It is also one of the most important triggers of heart attack. The excuse of 'I smoke little' doesn't apply here. Every amount is harmful. Quitting is the clearest move you can make for heart health."
-      }, {
-        q: "Does diabetes increase heart disease risk?",
-        a: "Yes, diabetes is a major risk factor for heart disease. It damages blood vessels over time. It can be difficult to notice because it progresses silently. Heart attacks in these patients have a more insidious course. Blood sugar control is therefore of vital importance."
-      }, {
-        q: "Can shortness of breath be heart-related?",
-        a: "Yes, shortness of breath that worsens with exertion can be a sign of heart failure. It can be confused with lung disease. This is why proper evaluation is important. It should not be dismissed as mere 'tiredness'. There may be a serious underlying condition."
-      }, {
-        q: "What is heart failure?",
-        a: "It is the condition in which the heart cannot pump enough blood to the body. It can manifest with shortness of breath, weakness, and edema. It is a chronic disease but can be controlled with treatment. Early diagnosis makes a significant difference. It requires regular follow-up."
-      }, {
-        q: "What should be considered after stent placement?",
-        a: "Medications must never be missed. Blood thinners in particular are of vital importance. Smoking should be stopped and lifestyle corrected. Follow-up appointments must not be neglected. Thinking 'the stent is placed, it's done' is a classic mistake."
-      }, {
-        q: "Can a heart attack recur?",
-        a: "Yes, the risk continues. If the underlying causes are not corrected, recurrence is possible. This is why treatment and lifestyle changes are essential. Regular follow-up is very important. The second attack can often be more severe."
-      }, {
-        q: "Does family history of heart disease matter?",
-        a: "Genetic factors play a significant role. If there is early-onset heart disease in the family, risk increases. These individuals should be screened earlier. It is actually advantageous information for taking preventive measures. Use it rather than ignoring it."
-      }, {
-        q: "Can heart disease be completely cured?",
-        a: "Some conditions can be fully resolved; others have a chronic course. But most diseases can be controlled. The goal is to reduce risk and improve quality of life. Regular follow-up plays a key role here. Saying 'it's completely gone' is often misleading."
-      }, {
-        q: "Can stress cause heart disease?",
-        a: "Stress alone may not cause it, but it is an important trigger. It can increase blood pressure and rhythm problems. Its long-term indirect effects are significant. Especially in city life, this factor is underestimated. But its effect is quite real."
-      }, {
-        q: "When should one see a cardiologist?",
-        a: "If symptoms such as chest pain, palpitations, or shortness of breath are present, consult without delay. People with risk factors should have regular check-ups. Waiting and hoping it passes can sometimes be costly. Early diagnosis always provides an advantage. The heart is not something to leave to chance."
-      }, {
-        q: "Are heart attack and cardiac arrest the same thing?",
-        a: "No, they are not the same, though people constantly confuse them. A heart attack is damage to the heart muscle due to arterial blockage. Cardiac arrest is when the heart completely loses its pumping function. A heart attack can lead to cardiac arrest, but not always. Both are emergencies requiring rapid intervention."
-      }, {
-        q: "Does aspirin prevent heart attacks?",
-        a: "Aspirin can be protective in some patients by reducing clot formation. But it is not a medication everyone should take at will. Unnecessary use increases bleeding risk. Therefore, it should not be started without medical advice. The 'it worked for my neighbor' logic is dangerous here."
-      }, {
-        q: "What should the pulse rate be?",
-        a: "A resting pulse rate of 60–100 is generally accepted as normal. In athletes it can be lower, which is normal. A very high or very low pulse may indicate an underlying problem. Especially if accompanied by complaints, it should be evaluated. Making decisions based on a single measurement is not correct."
-      }, {
-        q: "Who needs a pacemaker?",
-        a: "A pacemaker is implanted in patients whose heart rhythm is too slow. It is considered if symptoms such as fainting or dizziness are present. It regulates the heart rhythm and improves quality of life. It is implanted via a small surgical procedure. It is a very effective treatment in the right patient."
-      }, {
-        q: "Are arrhythmias dangerous?",
-        a: "Some are completely harmless; others carry serious risk. Therefore, dismissing all of them as 'insignificant' is a mistake. Duration, frequency, and accompanying symptoms are important. Advanced testing is performed if necessary. If accompanied by fainting in particular, it must be taken seriously."
-      }, {
-        q: "What does heart enlargement mean?",
-        a: "Heart enlargement usually develops as a result of the heart being under load. High blood pressure, valve diseases, or heart failure may be the cause. It is a finding, not a disease in itself. The underlying cause must be found and treated. Otherwise it can progress."
-      }, {
-        q: "Do energy drinks affect the heart?",
-        a: "Yes, especially with excessive consumption, they can have serious effects. They speed up the pulse and can trigger arrhythmias. They have been seen to cause sudden problems even in young people. A 'nothing will happen' attitude is risky here. Heart patients in particular should stay away from them."
-      }, {
-        q: "Can heart patients fast (during Ramadan)?",
-        a: "It depends on the patient's condition. Stable patients can generally fast, but medication scheduling is an important issue. It can be risky in advanced heart failure or serious disease. Therefore, individualized evaluation is necessary. Giving a blanket answer is not correct."
-      }, {
-        q: "Is chest pain always a heart attack?",
-        a: "No, most chest pain is not a heart attack. It can originate from muscle, the stomach, or stress. But distinguishing them is not always easy. Caution should be taken especially in high-risk patients. A check-up is essential in suspicious situations."
-      }, {
-        q: "What is cardiac ultrasound (ECO)?",
-        a: "ECO is an ultrasound method for evaluating the structure and functions of the heart. It is painless and harmless. Heart valves, contraction strength, and chambers are examined. It occupies a very important place in diagnosis. It is one of the first tests used in many patients."
-      }, {
-        q: "Can heart disease be completely prevented?",
-        a: "Complete prevention is not always possible, but risk can be significantly reduced. Healthy eating, exercise, and avoiding smoking are fundamental factors. Even with genetic risk, control can be achieved. The problem is usually not knowing — it's not applying what we know."
-      }, {
-        q: "How does excess weight affect the heart?",
-        a: "Obesity is an important risk factor for heart disease. It triggers high blood pressure, diabetes, and high cholesterol. It increases the workload on the heart. It impairs vascular health in the long term. Losing weight is a serious gain for the heart."
-      }, {
-        q: "Why is salt consumption important?",
-        a: "Excess salt raises blood pressure. This damages the cardiovascular system. Restriction is essential especially in hypertension patients. Daily consumption is generally more than needed. Reducing it is a more effective step than you might think."
-      }, {
-        q: "Can heart patients drink coffee?",
-        a: "For most patients, a reasonable amount of coffee does not cause problems. However, excessive consumption can increase palpitations. Sensitive individuals should be careful. Everyone's tolerance is different. Not exceeding the measure is sufficient."
-      }, {
-        q: "Is genetic testing necessary for heart disease?",
-        a: "It is not necessary for every patient. However, it can be useful in some special situations. It is evaluated if there is suspicion of familial disease. It helps in diagnosis and risk determination. It is not a routine test."
-      }, {
-        q: "How long should blood thinners be used?",
-        a: "This entirely depends on the patient and the disease. In some situations they are used for a short time, in others for life. Stopping them on their own creates serious risk. It is of critical importance especially after stenting. Follow-up must definitely be maintained."
-      }, {
-        q: "Can heart patients travel by plane?",
-        a: "Most patients can travel under appropriate conditions. However, it should be postponed after a recent heart attack or in serious conditions. Moving around during long flights is important. High-risk patients should be evaluated beforehand. Acting without a plan is not correct."
-      }, {
-        q: "Does high blood pressure cause symptoms?",
-        a: "Most of the time it does not, which is why it's called 'the silent killer'. Headache or dizziness may occur but it's not required. This is why it's difficult to know without measuring. Regular follow-up is important. Waiting for symptoms is the wrong approach."
-      }, {
-        q: "What nutrition is good for heart disease?",
-        a: "A Mediterranean-type diet is recommended. A diet heavy in vegetables, fruits, olive oil, and fish is beneficial. Processed foods and excessive fats should be avoided. There is no single miracle food. What matters is the overall habit."
-      }, {
-        q: "How often should regular check-ups be done?",
-        a: "This varies by patient. Annual check-ups may be sufficient for healthy individuals. More frequent follow-up is required for high-risk people or those with disease. The check-up interval should be determined by the doctor. 'I'm fine' and dropping it is generally the classic mistake."
-      }]
-    },
-    publications: {
-      label: "Academic Work",
-      title: "Scientific Work",
-      subtitle: "Conference presentations and publications in national and international journals",
-      presentationsTitle: "Scientific Presentations",
-      papersTitle: "Scientific Publications",
-      presentations: [{
-        title: "\"Fulminant Takotsubo cardiomyopathy by Covid19-Delta Variant (L452R)\"",
-        venue: "Turkish Cardiology Congress, Antalya",
-        year: "2021",
-        type: "Poster Presentation"
-      }, {
-        title: "\"Effect of empaglifozin on the diastolic fonctions\"",
-        venue: "International Turkish Congress of Cardiology, Digital",
-        year: "2020",
-        type: "Oral Presentation"
-      }, {
-        title: "\"Single Coronary Artery Anomaly\"",
-        venue: "35th Turkish Cardiology Congress, Antalya",
-        year: "2019",
-        type: "Poster Presentation"
-      }, {
-        title: "\"Unexpected radial angiography complication\"",
-        venue: "26th National Applied Interventional Cardiology Meeting, Antalya",
-        year: "2019",
-        type: "Poster Presentation"
-      }, {
-        title: "\"3D reconstruction of the Accordion Phenomenon\"",
-        venue: "26th National Applied Interventional Cardiology Meeting, Antalya",
-        year: "2019",
-        type: "Poster Presentation"
-      }],
-      papers: [{
-        title: "Evaluation of Cardiac Findings in People With Human Immunodeficiency Virus",
-        authors: "Sevgi Özan Köse, Yalın Tolga Yaylalı, Yiğit Davutoğlu, Gürsel Şen, İbrahim Oğuz, Selda Sayın Kutlu.",
-        journal: "Anatol J Cardiol.",
-        year: "2025",
-        doi: "10.14744/AnatolJCardiol.2025.5271",
-        type: "Research Article"
-      }, {
-        title: "Heart Failure Awareness Survey in a Turkish Population: HFAS-TR",
-        authors: "Dilay Karabulut, Şeyda Günay, Sena Sert Şekerci, Ertan Aydın, Kerem Köz, İbrahim Oguz, et al.",
-        journal: "Turk Kardiyol Dern Ars.",
-        year: "2024",
-        doi: "10.5543/tkda.2024.49280",
-        type: "Research Article"
-      }, {
-        title: "Telomerase activity and hTERT gene expression in patients with acute coronary syndrome and stable coronary artery disease",
-        authors: "Mehmet Kilinc, Oguz Kilic, Mucahit Secme, Cihan Ilyas Sevgican, Ibrahim Oguz, Hande Senol, Yavuz Dodurga, Gokay Nar, Ismail Dogu Kilic.",
-        journal: "Bratisl Lek Listy.",
-        year: "2024",
-        doi: "10.4149/BLL_2024_35",
-        type: "Research Article"
-      }, {
-        title: "Baseline Characteristics and Clinical Insights from the ARTEMIS Registry: A Comprehensive Study of Peripartum Cardiomyopathy in Türkiye",
-        authors: "Meral Kayıkçıoğlu, Murat Biteker, Ferit Onur Mutluer, Tuncay Güzel, İbrahim Oguz et al.",
-        journal: "Turk Kardiyol Dern Ars.",
-        year: "2024",
-        doi: "10.5543/tkda.2024.63367",
-        type: "Research Article"
-      }, {
-        title: "Comparison of current guidelines in the treatment of heart failure.",
-        authors: "Mehdi Zoghi (Ed.).",
-        journal: "Book Chapter: Heart failure: treatment approaches from past to present. Nobel Publisher. ISBN: 978-605-335-681-3",
-        year: "2022",
-        doi: "",
-        type: "Book Chapter"
-      }, {
-        title: "Interarm blood pressure differences and 2-year mortality in acute coronary syndrome patients",
-        authors: "Kilic ID, Kilci H, Sevgican CI, Oguz İbrahim, et al.",
-        journal: "Blood Press Monit.",
-        year: "2021",
-        doi: "PMID: 33734120",
-        type: "Research Article"
-      }, {
-        title: "In pregnancy Cardiovascular Diseases From the Perspective of a Family Physician Approach",
-        authors: "Erhan Okuyan (Ed.).",
-        journal: "Book Chapter: Practice for Family Physicians Gynecology and Obstetrics Information",
-        year: "2021",
-        doi: "10.37609/akya.39",
-        type: "Book Chapter"
-      }, {
-        title: "A Male Patient Presented with Anterior Myocardial Infarction with Left Main Coronary Artery Aneurysm",
-        authors: "Cihan İlyas Sevgican, İbrahim Oğuz et al.",
-        journal: "Turkiye Klinikleri J Cardiovasc Sci. 2018;30(1):29-33",
-        year: "2018",
-        doi: "10.5336/cardiosci.2018-60492",
-        type: "Case Report"
-      }, {
-        title: "PAC-MAN Endocarditis: Atypical Vegetation on the Mitral Valve",
-        authors: "Cihan İlyas Sevgican, İbrahim Oğuz et al.",
-        journal: "Turkiye Klinikleri J Cardiovasc Sci. 2018;30(3):143-4",
-        year: "2018",
-        doi: "10.5336/cardiosci.2018-62409",
-        type: "Case Report"
-      }]
-    },
-    appointment: {
-      label: "Appointment",
-      title: "Book an Appointment",
-      subtitle: "Fill out the form and we'll call you back as soon as possible",
-      namePlaceholder: "Your Full Name",
-      phonePlaceholder: "Your Phone Number",
-      emailPlaceholder: "Your Email (Optional)",
-      messagePlaceholder: "Your complaint or message...",
-      submitBtn: "Send Appointment Request",
-      successMsg: "Your appointment request has been received. We will call you shortly.",
-      orCall: "or call us directly",
-      phone: "444 4 324",
-      info: "Appointment services available on weekdays and weekends at Özel Denizli Cerrahi Hastanesi."
-    },
-    contact: {
-      label: "Contact",
-      title: "Get in Touch",
-      subtitle: "Feel free to reach out with any questions",
-      hospital: "Özel Denizli Cerrahi Hastanesi",
-      address: "Denizli, Türkiye",
-      phone: "444 4 324",
-      workHours: "Working Hours",
-      weekdays: "Monday – Friday: 09:00 – 17:00",
-      sunday: "Saturday: 09:00 – 12:00",
-      mapLabel: "Hospital Location",
-      sendMsg: "Send a Message",
-      namePh: "Your Full Name",
-      emailPh: "Your Email",
-      subjectPh: "Subject",
-      messagePh: "Your message...",
-      sendBtn: "Send",
-      successMsg: "Your message has been received. We will respond as soon as possible."
-    },
-    footer: {
-      tagline: "Your Trusted Address in Heart Health",
-      quickLinks: "Quick Links",
-      contactInfo: "Contact Information",
-      copyright: "© 2026 Uzm. Dr. İbrahim OĞUZ. All rights reserved."
-    }
-  }
-};
+
 function useLang() {
   _s();
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(LangContext);
@@ -33734,7 +32967,7 @@ _s(useLang, "gDsCjeeItUuvgOWf1v4qoK9RF6k=");
 function App() {
   _s2();
   const [lang, setLang] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("tr");
-  const t = translations[lang];
+  const t = _translations__WEBPACK_IMPORTED_MODULE_12__.translations[lang];
 
   // Remove Emergent badge if injected
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
@@ -33751,144 +32984,146 @@ function App() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     document.title = "Dr. İbrahim OĞUZ | Kardiyoloji Uzmanı | Denizli";
   }, []);
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(LangContext.Provider, {
+  const isRtl = lang === "ar";
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)(LangContext.Provider, {
     value: {
       lang,
       setLang,
       t
     },
-    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("div", {
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)("div", {
       className: "App",
+      dir: isRtl ? "rtl" : "ltr",
       "x-file-name": "App",
-      "x-line-number": "703",
+      "x-line-number": "46",
       "x-column": "6",
       "x-component": "div",
-      "x-id": "App_703_6",
+      "x-id": "App_46_6",
       "x-dynamic": "false",
-      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_components_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)(_components_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
         "x-file-name": "App",
-        "x-line-number": "704",
+        "x-line-number": "47",
         "x-column": "8",
         "x-component": "Navbar",
-        "x-id": "App_704_8",
+        "x-id": "App_47_8",
         "x-dynamic": "true"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 704,
+        lineNumber: 47,
         columnNumber: 9
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("main", {
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)("main", {
         "x-file-name": "App",
-        "x-line-number": "705",
+        "x-line-number": "48",
         "x-column": "8",
         "x-component": "main",
-        "x-id": "App_705_8",
+        "x-id": "App_48_8",
         "x-dynamic": "false",
-        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_components_Hero__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)(_components_Hero__WEBPACK_IMPORTED_MODULE_3__["default"], {
           "x-file-name": "App",
-          "x-line-number": "706",
+          "x-line-number": "49",
           "x-column": "10",
           "x-component": "Hero",
-          "x-id": "App_706_10",
+          "x-id": "App_49_10",
           "x-dynamic": "true"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 706,
+          lineNumber: 49,
           columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_components_About__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)(_components_About__WEBPACK_IMPORTED_MODULE_4__["default"], {
           "x-file-name": "App",
-          "x-line-number": "707",
+          "x-line-number": "50",
           "x-column": "10",
           "x-component": "About",
-          "x-id": "App_707_10",
+          "x-id": "App_50_10",
           "x-dynamic": "true"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 707,
+          lineNumber: 50,
           columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_components_Specializations__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)(_components_Specializations__WEBPACK_IMPORTED_MODULE_5__["default"], {
           "x-file-name": "App",
-          "x-line-number": "708",
+          "x-line-number": "51",
           "x-column": "10",
           "x-component": "Specializations",
-          "x-id": "App_708_10",
+          "x-id": "App_51_10",
           "x-dynamic": "true"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 708,
+          lineNumber: 51,
           columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_components_PatientEducation__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)(_components_PatientEducation__WEBPACK_IMPORTED_MODULE_6__["default"], {
           "x-file-name": "App",
-          "x-line-number": "709",
+          "x-line-number": "52",
           "x-column": "10",
           "x-component": "PatientEducation",
-          "x-id": "App_709_10",
+          "x-id": "App_52_10",
           "x-dynamic": "true",
           "x-excluded": "true"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 709,
+          lineNumber: 52,
           columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_components_Publications__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)(_components_Publications__WEBPACK_IMPORTED_MODULE_7__["default"], {
           "x-file-name": "App",
-          "x-line-number": "710",
+          "x-line-number": "53",
           "x-column": "10",
           "x-component": "Publications",
-          "x-id": "App_710_10",
+          "x-id": "App_53_10",
           "x-dynamic": "true"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 710,
+          lineNumber: 53,
           columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_components_PatientReviews__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)(_components_PatientReviews__WEBPACK_IMPORTED_MODULE_8__["default"], {
           "x-file-name": "App",
-          "x-line-number": "711",
+          "x-line-number": "54",
           "x-column": "10",
           "x-component": "PatientReviews",
-          "x-id": "App_711_10",
+          "x-id": "App_54_10",
           "x-dynamic": "true"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 711,
+          lineNumber: 54,
           columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_components_Appointment__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)(_components_Appointment__WEBPACK_IMPORTED_MODULE_9__["default"], {
           "x-file-name": "App",
-          "x-line-number": "712",
+          "x-line-number": "55",
           "x-column": "10",
           "x-component": "Appointment",
-          "x-id": "App_712_10",
+          "x-id": "App_55_10",
           "x-dynamic": "true"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 712,
+          lineNumber: 55,
           columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_components_Contact__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)(_components_Contact__WEBPACK_IMPORTED_MODULE_10__["default"], {
           "x-file-name": "App",
-          "x-line-number": "713",
+          "x-line-number": "56",
           "x-column": "10",
           "x-component": "Contact",
-          "x-id": "App_713_10",
+          "x-id": "App_56_10",
           "x-dynamic": "true"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 713,
+          lineNumber: 56,
           columnNumber: 11
         }, this)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 705,
+        lineNumber: 48,
         columnNumber: 9
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_components_Footer__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)(_components_Footer__WEBPACK_IMPORTED_MODULE_11__["default"], {
         "x-file-name": "App",
-        "x-line-number": "715",
+        "x-line-number": "58",
         "x-column": "8",
         "x-component": "Footer",
-        "x-id": "App_715_8",
+        "x-id": "App_58_8",
         "x-dynamic": "true"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 715,
+        lineNumber: 58,
         columnNumber: 9
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("a", {
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)("a", {
         href: "https://wa.me/905051736910",
         target: "_blank",
         rel: "noopener noreferrer",
@@ -33896,59 +33131,60 @@ function App() {
         style: {
           position: "fixed",
           bottom: "80px",
-          right: "20px",
+          right: isRtl ? "auto" : "20px",
+          left: isRtl ? "20px" : "auto",
           zIndex: 9998
         },
         "data-testid": "whatsapp-btn",
         title: "WhatsApp ile \u0130leti\u015Fim",
         "x-file-name": "App",
-        "x-line-number": "717",
+        "x-line-number": "60",
         "x-column": "8",
         "x-component": "a",
-        "x-id": "App_717_8",
+        "x-id": "App_60_8",
         "x-dynamic": "false",
-        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("svg", {
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)("svg", {
           width: "28",
           height: "28",
           viewBox: "0 0 24 24",
           fill: "white",
           "x-file-name": "App",
-          "x-line-number": "726",
+          "x-line-number": "69",
           "x-column": "10",
           "x-component": "svg",
-          "x-id": "App_726_10",
+          "x-id": "App_69_10",
           "x-dynamic": "false",
-          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("path", {
+          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)("path", {
             d: "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z",
             "x-file-name": "App",
-            "x-line-number": "727",
+            "x-line-number": "70",
             "x-column": "12",
             "x-component": "path",
-            "x-id": "App_727_12",
+            "x-id": "App_70_12",
             "x-dynamic": "false"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 727,
+            lineNumber: 70,
             columnNumber: 13
           }, this)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 726,
+          lineNumber: 69,
           columnNumber: 11
         }, this)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 717,
+        lineNumber: 60,
         columnNumber: 9
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 703,
+      lineNumber: 46,
       columnNumber: 7
     }, this)
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 702,
+    lineNumber: 45,
     columnNumber: 5
   }, this);
 }
@@ -35567,7 +34803,7 @@ function Contact() {
                   "x-id": "Contact_68_18",
                   "x-dynamic": "false",
                   children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("path", {
-                    d: "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z",
+                    d: "M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z",
                     "x-file-name": "Contact",
                     "x-line-number": "69",
                     "x-column": "20",
@@ -35584,6 +34820,174 @@ function Contact() {
                   lineNumber: 68,
                   columnNumber: 19
                 }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("a", {
+                  href: "https://www.facebook.com/dr.ibrahimoguz",
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                  style: {
+                    fontFamily: "Manrope,sans-serif",
+                    fontSize: 15,
+                    color: "rgba(255,255,255,0.85)",
+                    textDecoration: "none"
+                  },
+                  "data-testid": "contact-facebook",
+                  "x-file-name": "Contact",
+                  "x-line-number": "71",
+                  "x-column": "18",
+                  "x-component": "a",
+                  "x-id": "Contact_71_18",
+                  "x-dynamic": "false",
+                  children: "dr.ibrahimoguz"
+                }, void 0, false, {
+                  fileName: _jsxFileName,
+                  lineNumber: 71,
+                  columnNumber: 19
+                }, this)]
+              }, void 0, true, {
+                fileName: _jsxFileName,
+                lineNumber: 67,
+                columnNumber: 17
+              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("div", {
+                className: "flex items-center gap-3",
+                "x-file-name": "Contact",
+                "x-line-number": "82",
+                "x-column": "16",
+                "x-component": "div",
+                "x-id": "Contact_82_16",
+                "x-dynamic": "false",
+                children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("svg", {
+                  width: "18",
+                  height: "18",
+                  viewBox: "0 0 24 24",
+                  fill: "none",
+                  stroke: "#3b82f6",
+                  strokeWidth: "2",
+                  strokeLinecap: "round",
+                  strokeLinejoin: "round",
+                  style: {
+                    flexShrink: 0
+                  },
+                  "x-file-name": "Contact",
+                  "x-line-number": "83",
+                  "x-column": "18",
+                  "x-component": "svg",
+                  "x-id": "Contact_83_18",
+                  "x-dynamic": "false",
+                  children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("rect", {
+                    x: "2",
+                    y: "2",
+                    width: "20",
+                    height: "20",
+                    rx: "5",
+                    ry: "5",
+                    "x-file-name": "Contact",
+                    "x-line-number": "84",
+                    "x-column": "20",
+                    "x-component": "rect",
+                    "x-id": "Contact_84_20",
+                    "x-dynamic": "false"
+                  }, void 0, false, {
+                    fileName: _jsxFileName,
+                    lineNumber: 84,
+                    columnNumber: 21
+                  }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("path", {
+                    d: "M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z",
+                    "x-file-name": "Contact",
+                    "x-line-number": "84",
+                    "x-column": "76",
+                    "x-component": "path",
+                    "x-id": "Contact_84_76",
+                    "x-dynamic": "false"
+                  }, void 0, false, {
+                    fileName: _jsxFileName,
+                    lineNumber: 84,
+                    columnNumber: 77
+                  }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("line", {
+                    x1: "17.5",
+                    y1: "6.5",
+                    x2: "17.51",
+                    y2: "6.5",
+                    "x-file-name": "Contact",
+                    "x-line-number": "84",
+                    "x-column": "135",
+                    "x-component": "line",
+                    "x-id": "Contact_84_135",
+                    "x-dynamic": "false"
+                  }, void 0, false, {
+                    fileName: _jsxFileName,
+                    lineNumber: 84,
+                    columnNumber: 136
+                  }, this)]
+                }, void 0, true, {
+                  fileName: _jsxFileName,
+                  lineNumber: 83,
+                  columnNumber: 19
+                }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("a", {
+                  href: "https://www.instagram.com/dr_ibrahim_oguz/",
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                  style: {
+                    fontFamily: "Manrope,sans-serif",
+                    fontSize: 15,
+                    color: "rgba(255,255,255,0.85)",
+                    textDecoration: "none"
+                  },
+                  "data-testid": "contact-instagram",
+                  "x-file-name": "Contact",
+                  "x-line-number": "86",
+                  "x-column": "18",
+                  "x-component": "a",
+                  "x-id": "Contact_86_18",
+                  "x-dynamic": "false",
+                  children: "@dr_ibrahim_oguz"
+                }, void 0, false, {
+                  fileName: _jsxFileName,
+                  lineNumber: 86,
+                  columnNumber: 19
+                }, this)]
+              }, void 0, true, {
+                fileName: _jsxFileName,
+                lineNumber: 82,
+                columnNumber: 17
+              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("div", {
+                className: "flex items-center gap-3",
+                "x-file-name": "Contact",
+                "x-line-number": "97",
+                "x-column": "16",
+                "x-component": "div",
+                "x-id": "Contact_97_16",
+                "x-dynamic": "false",
+                children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("svg", {
+                  width: "18",
+                  height: "18",
+                  viewBox: "0 0 24 24",
+                  fill: "#3b82f6",
+                  style: {
+                    flexShrink: 0
+                  },
+                  "x-file-name": "Contact",
+                  "x-line-number": "98",
+                  "x-column": "18",
+                  "x-component": "svg",
+                  "x-id": "Contact_98_18",
+                  "x-dynamic": "false",
+                  children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("path", {
+                    d: "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z",
+                    "x-file-name": "Contact",
+                    "x-line-number": "99",
+                    "x-column": "20",
+                    "x-component": "path",
+                    "x-id": "Contact_99_20",
+                    "x-dynamic": "false"
+                  }, void 0, false, {
+                    fileName: _jsxFileName,
+                    lineNumber: 99,
+                    columnNumber: 21
+                  }, this)
+                }, void 0, false, {
+                  fileName: _jsxFileName,
+                  lineNumber: 98,
+                  columnNumber: 19
+                }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("a", {
                   href: "https://wa.me/905051736910",
                   target: "_blank",
                   rel: "noopener noreferrer",
@@ -35595,20 +34999,20 @@ function Contact() {
                   },
                   "data-testid": "contact-whatsapp",
                   "x-file-name": "Contact",
-                  "x-line-number": "71",
+                  "x-line-number": "101",
                   "x-column": "18",
                   "x-component": "a",
-                  "x-id": "Contact_71_18",
+                  "x-id": "Contact_101_18",
                   "x-dynamic": "false",
                   children: "WhatsApp ile Yaz\u0131n"
                 }, void 0, false, {
                   fileName: _jsxFileName,
-                  lineNumber: 71,
+                  lineNumber: 101,
                   columnNumber: 19
                 }, this)]
               }, void 0, true, {
                 fileName: _jsxFileName,
-                lineNumber: 67,
+                lineNumber: 97,
                 columnNumber: 17
               }, this)]
             }, void 0, true, {
@@ -35629,18 +35033,18 @@ function Contact() {
             },
             "data-testid": "contact-hours-card",
             "x-file-name": "Contact",
-            "x-line-number": "85",
+            "x-line-number": "115",
             "x-column": "12",
             "x-component": "div",
-            "x-id": "Contact_85_12",
+            "x-id": "Contact_115_12",
             "x-dynamic": "false",
             children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("div", {
               className: "flex items-center gap-3 mb-4",
               "x-file-name": "Contact",
-              "x-line-number": "89",
+              "x-line-number": "119",
               "x-column": "14",
               "x-component": "div",
-              "x-id": "Contact_89_14",
+              "x-id": "Contact_119_14",
               "x-dynamic": "false",
               children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("div", {
                 style: {
@@ -35653,28 +35057,28 @@ function Contact() {
                   justifyContent: "center"
                 },
                 "x-file-name": "Contact",
-                "x-line-number": "90",
+                "x-line-number": "120",
                 "x-column": "16",
                 "x-component": "div",
-                "x-id": "Contact_90_16",
+                "x-id": "Contact_120_16",
                 "x-dynamic": "false",
                 children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
                   size: 18,
                   color: "#0f2d5c",
                   "x-file-name": "Contact",
-                  "x-line-number": "91",
+                  "x-line-number": "121",
                   "x-column": "18",
                   "x-component": "Clock",
-                  "x-id": "Contact_91_18",
+                  "x-id": "Contact_121_18",
                   "x-dynamic": "false"
                 }, void 0, false, {
                   fileName: _jsxFileName,
-                  lineNumber: 91,
+                  lineNumber: 121,
                   columnNumber: 19
                 }, this)
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 90,
+                lineNumber: 120,
                 columnNumber: 17
               }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("h3", {
                 style: {
@@ -35684,10 +35088,10 @@ function Contact() {
                   color: "#0f2d5c"
                 },
                 "x-file-name": "Contact",
-                "x-line-number": "93",
+                "x-line-number": "123",
                 "x-column": "16",
                 "x-component": "h3",
-                "x-id": "Contact_93_16",
+                "x-id": "Contact_123_16",
                 "x-dynamic": "true",
                 "x-source-type": "unknown",
                 "x-source-var": "c",
@@ -35696,12 +35100,12 @@ function Contact() {
                 children: c.workHours
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 93,
+                lineNumber: 123,
                 columnNumber: 17
               }, this)]
             }, void 0, true, {
               fileName: _jsxFileName,
-              lineNumber: 89,
+              lineNumber: 119,
               columnNumber: 15
             }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("p", {
               style: {
@@ -35711,10 +35115,10 @@ function Contact() {
                 marginBottom: 6
               },
               "x-file-name": "Contact",
-              "x-line-number": "97",
+              "x-line-number": "127",
               "x-column": "14",
               "x-component": "p",
-              "x-id": "Contact_97_14",
+              "x-id": "Contact_127_14",
               "x-dynamic": "true",
               "x-source-type": "unknown",
               "x-source-var": "c",
@@ -35723,7 +35127,7 @@ function Contact() {
               children: c.weekdays
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 97,
+              lineNumber: 127,
               columnNumber: 15
             }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("p", {
               style: {
@@ -35732,10 +35136,10 @@ function Contact() {
                 color: "#475569"
               },
               "x-file-name": "Contact",
-              "x-line-number": "98",
+              "x-line-number": "128",
               "x-column": "14",
               "x-component": "p",
-              "x-id": "Contact_98_14",
+              "x-id": "Contact_128_14",
               "x-dynamic": "true",
               "x-source-type": "unknown",
               "x-source-var": "c",
@@ -35744,12 +35148,12 @@ function Contact() {
               children: c.sunday
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 98,
+              lineNumber: 128,
               columnNumber: 15
             }, this)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 85,
+            lineNumber: 115,
             columnNumber: 13
           }, this)]
         }, void 0, true, {
@@ -35766,10 +35170,10 @@ function Contact() {
           },
           "data-testid": "contact-map",
           "x-file-name": "Contact",
-          "x-line-number": "103",
+          "x-line-number": "133",
           "x-column": "10",
           "x-component": "div",
-          "x-id": "Contact_103_10",
+          "x-id": "Contact_133_10",
           "x-dynamic": "false",
           children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("iframe", {
             title: "\xD6zel Denizli Cerrahi Hastanesi",
@@ -35783,19 +35187,19 @@ function Contact() {
             loading: "lazy",
             allowFullScreen: true,
             "x-file-name": "Contact",
-            "x-line-number": "107",
+            "x-line-number": "137",
             "x-column": "12",
             "x-component": "iframe",
-            "x-id": "Contact_107_12",
+            "x-id": "Contact_137_12",
             "x-dynamic": "false"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 107,
+            lineNumber: 137,
             columnNumber: 13
           }, this)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 103,
+          lineNumber: 133,
           columnNumber: 11
         }, this)]
       }, void 0, true, {
@@ -36372,6 +35776,174 @@ function Footer() {
               fileName: _jsxFileName,
               lineNumber: 144,
               columnNumber: 15
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("div", {
+              className: "flex items-center gap-3",
+              "x-file-name": "Footer",
+              "x-line-number": "156",
+              "x-column": "14",
+              "x-component": "div",
+              "x-id": "Footer_156_14",
+              "x-dynamic": "false",
+              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("svg", {
+                width: "16",
+                height: "16",
+                viewBox: "0 0 24 24",
+                fill: "#3b82f6",
+                style: {
+                  flexShrink: 0
+                },
+                "x-file-name": "Footer",
+                "x-line-number": "157",
+                "x-column": "16",
+                "x-component": "svg",
+                "x-id": "Footer_157_16",
+                "x-dynamic": "false",
+                children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("path", {
+                  d: "M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z",
+                  "x-file-name": "Footer",
+                  "x-line-number": "158",
+                  "x-column": "18",
+                  "x-component": "path",
+                  "x-id": "Footer_158_18",
+                  "x-dynamic": "false"
+                }, void 0, false, {
+                  fileName: _jsxFileName,
+                  lineNumber: 158,
+                  columnNumber: 19
+                }, this)
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 157,
+                columnNumber: 17
+              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("a", {
+                href: "https://www.facebook.com/dr.ibrahimoguz",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                style: {
+                  fontFamily: "Manrope,sans-serif",
+                  fontSize: 14,
+                  color: "rgba(255,255,255,0.65)",
+                  textDecoration: "none"
+                },
+                "data-testid": "footer-facebook-link",
+                "x-file-name": "Footer",
+                "x-line-number": "160",
+                "x-column": "16",
+                "x-component": "a",
+                "x-id": "Footer_160_16",
+                "x-dynamic": "false",
+                children: "dr.ibrahimoguz"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 160,
+                columnNumber: 17
+              }, this)]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 156,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("div", {
+              className: "flex items-center gap-3",
+              "x-file-name": "Footer",
+              "x-line-number": "170",
+              "x-column": "14",
+              "x-component": "div",
+              "x-id": "Footer_170_14",
+              "x-dynamic": "false",
+              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("svg", {
+                width: "16",
+                height: "16",
+                viewBox: "0 0 24 24",
+                fill: "none",
+                stroke: "#3b82f6",
+                strokeWidth: "2",
+                strokeLinecap: "round",
+                strokeLinejoin: "round",
+                style: {
+                  flexShrink: 0
+                },
+                "x-file-name": "Footer",
+                "x-line-number": "171",
+                "x-column": "16",
+                "x-component": "svg",
+                "x-id": "Footer_171_16",
+                "x-dynamic": "false",
+                children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("rect", {
+                  x: "2",
+                  y: "2",
+                  width: "20",
+                  height: "20",
+                  rx: "5",
+                  ry: "5",
+                  "x-file-name": "Footer",
+                  "x-line-number": "172",
+                  "x-column": "18",
+                  "x-component": "rect",
+                  "x-id": "Footer_172_18",
+                  "x-dynamic": "false"
+                }, void 0, false, {
+                  fileName: _jsxFileName,
+                  lineNumber: 172,
+                  columnNumber: 19
+                }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("path", {
+                  d: "M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z",
+                  "x-file-name": "Footer",
+                  "x-line-number": "172",
+                  "x-column": "74",
+                  "x-component": "path",
+                  "x-id": "Footer_172_74",
+                  "x-dynamic": "false"
+                }, void 0, false, {
+                  fileName: _jsxFileName,
+                  lineNumber: 172,
+                  columnNumber: 75
+                }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("line", {
+                  x1: "17.5",
+                  y1: "6.5",
+                  x2: "17.51",
+                  y2: "6.5",
+                  "x-file-name": "Footer",
+                  "x-line-number": "172",
+                  "x-column": "133",
+                  "x-component": "line",
+                  "x-id": "Footer_172_133",
+                  "x-dynamic": "false"
+                }, void 0, false, {
+                  fileName: _jsxFileName,
+                  lineNumber: 172,
+                  columnNumber: 134
+                }, this)]
+              }, void 0, true, {
+                fileName: _jsxFileName,
+                lineNumber: 171,
+                columnNumber: 17
+              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("a", {
+                href: "https://www.instagram.com/dr_ibrahim_oguz/",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                style: {
+                  fontFamily: "Manrope,sans-serif",
+                  fontSize: 14,
+                  color: "rgba(255,255,255,0.65)",
+                  textDecoration: "none"
+                },
+                "data-testid": "footer-instagram-link",
+                "x-file-name": "Footer",
+                "x-line-number": "174",
+                "x-column": "16",
+                "x-component": "a",
+                "x-id": "Footer_174_16",
+                "x-dynamic": "false",
+                children: "@dr_ibrahim_oguz"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 174,
+                columnNumber: 17
+              }, this)]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 170,
+              columnNumber: 15
             }, this)]
           }, void 0, true, {
             fileName: _jsxFileName,
@@ -36398,10 +35970,10 @@ function Footer() {
           gap: 12
         },
         "x-file-name": "Footer",
-        "x-line-number": "161",
+        "x-line-number": "189",
         "x-column": "8",
         "x-component": "div",
-        "x-id": "Footer_161_8",
+        "x-id": "Footer_189_8",
         "x-dynamic": "false",
         children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("p", {
           style: {
@@ -36410,10 +35982,10 @@ function Footer() {
             color: "rgba(255,255,255,0.45)"
           },
           "x-file-name": "Footer",
-          "x-line-number": "172",
+          "x-line-number": "200",
           "x-column": "10",
           "x-component": "p",
-          "x-id": "Footer_172_10",
+          "x-id": "Footer_200_10",
           "x-dynamic": "true",
           "x-source-type": "unknown",
           "x-source-var": "f",
@@ -36422,7 +35994,7 @@ function Footer() {
           children: f.copyright
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 172,
+          lineNumber: 200,
           columnNumber: 11
         }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("p", {
           style: {
@@ -36431,22 +36003,22 @@ function Footer() {
             color: "rgba(255,255,255,0.35)"
           },
           "x-file-name": "Footer",
-          "x-line-number": "175",
+          "x-line-number": "203",
           "x-column": "10",
           "x-component": "p",
-          "x-id": "Footer_175_10",
+          "x-id": "Footer_203_10",
           "x-dynamic": "true",
           "x-source-type": "computed",
           "x-source-editable": "false",
           children: lang === "tr" ? "Tıbbi Bilgi Uyarısı: Bu site bilgilendirme amaçlıdır, tanı ve tedavi yerine geçmez." : "Medical Disclaimer: This site is for informational purposes only and does not replace professional medical advice."
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 175,
+          lineNumber: 203,
           columnNumber: 11
         }, this)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 161,
+        lineNumber: 189,
         columnNumber: 9
       }, this)]
     }, void 0, true, {
@@ -36842,9 +36414,8 @@ function Hero() {
           "x-id": "Hero_110_10",
           "x-dynamic": "false",
           children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+            className: "hero-photo-container",
             style: {
-              width: 420,
-              height: 510,
               borderRadius: 28,
               overflow: "hidden",
               boxShadow: "0 48px 110px rgba(15,45,92,0.30), 0 12px 36px rgba(15,45,92,0.16)",
@@ -36872,14 +36443,14 @@ function Hero() {
                 e.target.src = "https://images.pexels.com/photos/6762862/pexels-photo-6762862.jpeg?auto=compress&cs=tinysrgb&w=400";
               },
               "x-file-name": "Hero",
-              "x-line-number": "128",
+              "x-line-number": "127",
               "x-column": "14",
               "x-component": "img",
-              "x-id": "Hero_128_14",
+              "x-id": "Hero_127_14",
               "x-dynamic": "false"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 128,
+              lineNumber: 127,
               columnNumber: 15
             }, this)
           }, void 0, false, {
@@ -36902,10 +36473,10 @@ function Hero() {
           animation: "bounce 2s infinite"
         },
         "x-file-name": "Hero",
-        "x-line-number": "141",
+        "x-line-number": "140",
         "x-column": "8",
         "x-component": "div",
-        "x-id": "Hero_141_8",
+        "x-id": "Hero_140_8",
         "x-dynamic": "false",
         children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("button", {
           onClick: () => scrollTo("about"),
@@ -36917,26 +36488,26 @@ function Hero() {
           },
           "data-testid": "scroll-down-btn",
           "x-file-name": "Hero",
-          "x-line-number": "145",
+          "x-line-number": "144",
           "x-column": "10",
           "x-component": "button",
-          "x-id": "Hero_145_10",
+          "x-id": "Hero_144_10",
           "x-dynamic": "false",
           children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
             size: 28
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 150,
+            lineNumber: 149,
             columnNumber: 13
           }, this)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 145,
+          lineNumber: 144,
           columnNumber: 11
         }, this)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 141,
+        lineNumber: 140,
         columnNumber: 9
       }, this)]
     }, void 0, true, {
@@ -36945,10 +36516,10 @@ function Hero() {
       columnNumber: 7
     }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("style", {
       "x-file-name": "Hero",
-      "x-line-number": "155",
+      "x-line-number": "154",
       "x-column": "6",
       "x-component": "style",
-      "x-id": "Hero_155_6",
+      "x-id": "Hero_154_6",
       "x-dynamic": "true",
       "x-source-type": "template",
       "x-source-editable": "false",
@@ -36964,7 +36535,7 @@ function Hero() {
       `
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 155,
+      lineNumber: 154,
       columnNumber: 7
     }, this)]
   }, void 0, true, {
@@ -37027,10 +36598,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../App */ "./src/App.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/globe.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/menu.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/x.js");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/menu.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/x.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
@@ -37040,7 +36610,34 @@ var _jsxFileName = "/app/frontend/src/components/Navbar.js",
 
 
 
-const navIds = ["about", "specializations", "news", "education", "publications", "appointment", "contact"];
+const LANGS = [{
+  code: "tr",
+  label: "TR",
+  name: "Türkçe"
+}, {
+  code: "en",
+  label: "EN",
+  name: "English"
+}, {
+  code: "ru",
+  label: "RU",
+  name: "Русский"
+}, {
+  code: "zh",
+  label: "中文",
+  name: "中文"
+}, {
+  code: "ar",
+  label: "AR",
+  name: "العربية"
+}];
+const reviewsLabel = {
+  tr: "Yorumlar",
+  en: "Reviews",
+  ru: "Отзывы",
+  zh: "评价",
+  ar: "تقييمات"
+};
 function Navbar() {
   _s();
   const {
@@ -37050,7 +36647,6 @@ function Navbar() {
   } = (0,_App__WEBPACK_IMPORTED_MODULE_1__.useLang)();
   const [scrolled, setScrolled] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [mobileOpen, setMobileOpen] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
-  const [activeSection, setActiveSection] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("");
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
@@ -37078,38 +36674,38 @@ function Navbar() {
     label: t.nav.publications
   }, {
     id: "reviews",
-    label: lang === "tr" ? "Yorumlar" : "Reviews"
+    label: reviewsLabel[lang] || "Yorumlar"
   }, {
     id: "contact",
     label: t.nav.contact
   }];
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("nav", {
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("nav", {
       className: `navbar-glass fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "shadow-md" : ""}`,
       "data-testid": "navbar",
       "x-file-name": "Navbar",
-      "x-line-number": "36",
+      "x-line-number": "43",
       "x-column": "6",
       "x-component": "nav",
-      "x-id": "Navbar_36_6",
+      "x-id": "Navbar_43_6",
       "x-dynamic": "false",
-      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("div", {
+      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
         className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
         "x-file-name": "Navbar",
-        "x-line-number": "40",
+        "x-line-number": "47",
         "x-column": "8",
         "x-component": "div",
-        "x-id": "Navbar_40_8",
+        "x-id": "Navbar_47_8",
         "x-dynamic": "false",
-        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("div", {
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
           className: "flex items-center justify-between h-16",
           "x-file-name": "Navbar",
-          "x-line-number": "41",
+          "x-line-number": "48",
           "x-column": "10",
           "x-component": "div",
-          "x-id": "Navbar_41_10",
+          "x-id": "Navbar_48_10",
           "x-dynamic": "false",
-          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("button", {
+          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("button", {
             onClick: () => window.scrollTo({
               top: 0,
               behavior: "smooth"
@@ -37117,12 +36713,12 @@ function Navbar() {
             className: "flex items-center gap-2 group",
             "data-testid": "nav-logo",
             "x-file-name": "Navbar",
-            "x-line-number": "43",
+            "x-line-number": "50",
             "x-column": "12",
             "x-component": "button",
-            "x-id": "Navbar_43_12",
+            "x-id": "Navbar_50_12",
             "x-dynamic": "false",
-            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
               style: {
                 width: 36,
                 height: 36,
@@ -37134,12 +36730,12 @@ function Navbar() {
                 flexShrink: 0
               },
               "x-file-name": "Navbar",
-              "x-line-number": "48",
+              "x-line-number": "55",
               "x-column": "14",
               "x-component": "div",
-              "x-id": "Navbar_48_14",
+              "x-id": "Navbar_55_14",
               "x-dynamic": "false",
-              children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("img", {
+              children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("img", {
                 src: "https://customer-assets.emergentagent.com/job_pulse-portal-3/artifacts/1qgianbl_WhatsApp%20Image%202026-04-01%20at%2015.39.10.jpeg",
                 alt: "Logo",
                 style: {
@@ -37148,29 +36744,29 @@ function Navbar() {
                   objectFit: "cover"
                 },
                 "x-file-name": "Navbar",
-                "x-line-number": "60",
+                "x-line-number": "67",
                 "x-column": "16",
                 "x-component": "img",
-                "x-id": "Navbar_60_16",
+                "x-id": "Navbar_67_16",
                 "x-dynamic": "false"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 60,
+                lineNumber: 67,
                 columnNumber: 17
               }, this)
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 48,
+              lineNumber: 55,
               columnNumber: 15
-            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("div", {
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
               className: "hidden sm:block",
               "x-file-name": "Navbar",
-              "x-line-number": "66",
+              "x-line-number": "73",
               "x-column": "14",
               "x-component": "div",
-              "x-id": "Navbar_66_14",
+              "x-id": "Navbar_73_14",
               "x-dynamic": "false",
-              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("p", {
+              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("p", {
                 style: {
                   fontFamily: "Outfit,sans-serif",
                   fontWeight: 700,
@@ -37179,17 +36775,17 @@ function Navbar() {
                   lineHeight: 1.1
                 },
                 "x-file-name": "Navbar",
-                "x-line-number": "67",
+                "x-line-number": "74",
                 "x-column": "16",
                 "x-component": "p",
-                "x-id": "Navbar_67_16",
+                "x-id": "Navbar_74_16",
                 "x-dynamic": "false",
                 children: "Dr. \u0130brahim O\u011EUZ"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 67,
+                lineNumber: 74,
                 columnNumber: 17
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("p", {
+              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("p", {
                 style: {
                   fontFamily: "Manrope,sans-serif",
                   fontWeight: 500,
@@ -37198,39 +36794,39 @@ function Navbar() {
                   letterSpacing: "0.05em"
                 },
                 "x-file-name": "Navbar",
-                "x-line-number": "70",
+                "x-line-number": "77",
                 "x-column": "16",
                 "x-component": "p",
-                "x-id": "Navbar_70_16",
+                "x-id": "Navbar_77_16",
                 "x-dynamic": "true",
                 "x-source-type": "computed",
                 "x-source-editable": "false",
-                children: lang === "tr" ? "Kardiyoloji Uzmanı" : "Cardiologist"
+                children: t.hero ? t.hero.label : "Kardiyoloji Uzmanı"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 70,
+                lineNumber: 77,
                 columnNumber: 17
               }, this)]
             }, void 0, true, {
               fileName: _jsxFileName,
-              lineNumber: 66,
+              lineNumber: 73,
               columnNumber: 15
             }, this)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 43,
+            lineNumber: 50,
             columnNumber: 13
-          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("div", {
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
             className: "hidden lg:flex items-center gap-1",
             "x-file-name": "Navbar",
-            "x-line-number": "77",
+            "x-line-number": "84",
             "x-column": "12",
             "x-component": "div",
-            "x-id": "Navbar_77_12",
+            "x-id": "Navbar_84_12",
             "x-dynamic": "true",
             "x-source-type": "computed",
             "x-source-editable": "false",
-            children: navLinks.map(link => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("button", {
+            children: navLinks.map(link => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("button", {
               onClick: () => scrollTo(link.id),
               "data-testid": `nav-link-${link.id}`,
               style: {
@@ -37254,84 +36850,281 @@ function Navbar() {
                 e.target.style.background = "transparent";
               },
               "x-file-name": "Navbar",
-              "x-line-number": "79",
+              "x-line-number": "86",
               "x-column": "16",
               "x-component": "button",
-              "x-id": "Navbar_79_16",
+              "x-id": "Navbar_86_16",
               "x-dynamic": "true",
               "x-source-type": "static-imported",
               "x-source-var": "navLinks",
               "x-source-file-abs": "/app/frontend/src/components/Navbar.js",
-              "x-source-line": "25",
+              "x-source-line": "32",
               "x-source-path": "label",
               "x-source-editable": "true",
               "x-array-var": "navLinks",
-              "x-array-line": "25",
+              "x-array-line": "32",
               "x-array-item-param": "link",
               children: link.label
             }, link.id, false, {
               fileName: _jsxFileName,
-              lineNumber: 79,
+              lineNumber: 86,
               columnNumber: 17
             }, this))
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 77,
+            lineNumber: 84,
             columnNumber: 13
-          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("div", {
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
             className: "flex items-center gap-3",
             "x-file-name": "Navbar",
-            "x-line-number": "110",
+            "x-line-number": "117",
             "x-column": "12",
             "x-component": "div",
-            "x-id": "Navbar_110_12",
+            "x-id": "Navbar_117_12",
             "x-dynamic": "false",
-            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("button", {
-              onClick: () => setLang(lang === "tr" ? "en" : "tr"),
-              "data-testid": "lang-toggle-btn",
-              style: {
-                display: "flex",
-                alignItems: "center",
-                gap: 6,
-                padding: "6px 12px",
-                borderRadius: 8,
-                border: "1px solid #e2e8f0",
-                background: "white",
-                fontFamily: "Outfit,sans-serif",
-                fontWeight: 700,
-                fontSize: 13,
-                color: "#0f2d5c",
-                cursor: "pointer",
-                transition: "all 0.2s"
-              },
-              onMouseEnter: e => e.currentTarget.style.borderColor = "#0f2d5c",
-              onMouseLeave: e => e.currentTarget.style.borderColor = "#e2e8f0",
+            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
+              className: "hidden sm:flex items-center gap-2",
               "x-file-name": "Navbar",
-              "x-line-number": "111",
+              "x-line-number": "119",
               "x-column": "14",
-              "x-component": "button",
-              "x-id": "Navbar_111_14",
+              "x-component": "div",
+              "x-id": "Navbar_119_14",
+              "x-dynamic": "false",
+              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("a", {
+                href: "https://www.instagram.com/dr_ibrahim_oguz/",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                "data-testid": "nav-instagram",
+                style: {
+                  width: 32,
+                  height: 32,
+                  borderRadius: 8,
+                  border: "1px solid #e2e8f0",
+                  background: "white",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  transition: "all 0.2s",
+                  color: "#0f2d5c"
+                },
+                onMouseEnter: e => {
+                  e.currentTarget.style.borderColor = "#e1306c";
+                  e.currentTarget.style.color = "#e1306c";
+                },
+                onMouseLeave: e => {
+                  e.currentTarget.style.borderColor = "#e2e8f0";
+                  e.currentTarget.style.color = "#0f2d5c";
+                },
+                title: "Instagram",
+                "x-file-name": "Navbar",
+                "x-line-number": "120",
+                "x-column": "16",
+                "x-component": "a",
+                "x-id": "Navbar_120_16",
+                "x-dynamic": "false",
+                children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("svg", {
+                  width: "16",
+                  height: "16",
+                  viewBox: "0 0 24 24",
+                  fill: "none",
+                  stroke: "currentColor",
+                  strokeWidth: "2",
+                  strokeLinecap: "round",
+                  strokeLinejoin: "round",
+                  "x-file-name": "Navbar",
+                  "x-line-number": "135",
+                  "x-column": "18",
+                  "x-component": "svg",
+                  "x-id": "Navbar_135_18",
+                  "x-dynamic": "false",
+                  children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("rect", {
+                    x: "2",
+                    y: "2",
+                    width: "20",
+                    height: "20",
+                    rx: "5",
+                    ry: "5",
+                    "x-file-name": "Navbar",
+                    "x-line-number": "136",
+                    "x-column": "20",
+                    "x-component": "rect",
+                    "x-id": "Navbar_136_20",
+                    "x-dynamic": "false"
+                  }, void 0, false, {
+                    fileName: _jsxFileName,
+                    lineNumber: 136,
+                    columnNumber: 21
+                  }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("path", {
+                    d: "M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z",
+                    "x-file-name": "Navbar",
+                    "x-line-number": "136",
+                    "x-column": "76",
+                    "x-component": "path",
+                    "x-id": "Navbar_136_76",
+                    "x-dynamic": "false"
+                  }, void 0, false, {
+                    fileName: _jsxFileName,
+                    lineNumber: 136,
+                    columnNumber: 77
+                  }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("line", {
+                    x1: "17.5",
+                    y1: "6.5",
+                    x2: "17.51",
+                    y2: "6.5",
+                    "x-file-name": "Navbar",
+                    "x-line-number": "136",
+                    "x-column": "135",
+                    "x-component": "line",
+                    "x-id": "Navbar_136_135",
+                    "x-dynamic": "false"
+                  }, void 0, false, {
+                    fileName: _jsxFileName,
+                    lineNumber: 136,
+                    columnNumber: 136
+                  }, this)]
+                }, void 0, true, {
+                  fileName: _jsxFileName,
+                  lineNumber: 135,
+                  columnNumber: 19
+                }, this)
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 120,
+                columnNumber: 17
+              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("a", {
+                href: "https://www.facebook.com/dr.ibrahimoguz",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                "data-testid": "nav-facebook",
+                style: {
+                  width: 32,
+                  height: 32,
+                  borderRadius: 8,
+                  border: "1px solid #e2e8f0",
+                  background: "white",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  transition: "all 0.2s",
+                  color: "#0f2d5c"
+                },
+                onMouseEnter: e => {
+                  e.currentTarget.style.borderColor = "#1877f2";
+                  e.currentTarget.style.color = "#1877f2";
+                },
+                onMouseLeave: e => {
+                  e.currentTarget.style.borderColor = "#e2e8f0";
+                  e.currentTarget.style.color = "#0f2d5c";
+                },
+                title: "Facebook",
+                "x-file-name": "Navbar",
+                "x-line-number": "139",
+                "x-column": "16",
+                "x-component": "a",
+                "x-id": "Navbar_139_16",
+                "x-dynamic": "false",
+                children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("svg", {
+                  width: "16",
+                  height: "16",
+                  viewBox: "0 0 24 24",
+                  fill: "currentColor",
+                  "x-file-name": "Navbar",
+                  "x-line-number": "154",
+                  "x-column": "18",
+                  "x-component": "svg",
+                  "x-id": "Navbar_154_18",
+                  "x-dynamic": "false",
+                  children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("path", {
+                    d: "M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z",
+                    "x-file-name": "Navbar",
+                    "x-line-number": "155",
+                    "x-column": "20",
+                    "x-component": "path",
+                    "x-id": "Navbar_155_20",
+                    "x-dynamic": "false"
+                  }, void 0, false, {
+                    fileName: _jsxFileName,
+                    lineNumber: 155,
+                    columnNumber: 21
+                  }, this)
+                }, void 0, false, {
+                  fileName: _jsxFileName,
+                  lineNumber: 154,
+                  columnNumber: 19
+                }, this)
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 139,
+                columnNumber: 17
+              }, this)]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 119,
+              columnNumber: 15
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
+              className: "hidden sm:flex items-center gap-1",
+              "x-file-name": "Navbar",
+              "x-line-number": "160",
+              "x-column": "14",
+              "x-component": "div",
+              "x-id": "Navbar_160_14",
               "x-dynamic": "true",
               "x-source-type": "computed",
               "x-source-editable": "false",
-              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
-                size: 14,
+              children: LANGS.map(l => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("button", {
+                onClick: () => setLang(l.code),
+                "data-testid": `lang-option-${l.code}`,
+                style: {
+                  padding: "5px 9px",
+                  borderRadius: 7,
+                  border: lang === l.code ? "2px solid #0f2d5c" : "1px solid #e2e8f0",
+                  background: lang === l.code ? "#0f2d5c" : "white",
+                  fontFamily: "Outfit,sans-serif",
+                  fontWeight: 700,
+                  fontSize: 12,
+                  color: lang === l.code ? "white" : "#64748b",
+                  cursor: "pointer",
+                  transition: "all 0.18s",
+                  lineHeight: 1
+                },
+                onMouseEnter: e => {
+                  if (lang !== l.code) {
+                    e.currentTarget.style.borderColor = "#0f2d5c";
+                    e.currentTarget.style.color = "#0f2d5c";
+                  }
+                },
+                onMouseLeave: e => {
+                  if (lang !== l.code) {
+                    e.currentTarget.style.borderColor = "#e2e8f0";
+                    e.currentTarget.style.color = "#64748b";
+                  }
+                },
                 "x-file-name": "Navbar",
-                "x-line-number": "132",
-                "x-column": "16",
-                "x-component": "Globe",
-                "x-id": "Navbar_132_16",
-                "x-dynamic": "false"
-              }, void 0, false, {
+                "x-line-number": "162",
+                "x-column": "18",
+                "x-component": "button",
+                "x-id": "Navbar_162_18",
+                "x-dynamic": "true",
+                "x-source-type": "static-imported",
+                "x-source-var": "LANGS",
+                "x-source-file-abs": "/app/frontend/src/components/Navbar.js",
+                "x-source-line": "5",
+                "x-source-path": "label",
+                "x-source-editable": "true",
+                "x-array-var": "LANGS",
+                "x-array-line": "5",
+                "x-array-item-param": "l",
+                children: l.label
+              }, l.code, false, {
                 fileName: _jsxFileName,
-                lineNumber: 132,
-                columnNumber: 17
-              }, this), lang === "tr" ? "EN" : "TR"]
-            }, void 0, true, {
+                lineNumber: 162,
+                columnNumber: 19
+              }, this))
+            }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 111,
+              lineNumber: 160,
               columnNumber: 15
-            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("button", {
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("button", {
               onClick: () => scrollTo("appointment"),
               "data-testid": "nav-appointment-btn",
               className: "hidden sm:flex btn-primary",
@@ -37341,10 +37134,10 @@ function Navbar() {
                 borderRadius: 9
               },
               "x-file-name": "Navbar",
-              "x-line-number": "136",
+              "x-line-number": "187",
               "x-column": "14",
               "x-component": "button",
-              "x-id": "Navbar_136_14",
+              "x-id": "Navbar_187_14",
               "x-dynamic": "true",
               "x-source-type": "unknown",
               "x-source-var": "t",
@@ -37353,9 +37146,9 @@ function Navbar() {
               children: t.nav.appointment
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 136,
+              lineNumber: 187,
               columnNumber: 15
-            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("button", {
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("button", {
               onClick: () => setMobileOpen(!mobileOpen),
               className: "lg:hidden",
               "data-testid": "mobile-menu-toggle",
@@ -37367,62 +37160,62 @@ function Navbar() {
                 cursor: "pointer"
               },
               "x-file-name": "Navbar",
-              "x-line-number": "146",
+              "x-line-number": "197",
               "x-column": "14",
               "x-component": "button",
-              "x-id": "Navbar_146_14",
+              "x-id": "Navbar_197_14",
               "x-dynamic": "true",
               "x-source-type": "computed",
               "x-source-editable": "false",
-              children: mobileOpen ? /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+              children: mobileOpen ? /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
                 size: 24
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 152,
+                lineNumber: 203,
                 columnNumber: 31
-              }, this) : /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+              }, this) : /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
                 size: 24
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 152,
+                lineNumber: 203,
                 columnNumber: 49
               }, this)
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 146,
+              lineNumber: 197,
               columnNumber: 15
             }, this)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 110,
+            lineNumber: 117,
             columnNumber: 13
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 41,
+          lineNumber: 48,
           columnNumber: 11
         }, this)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 40,
+        lineNumber: 47,
         columnNumber: 9
       }, this)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 43,
       columnNumber: 7
-    }, this), mobileOpen && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("div", {
+    }, this), mobileOpen && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
       className: "mobile-menu",
       "data-testid": "mobile-menu",
       "x-file-name": "Navbar",
-      "x-line-number": "161",
+      "x-line-number": "212",
       "x-column": "8",
       "x-component": "div",
-      "x-id": "Navbar_161_8",
+      "x-id": "Navbar_212_8",
       "x-dynamic": "true",
       "x-source-type": "computed",
       "x-source-editable": "false",
-      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("button", {
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("button", {
         onClick: () => setMobileOpen(false),
         style: {
           position: "absolute",
@@ -37434,23 +37227,23 @@ function Navbar() {
           cursor: "pointer"
         },
         "x-file-name": "Navbar",
-        "x-line-number": "162",
+        "x-line-number": "213",
         "x-column": "10",
         "x-component": "button",
-        "x-id": "Navbar_162_10",
+        "x-id": "Navbar_213_10",
         "x-dynamic": "false",
-        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
           size: 28
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 166,
+          lineNumber: 217,
           columnNumber: 13
         }, this)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 162,
+        lineNumber: 213,
         columnNumber: 11
-      }, this), navLinks.map(link => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("button", {
+      }, this), navLinks.map(link => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("button", {
         onClick: () => scrollTo(link.id),
         style: {
           fontFamily: "Outfit,sans-serif",
@@ -37463,26 +37256,26 @@ function Navbar() {
           transition: "opacity 0.2s"
         },
         "x-file-name": "Navbar",
-        "x-line-number": "169",
+        "x-line-number": "220",
         "x-column": "12",
         "x-component": "button",
-        "x-id": "Navbar_169_12",
+        "x-id": "Navbar_220_12",
         "x-dynamic": "true",
         "x-source-type": "static-imported",
         "x-source-var": "navLinks",
         "x-source-file-abs": "/app/frontend/src/components/Navbar.js",
-        "x-source-line": "25",
+        "x-source-line": "32",
         "x-source-path": "label",
         "x-source-editable": "true",
         "x-array-var": "navLinks",
-        "x-array-line": "25",
+        "x-array-line": "32",
         "x-array-item-param": "link",
         children: link.label
       }, link.id, false, {
         fileName: _jsxFileName,
-        lineNumber: 169,
+        lineNumber: 220,
         columnNumber: 13
-      }, this)), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("button", {
+      }, this)), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("button", {
         onClick: () => {
           scrollTo("appointment");
           setMobileOpen(false);
@@ -37492,10 +37285,10 @@ function Navbar() {
           marginTop: 16
         },
         "x-file-name": "Navbar",
-        "x-line-number": "186",
+        "x-line-number": "237",
         "x-column": "10",
         "x-component": "button",
-        "x-id": "Navbar_186_10",
+        "x-id": "Navbar_237_10",
         "x-dynamic": "true",
         "x-source-type": "unknown",
         "x-source-var": "t",
@@ -37504,58 +37297,74 @@ function Navbar() {
         children: t.nav.appointment
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 186,
+        lineNumber: 237,
         columnNumber: 11
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("button", {
-        onClick: () => setLang(lang === "tr" ? "en" : "tr"),
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
         style: {
           display: "flex",
-          alignItems: "center",
-          gap: 6,
-          padding: "8px 16px",
-          borderRadius: 8,
-          border: "1px solid rgba(255,255,255,0.3)",
-          background: "transparent",
-          color: "white",
-          fontFamily: "Outfit,sans-serif",
-          fontWeight: 700,
-          fontSize: 15,
-          cursor: "pointer"
+          flexWrap: "wrap",
+          gap: 8,
+          justifyContent: "center",
+          marginTop: 8
         },
         "x-file-name": "Navbar",
-        "x-line-number": "193",
+        "x-line-number": "244",
         "x-column": "10",
-        "x-component": "button",
-        "x-id": "Navbar_193_10",
+        "x-component": "div",
+        "x-id": "Navbar_244_10",
         "x-dynamic": "true",
         "x-source-type": "computed",
         "x-source-editable": "false",
-        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
-          size: 16,
+        children: LANGS.map(l => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("button", {
+          onClick: () => {
+            setLang(l.code);
+            setMobileOpen(false);
+          },
+          style: {
+            padding: "8px 14px",
+            borderRadius: 8,
+            border: lang === l.code ? "2px solid white" : "1px solid rgba(255,255,255,0.3)",
+            background: lang === l.code ? "rgba(255,255,255,0.2)" : "transparent",
+            color: "white",
+            fontFamily: "Outfit,sans-serif",
+            fontWeight: lang === l.code ? 700 : 500,
+            fontSize: 13,
+            cursor: "pointer"
+          },
           "x-file-name": "Navbar",
-          "x-line-number": "202",
-          "x-column": "12",
-          "x-component": "Globe",
-          "x-id": "Navbar_202_12",
-          "x-dynamic": "false"
-        }, void 0, false, {
+          "x-line-number": "246",
+          "x-column": "14",
+          "x-component": "button",
+          "x-id": "Navbar_246_14",
+          "x-dynamic": "true",
+          "x-source-type": "static-imported",
+          "x-source-var": "LANGS",
+          "x-source-file-abs": "/app/frontend/src/components/Navbar.js",
+          "x-source-line": "5",
+          "x-source-path": "label",
+          "x-source-editable": "true",
+          "x-array-var": "LANGS",
+          "x-array-line": "5",
+          "x-array-item-param": "l",
+          children: [l.label, " ", l.name]
+        }, l.code, true, {
           fileName: _jsxFileName,
-          lineNumber: 202,
-          columnNumber: 13
-        }, this), lang === "tr" ? "Switch to English" : "Türkçe'ye Geç"]
-      }, void 0, true, {
+          lineNumber: 246,
+          columnNumber: 15
+        }, this))
+      }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 193,
+        lineNumber: 244,
         columnNumber: 11
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 161,
+      lineNumber: 212,
       columnNumber: 9
     }, this)]
   }, void 0, true);
 }
-_s(Navbar, "zuNus60PaA1oagmtY3cT8Mas+ok=", false, function () {
+_s(Navbar, "bDgjHNoADEgdQvSq0Qzi/GWTV6E=", false, function () {
   return [_App__WEBPACK_IMPORTED_MODULE_1__.useLang];
 });
 _c = Navbar;
@@ -38007,6 +37816,24 @@ const reviews = [{
   tr: "İnternetten yorumlara bakarak gittim, iyi ki gitmişim. İlk başta çok kararsızdım, kime gideceğimi bilmiyordum. Ama burada yazılanlar doğruymuş. İşini bilen bir doktor, gereksiz panik yaptığımı anladım. Açıklamaları sade ve anlaşılır. Hastayla iletişimi de gayet iyi. Gönül rahatlığıyla tavsiye ederim.",
   en: "I went based on online reviews and I'm very glad I did. I was very undecided at first and didn't know who to go to. But what was written here turned out to be true. He is a knowledgeable doctor — I realized I had panicked unnecessarily. His explanations are clear and simple. His communication with patients is also very good. I recommend him wholeheartedly.",
   stars: 5
+}, {
+  initial: "A.K.",
+  date: "05.10.2025",
+  tr: "Bir süredir göğüs ağrım vardı, açıkçası biraz endişeliydim. Denizli'de araştırma yaparken kendisine ulaştım. İlk muayenede detaylı anlatımı beni rahatlattı. Anjiyo olmam gerekti ama süreç düşündüğüm kadar zor geçmedi. Denizli kardiyoloji ve anjiyo konusunda gerçekten tecrübeli bir doktor.",
+  en: "I had been having chest pain for a while and was honestly a bit worried. I came across him while researching in Denizli. His detailed explanation during the first consultation put me at ease. I needed an angiography but the process wasn't as difficult as I had imagined. He is truly an experienced doctor in Denizli cardiology and angiography.",
+  stars: 5
+}, {
+  initial: "M.Y.",
+  date: "21.03.2026",
+  tr: "Babam için Denizli'de doktor arayışındaydık. Tavsiye üzerine randevu aldık. Muayene sırasında her şeyi tek tek anlatması çok güven verdi. Anjiyo sürecinde de sürekli bilgilendirme yaptı. Denizli kardiyoloji ve anjiyo alanında ilgili ve güven veren bir hekim.",
+  en: "We were looking for a doctor in Denizli for my father. We made an appointment on recommendation. His detailed step-by-step explanations during the examination were very reassuring. He kept us informed throughout the angiography process as well. A caring and trustworthy physician in Denizli cardiology and angiography.",
+  stars: 5
+}, {
+  initial: "S.T.",
+  date: "14.07.2025",
+  tr: "Kalp çarpıntısı şikayetiyle gittim, biraz tedirgindim açıkçası. Denizli'de öneri üzerine gittim. Önce detaylı inceleme yaptı, sonrasında anjiyo gerektiğini söyledi. Süreç beklediğimden daha rahat geçti. Denizli kardiyoloji ve anjiyo konusunda hem bilgili hem de hastaya yaklaşımı çok iyi.",
+  en: "I went with a heart palpitation complaint, honestly feeling a bit anxious. I was referred in Denizli. He first did a thorough examination, then informed me that angiography was needed. The process went more comfortably than I expected. He is both very knowledgeable and has an excellent patient approach in Denizli cardiology and angiography.",
+  stars: 5
 }];
 function StarRating({
   count
@@ -38014,10 +37841,10 @@ function StarRating({
   return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
     className: "flex gap-0.5",
     "x-file-name": "PatientReviews",
-    "x-line-number": "115",
+    "x-line-number": "136",
     "x-column": "4",
     "x-component": "div",
-    "x-id": "PatientReviews_115_4",
+    "x-id": "PatientReviews_136_4",
     "x-dynamic": "true",
     "x-source-type": "computed",
     "x-source-editable": "false",
@@ -38028,22 +37855,22 @@ function StarRating({
       fill: "#f59e0b",
       color: "#f59e0b",
       "x-file-name": "PatientReviews",
-      "x-line-number": "117",
+      "x-line-number": "138",
       "x-column": "8",
       "x-component": "Star",
-      "x-id": "PatientReviews_117_8",
+      "x-id": "PatientReviews_138_8",
       "x-dynamic": "true",
       "x-source-type": "external",
       "x-source-editable": "false",
       "x-array-item-param": "_"
     }, i, false, {
       fileName: _jsxFileName,
-      lineNumber: 117,
+      lineNumber: 138,
       columnNumber: 9
     }, this))
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 115,
+    lineNumber: 136,
     columnNumber: 5
   }, this);
 }
@@ -38073,34 +37900,34 @@ function PatientReviews() {
     },
     "data-testid": "reviews-section",
     "x-file-name": "PatientReviews",
-    "x-line-number": "147",
+    "x-line-number": "168",
     "x-column": "4",
     "x-component": "section",
-    "x-id": "PatientReviews_147_4",
+    "x-id": "PatientReviews_168_4",
     "x-dynamic": "false",
     children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
       className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
       "x-file-name": "PatientReviews",
-      "x-line-number": "153",
+      "x-line-number": "174",
       "x-column": "6",
       "x-component": "div",
-      "x-id": "PatientReviews_153_6",
+      "x-id": "PatientReviews_174_6",
       "x-dynamic": "false",
       children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
         className: "text-center mb-14",
         "x-file-name": "PatientReviews",
-        "x-line-number": "155",
+        "x-line-number": "176",
         "x-column": "8",
         "x-component": "div",
-        "x-id": "PatientReviews_155_8",
+        "x-id": "PatientReviews_176_8",
         "x-dynamic": "false",
         children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
           className: "section-label",
           "x-file-name": "PatientReviews",
-          "x-line-number": "156",
+          "x-line-number": "177",
           "x-column": "10",
           "x-component": "div",
-          "x-id": "PatientReviews_156_10",
+          "x-id": "PatientReviews_177_10",
           "x-dynamic": "true",
           "x-source-type": "unknown",
           "x-source-var": "label",
@@ -38108,7 +37935,7 @@ function PatientReviews() {
           children: label
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 156,
+          lineNumber: 177,
           columnNumber: 11
         }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("h2", {
           style: {
@@ -38120,10 +37947,10 @@ function PatientReviews() {
             marginBottom: 12
           },
           "x-file-name": "PatientReviews",
-          "x-line-number": "157",
+          "x-line-number": "178",
           "x-column": "10",
           "x-component": "h2",
-          "x-id": "PatientReviews_157_10",
+          "x-id": "PatientReviews_178_10",
           "x-dynamic": "true",
           "x-source-type": "unknown",
           "x-source-var": "title",
@@ -38131,7 +37958,7 @@ function PatientReviews() {
           children: title
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 157,
+          lineNumber: 178,
           columnNumber: 11
         }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
           className: "divider-navy mx-auto",
@@ -38139,14 +37966,14 @@ function PatientReviews() {
             margin: "12px auto 20px"
           },
           "x-file-name": "PatientReviews",
-          "x-line-number": "169",
+          "x-line-number": "190",
           "x-column": "10",
           "x-component": "div",
-          "x-id": "PatientReviews_169_10",
+          "x-id": "PatientReviews_190_10",
           "x-dynamic": "false"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 169,
+          lineNumber: 190,
           columnNumber: 11
         }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
           style: {
@@ -38157,10 +37984,10 @@ function PatientReviews() {
             margin: "0 auto"
           },
           "x-file-name": "PatientReviews",
-          "x-line-number": "170",
+          "x-line-number": "191",
           "x-column": "10",
           "x-component": "p",
-          "x-id": "PatientReviews_170_10",
+          "x-id": "PatientReviews_191_10",
           "x-dynamic": "true",
           "x-source-type": "unknown",
           "x-source-var": "subtitle",
@@ -38168,20 +37995,20 @@ function PatientReviews() {
           children: subtitle
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 170,
+          lineNumber: 191,
           columnNumber: 11
         }, this)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 155,
+        lineNumber: 176,
         columnNumber: 9
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
         className: "grid grid-cols-1 md:grid-cols-3 gap-6 mb-10",
         "x-file-name": "PatientReviews",
-        "x-line-number": "176",
+        "x-line-number": "197",
         "x-column": "8",
         "x-component": "div",
-        "x-id": "PatientReviews_176_8",
+        "x-id": "PatientReviews_197_8",
         "x-dynamic": "true",
         "x-source-type": "computed",
         "x-source-editable": "false",
@@ -38201,10 +38028,10 @@ function PatientReviews() {
             animation: "fadeInUp 0.4s ease forwards"
           },
           "x-file-name": "PatientReviews",
-          "x-line-number": "178",
+          "x-line-number": "199",
           "x-column": "12",
           "x-component": "div",
-          "x-id": "PatientReviews_178_12",
+          "x-id": "PatientReviews_199_12",
           "x-dynamic": "false",
           children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
             style: {
@@ -38214,64 +38041,64 @@ function PatientReviews() {
               opacity: 0.06
             },
             "x-file-name": "PatientReviews",
-            "x-line-number": "196",
+            "x-line-number": "217",
             "x-column": "14",
             "x-component": "div",
-            "x-id": "PatientReviews_196_14",
+            "x-id": "PatientReviews_217_14",
             "x-dynamic": "false",
             children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
               size: 56,
               color: "#0f2d5c",
               "x-file-name": "PatientReviews",
-              "x-line-number": "204",
+              "x-line-number": "225",
               "x-column": "16",
               "x-component": "Quote",
-              "x-id": "PatientReviews_204_16",
+              "x-id": "PatientReviews_225_16",
               "x-dynamic": "true",
               "x-source-type": "static-imported",
               "x-source-var": "visible",
               "x-source-file-abs": "/app/frontend/src/components/PatientReviews.js",
-              "x-source-line": "140",
+              "x-source-line": "161",
               "x-source-editable": "true",
               "x-array-var": "visible",
-              "x-array-line": "140",
+              "x-array-line": "161",
               "x-array-item-param": "review"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 204,
+              lineNumber: 225,
               columnNumber: 17
             }, this)
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 196,
+            lineNumber: 217,
             columnNumber: 15
           }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
             className: "flex items-center justify-between",
             "x-file-name": "PatientReviews",
-            "x-line-number": "208",
+            "x-line-number": "229",
             "x-column": "14",
             "x-component": "div",
-            "x-id": "PatientReviews_208_14",
+            "x-id": "PatientReviews_229_14",
             "x-dynamic": "false",
             children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(StarRating, {
               count: review.stars,
               "x-file-name": "PatientReviews",
-              "x-line-number": "209",
+              "x-line-number": "230",
               "x-column": "16",
               "x-component": "StarRating",
-              "x-id": "PatientReviews_209_16",
+              "x-id": "PatientReviews_230_16",
               "x-dynamic": "true",
               "x-source-type": "static-imported",
               "x-source-var": "visible",
               "x-source-file-abs": "/app/frontend/src/components/PatientReviews.js",
-              "x-source-line": "140",
+              "x-source-line": "161",
               "x-source-editable": "true",
               "x-array-var": "visible",
-              "x-array-line": "140",
+              "x-array-line": "161",
               "x-array-item-param": "review"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 209,
+              lineNumber: 230,
               columnNumber: 17
             }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("span", {
               style: {
@@ -38280,29 +38107,29 @@ function PatientReviews() {
                 color: "#94a3b8"
               },
               "x-file-name": "PatientReviews",
-              "x-line-number": "210",
+              "x-line-number": "231",
               "x-column": "16",
               "x-component": "span",
-              "x-id": "PatientReviews_210_16",
+              "x-id": "PatientReviews_231_16",
               "x-dynamic": "true",
               "x-source-type": "static-imported",
               "x-source-var": "visible",
               "x-source-file-abs": "/app/frontend/src/components/PatientReviews.js",
-              "x-source-line": "140",
+              "x-source-line": "161",
               "x-source-path": "date",
               "x-source-editable": "true",
               "x-array-var": "visible",
-              "x-array-line": "140",
+              "x-array-line": "161",
               "x-array-item-param": "review",
               children: review.date
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 210,
+              lineNumber: 231,
               columnNumber: 17
             }, this)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 208,
+            lineNumber: 229,
             columnNumber: 15
           }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
             style: {
@@ -38313,17 +38140,17 @@ function PatientReviews() {
               flex: 1
             },
             "x-file-name": "PatientReviews",
-            "x-line-number": "216",
+            "x-line-number": "237",
             "x-column": "14",
             "x-component": "p",
-            "x-id": "PatientReviews_216_14",
+            "x-id": "PatientReviews_237_14",
             "x-dynamic": "true",
             "x-source-type": "computed",
             "x-source-editable": "false",
             children: lang === "tr" ? review.tr : review.en
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 216,
+            lineNumber: 237,
             columnNumber: 15
           }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
             className: "flex items-center gap-3 pt-2",
@@ -38331,10 +38158,10 @@ function PatientReviews() {
               borderTop: "1px solid #f1f5f9"
             },
             "x-file-name": "PatientReviews",
-            "x-line-number": "229",
+            "x-line-number": "250",
             "x-column": "14",
             "x-component": "div",
-            "x-id": "PatientReviews_229_14",
+            "x-id": "PatientReviews_250_14",
             "x-dynamic": "false",
             children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
               style: {
@@ -38348,10 +38175,10 @@ function PatientReviews() {
                 flexShrink: 0
               },
               "x-file-name": "PatientReviews",
-              "x-line-number": "230",
+              "x-line-number": "251",
               "x-column": "16",
               "x-component": "div",
-              "x-id": "PatientReviews_230_16",
+              "x-id": "PatientReviews_251_16",
               "x-dynamic": "false",
               children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("span", {
                 style: {
@@ -38361,36 +38188,36 @@ function PatientReviews() {
                   color: "white"
                 },
                 "x-file-name": "PatientReviews",
-                "x-line-number": "238",
+                "x-line-number": "259",
                 "x-column": "18",
                 "x-component": "span",
-                "x-id": "PatientReviews_238_18",
+                "x-id": "PatientReviews_259_18",
                 "x-dynamic": "true",
                 "x-source-type": "static-imported",
                 "x-source-var": "visible",
                 "x-source-file-abs": "/app/frontend/src/components/PatientReviews.js",
-                "x-source-line": "140",
+                "x-source-line": "161",
                 "x-source-path": "initial",
                 "x-source-editable": "true",
                 "x-array-var": "visible",
-                "x-array-line": "140",
+                "x-array-line": "161",
                 "x-array-item-param": "review",
                 children: review.initial
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 238,
+                lineNumber: 259,
                 columnNumber: 19
               }, this)
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 230,
+              lineNumber: 251,
               columnNumber: 17
             }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
               "x-file-name": "PatientReviews",
-              "x-line-number": "242",
+              "x-line-number": "263",
               "x-column": "16",
               "x-component": "div",
-              "x-id": "PatientReviews_242_16",
+              "x-id": "PatientReviews_263_16",
               "x-dynamic": "false",
               children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
                 style: {
@@ -38400,24 +38227,24 @@ function PatientReviews() {
                   color: "#0f2d5c"
                 },
                 "x-file-name": "PatientReviews",
-                "x-line-number": "243",
+                "x-line-number": "264",
                 "x-column": "18",
                 "x-component": "div",
-                "x-id": "PatientReviews_243_18",
+                "x-id": "PatientReviews_264_18",
                 "x-dynamic": "true",
                 "x-source-type": "static-imported",
                 "x-source-var": "visible",
                 "x-source-file-abs": "/app/frontend/src/components/PatientReviews.js",
-                "x-source-line": "140",
+                "x-source-line": "161",
                 "x-source-path": "initial",
                 "x-source-editable": "true",
                 "x-array-var": "visible",
-                "x-array-line": "140",
+                "x-array-line": "161",
                 "x-array-item-param": "review",
                 children: review.initial
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 243,
+                lineNumber: 264,
                 columnNumber: 19
               }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
                 style: {
@@ -38426,45 +38253,45 @@ function PatientReviews() {
                   color: "#94a3b8"
                 },
                 "x-file-name": "PatientReviews",
-                "x-line-number": "246",
+                "x-line-number": "267",
                 "x-column": "18",
                 "x-component": "div",
-                "x-id": "PatientReviews_246_18",
+                "x-id": "PatientReviews_267_18",
                 "x-dynamic": "true",
                 "x-source-type": "computed",
                 "x-source-editable": "false",
                 children: lang === "tr" ? "Doğrulanmış Hasta" : "Verified Patient"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 246,
+                lineNumber: 267,
                 columnNumber: 19
               }, this)]
             }, void 0, true, {
               fileName: _jsxFileName,
-              lineNumber: 242,
+              lineNumber: 263,
               columnNumber: 17
             }, this)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 229,
+            lineNumber: 250,
             columnNumber: 15
           }, this)]
         }, `${current}-${i}`, true, {
           fileName: _jsxFileName,
-          lineNumber: 178,
+          lineNumber: 199,
           columnNumber: 13
         }, this))
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 176,
+        lineNumber: 197,
         columnNumber: 9
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
         className: "flex items-center justify-center gap-4",
         "x-file-name": "PatientReviews",
-        "x-line-number": "256",
+        "x-line-number": "277",
         "x-column": "8",
         "x-component": "div",
-        "x-id": "PatientReviews_256_8",
+        "x-id": "PatientReviews_277_8",
         "x-dynamic": "false",
         children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("button", {
           onClick: prev,
@@ -38493,29 +38320,29 @@ function PatientReviews() {
             e.currentTarget.style.borderColor = "#e2e8f0";
           },
           "x-file-name": "PatientReviews",
-          "x-line-number": "257",
+          "x-line-number": "278",
           "x-column": "10",
           "x-component": "button",
-          "x-id": "PatientReviews_257_10",
+          "x-id": "PatientReviews_278_10",
           "x-dynamic": "false",
           children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
             size: 18
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 270,
+            lineNumber: 291,
             columnNumber: 13
           }, this)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 257,
+          lineNumber: 278,
           columnNumber: 11
         }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
           className: "flex gap-2",
           "x-file-name": "PatientReviews",
-          "x-line-number": "274",
+          "x-line-number": "295",
           "x-column": "10",
           "x-component": "div",
-          "x-id": "PatientReviews_274_10",
+          "x-id": "PatientReviews_295_10",
           "x-dynamic": "true",
           "x-source-type": "computed",
           "x-source-editable": "false",
@@ -38533,19 +38360,19 @@ function PatientReviews() {
               padding: 0
             },
             "x-file-name": "PatientReviews",
-            "x-line-number": "276",
+            "x-line-number": "297",
             "x-column": "14",
             "x-component": "button",
-            "x-id": "PatientReviews_276_14",
+            "x-id": "PatientReviews_297_14",
             "x-dynamic": "false"
           }, i, false, {
             fileName: _jsxFileName,
-            lineNumber: 276,
+            lineNumber: 297,
             columnNumber: 15
           }, this))
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 274,
+          lineNumber: 295,
           columnNumber: 11
         }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("button", {
           onClick: next,
@@ -38574,26 +38401,26 @@ function PatientReviews() {
             e.currentTarget.style.borderColor = "#e2e8f0";
           },
           "x-file-name": "PatientReviews",
-          "x-line-number": "294",
+          "x-line-number": "315",
           "x-column": "10",
           "x-component": "button",
-          "x-id": "PatientReviews_294_10",
+          "x-id": "PatientReviews_315_10",
           "x-dynamic": "false",
           children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
             size: 18
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 307,
+            lineNumber: 328,
             columnNumber: 13
           }, this)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 294,
+          lineNumber: 315,
           columnNumber: 11
         }, this)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 256,
+        lineNumber: 277,
         columnNumber: 9
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
         className: "text-center mt-6",
@@ -38603,10 +38430,10 @@ function PatientReviews() {
           color: "#94a3b8"
         },
         "x-file-name": "PatientReviews",
-        "x-line-number": "312",
+        "x-line-number": "333",
         "x-column": "8",
         "x-component": "p",
-        "x-id": "PatientReviews_312_8",
+        "x-id": "PatientReviews_333_8",
         "x-dynamic": "true",
         "x-source-type": "unknown",
         "x-source-var": "sourceLabel",
@@ -38614,17 +38441,17 @@ function PatientReviews() {
         children: sourceLabel
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 312,
+        lineNumber: 333,
         columnNumber: 9
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 153,
+      lineNumber: 174,
       columnNumber: 7
     }, this)
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 147,
+    lineNumber: 168,
     columnNumber: 5
   }, this);
 }
@@ -40372,6 +40199,1459 @@ if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Pr
 	$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);
 }
 
+/***/ },
+
+/***/ "./src/translations.js"
+/*!*****************************!*\
+  !*** ./src/translations.js ***!
+  \*****************************/
+(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   translations: () => (/* binding */ translations)
+/* harmony export */ });
+/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+
+// ─── Image URLs ────────────────────────────────────────────────────────────────
+const IMG = {
+  angio: "https://customer-assets.emergentagent.com/job_pulse-portal-3/artifacts/bkbu5hhp_1-%20stent%20.jpg",
+  hole: "https://customer-assets.emergentagent.com/job_pulse-portal-3/artifacts/c4lyp736_2-kalp%20deli%C4%9Fi.jpg",
+  pace: "https://customer-assets.emergentagent.com/job_pulse-portal-3/artifacts/7wn2l4rg_3-kalp%20pili.jpg",
+  echo: "https://customer-assets.emergentagent.com/job_pulse-portal-3/artifacts/3czm02u8_4-eko.jpg",
+  efor: "https://customer-assets.emergentagent.com/job_pulse-portal-3/artifacts/ok9a80wq_5-efor-testi.jpg",
+  tavi: "https://customer-assets.emergentagent.com/job_pulse-portal-3/artifacts/4is1iau9_6-tavi.jpg",
+  cto: "https://customer-assets.emergentagent.com/job_pulse-portal-3/artifacts/jywpuuus_7-cto.jpg",
+  evar: "https://customer-assets.emergentagent.com/job_pulse-portal-3/artifacts/wxw1n3ty_8-evar%20tevar.jpg"
+};
+
+// ─── Academic publications (shared across all languages) ──────────────────────
+const PRESENTATIONS = [{
+  title: '"Fulminant Takotsubo cardiomyopathy by Covid19-Delta Variant (L452R)"',
+  venue: "Turkish Cardiology Congress, Antalya",
+  year: "2021",
+  type: "Poster"
+}, {
+  title: '"Effect of empaglifozin on the diastolic fonctions"',
+  venue: "International Turkish Congress of Cardiology, Digital",
+  year: "2020",
+  type: "Oral"
+}, {
+  title: '"Single Coronary Artery Anomaly"',
+  venue: "35th Turkish Cardiology Congress, Antalya",
+  year: "2019",
+  type: "Poster"
+}, {
+  title: '"Unexpected radial angiography complication"',
+  venue: "26th National Applied Interventional Cardiology Meeting, Antalya",
+  year: "2019",
+  type: "Poster"
+}, {
+  title: '"3D reconstruction of the Accordion Phenomenon"',
+  venue: "26th National Applied Interventional Cardiology Meeting, Antalya",
+  year: "2019",
+  type: "Poster"
+}];
+const PAPERS = [{
+  title: "Evaluation of Cardiac Findings in People With Human Immunodeficiency Virus",
+  authors: "Sevgi Özan Köse, Yalın Tolga Yaylalı, Yiğit Davutoğlu, Gürsel Şen, İbrahim Oğuz, Selda Sayın Kutlu.",
+  journal: "Anatol J Cardiol.",
+  year: "2025",
+  doi: "10.14744/AnatolJCardiol.2025.5271",
+  type: "Research Article"
+}, {
+  title: "Heart Failure Awareness Survey in a Turkish Population: HFAS-TR",
+  authors: "Dilay Karabulut, Şeyda Günay, Sena Sert Şekerci, Ertan Aydın, Kerem Köz, İbrahim Oguz, et al.",
+  journal: "Turk Kardiyol Dern Ars.",
+  year: "2024",
+  doi: "10.5543/tkda.2024.49280",
+  type: "Research Article"
+}, {
+  title: "Telomerase activity and hTERT gene expression in patients with acute coronary syndrome",
+  authors: "Mehmet Kilinc, Oguz Kilic, Mucahit Secme, Cihan Ilyas Sevgican, Ibrahim Oguz, et al.",
+  journal: "Bratisl Lek Listy.",
+  year: "2024",
+  doi: "10.4149/BLL_2024_35",
+  type: "Research Article"
+}, {
+  title: "Baseline Characteristics and Clinical Insights from the ARTEMIS Registry",
+  authors: "Meral Kayıkçıoğlu, Murat Biteker, Ferit Onur Mutluer, Tuncay Güzel, İbrahim Oguz et al.",
+  journal: "Turk Kardiyol Dern Ars.",
+  year: "2024",
+  doi: "10.5543/tkda.2024.63367",
+  type: "Research Article"
+}, {
+  title: "Comparison of current guidelines in the treatment of heart failure.",
+  authors: "Mehdi Zoghi (Ed.).",
+  journal: "Book Chapter: Nobel Publisher. ISBN: 978-605-335-681-3",
+  year: "2022",
+  doi: "",
+  type: "Book Chapter"
+}, {
+  title: "Interarm blood pressure differences and 2-year mortality in acute coronary syndrome patients",
+  authors: "Kilic ID, Kilci H, Sevgican CI, Oguz İbrahim, et al.",
+  journal: "Blood Press Monit.",
+  year: "2021",
+  doi: "PMID: 33734120",
+  type: "Research Article"
+}, {
+  title: "In pregnancy Cardiovascular Diseases From the Perspective of a Family Physician Approach",
+  authors: "Erhan Okuyan (Ed.).",
+  journal: "Book Chapter: Practice for Family Physicians",
+  year: "2021",
+  doi: "10.37609/akya.39",
+  type: "Book Chapter"
+}, {
+  title: "A Male Patient Presented with Anterior Myocardial Infarction with Left Main Coronary Artery Aneurysm",
+  authors: "Cihan İlyas Sevgican, İbrahim Oğuz et al.",
+  journal: "Turkiye Klinikleri J Cardiovasc Sci. 2018;30(1):29-33",
+  year: "2018",
+  doi: "10.5336/cardiosci.2018-60492",
+  type: "Case Report"
+}, {
+  title: "PAC-MAN Endocarditis: Atypical Vegetation on the Mitral Valve",
+  authors: "Cihan İlyas Sevgican, İbrahim Oğuz et al.",
+  journal: "Turkiye Klinikleri J Cardiovasc Sci. 2018;30(3):143-4",
+  year: "2018",
+  doi: "10.5336/cardiosci.2018-62409",
+  type: "Case Report"
+}];
+const translations = {
+  // ─────────────────────────────── TÜRKÇE ─────────────────────────────────────
+  tr: {
+    nav: {
+      about: "Hakkımda",
+      specializations: "Uzmanlık Alanları",
+      news: "Haberler",
+      education: "Hasta Bilgilendirme",
+      publications: "Yayınlar",
+      appointment: "Randevu Al",
+      contact: "İletişim"
+    },
+    hero: {
+      label: "Kardiyoloji Uzmanı",
+      title: "Uzm. Dr. İbrahim OĞUZ",
+      subtitle: "Kardiyoloji Uzmanı | Denizli",
+      description: "Girişimsel kardiyoloji, anjiyografi, kalp pili ve kardiyak görüntüleme alanlarında uzmanlaşmış, 10+ yıl deneyimli kardiyoloji doktoru.",
+      cta1: "Randevu Al",
+      cta2: "Özgeçmişi Gör",
+      stat1: "10+",
+      stat1Label: "Yıl Deneyim",
+      stat2: "3000+",
+      stat2Label: "Başarılı Girişimsel İşlem"
+    },
+    about: {
+      label: "Biyografi",
+      title: "Dr. İbrahim OĞUZ Hakkında",
+      description: "Ankara Üniversitesi Tıp Fakültesi mezunu olan Dr. İbrahim OĞUZ, Pamukkale Üniversitesi'nde aldığı uzmanlık eğitiminin ardından girişimsel kardiyoloji alanında uzmanlaşmıştır. Kompleks koroner girişimler, kalp deliği kapatılması, mitral balon valvüloplasti ve kalp pili takılması gibi kritik prosedürleri başarıyla uygulamaktadır. 2024 yılından itibaren Özel Denizli Cerrahi Hastanesi'nde görev yapmaktadır.",
+      educationTitle: "Eğitim & Kariyer",
+      education: [{
+        year: "2024 – Halen",
+        place: "Özel Denizli Cerrahi Hastanesi",
+        role: "Kardiyoloji Uzmanı"
+      }, {
+        year: "2020 – 2024",
+        place: "Denizli Devlet Hastanesi",
+        role: "Kardiyoloji Uzmanı"
+      }, {
+        year: "2015 – 2020",
+        place: "Pamukkale Üniversitesi Kardiyoloji A.B.D.",
+        role: "Uzmanlık Eğitimi"
+      }, {
+        year: "2005 – 2012",
+        place: "Ankara Üniversitesi Tıp Fakültesi",
+        role: "Tıp Doktorluğu"
+      }],
+      certsTitle: "Sertifikalar",
+      certs: ["Türk Kardiyoloji Derneği Yeterlilik Sertifikası", "Deney Hayvanları Kullanım Sertifikası"],
+      membTitle: "Mesleki Üyelikler",
+      memb: ["Türk Kardiyoloji Derneği", "Türk Tabipler Birliği", "Avrupa Kardiyoloji Derneği (ESC)"],
+      langTitle: "Dil Becerileri",
+      langs: ["Türkçe (Anadil)", "İngilizce (İyi düzey)", "İsveççe (Orta düzey)"]
+    },
+    spec: {
+      label: "Uzmanlık Alanları",
+      title: "Girişimsel Kardiyoloji",
+      subtitle: "Kalp hastalıklarının tanı ve tedavisinde ileri düzey prosedürler",
+      items: [{
+        icon: "activity",
+        image: IMG.angio,
+        title: "Anjiyo, Balon & Stent",
+        desc: "Bilekten ve kasıktan girişle koroner anjiyografi yapılması; balon, ilaçlı balon ve stent uygulamalarıyla tedavisi."
+      }, {
+        icon: "heart",
+        image: IMG.hole,
+        title: "Kalp Deliği Kapama",
+        desc: "Anjiyografi eşliğinde ASD, PFO ve diğer kardiyak septal defektlerin ameliyatsız kapatılması."
+      }, {
+        icon: "zap",
+        image: IMG.pace,
+        title: "Kalp Pili Uygulamaları",
+        desc: "Her türlü kalp pili takılması ve değiştirilmesi işlemleri; pace maker implantasyonu."
+      }, {
+        icon: "scan",
+        image: IMG.echo,
+        title: "Kardiyak Görüntüleme",
+        desc: "Ekokardiyografi (EKO), transözofageal ekokardiyografi (TEE) ile detaylı kalp görüntüleme."
+      }, {
+        icon: "gauge",
+        image: IMG.efor,
+        title: "Efor Testi & Holter",
+        desc: "Kalp ritim bozukluklarının tanısı için Holter monitorizasyonu ve efor testi uygulamaları."
+      }, {
+        icon: "shield",
+        image: IMG.tavi,
+        title: "TAVİ – Ameliyatsız Kapak Değiştirilmesi",
+        desc: "Açık kalp ameliyatı olmaksızın anjiyo yöntemiyle aort kapak değiştirilmesi (TAVI) prosedürü."
+      }, {
+        icon: "target",
+        image: IMG.cto,
+        title: "CTO – Tam Tıkalı Damar Açma",
+        desc: "Kronik total oklüzyon (CTO) olarak adlandırılan tam tıkalı koroner damarların özel kateter teknikleriyle açılması."
+      }, {
+        icon: "layers",
+        image: IMG.evar,
+        title: "EVAR & TEVAR – Endovasküler Aort Tedavisi",
+        desc: "Aort anevrizmaların ameliyatsız, endovasküler stent-greft yöntemiyle (EVAR/TEVAR) tedavisi."
+      }]
+    },
+    education: {
+      label: "Hasta Bilgilendirme",
+      title: "Sık Sorulan Sorular",
+      subtitle: "Kardiyoloji ile ilgili merak ettiğiniz konular",
+      items: [{
+        q: "Kalp krizi belirtileri nelerdir?",
+        a: "Kalp krizi genelde göğüste baskı, yanma veya sıkışma hissiyle başlar. Bu ağrı sol kola, boyuna, çeneye veya sırta yayılabilir. Beraberinde nefes darlığı, terleme ve mide bulantısı görülebilir. Özellikle diyabet hastalarında belirtiler daha silik olabilir. Şüphe varsa zaman kaybetmeden hastaneye başvurmak gerekir."
+      }, {
+        q: "Anjiyo nedir, nasıl yapılır?",
+        a: "Anjiyo, kalp damarlarını görüntülemek için yapılan bir işlemdir. Genellikle kasık ya da el bileğinden girilerek ince bir kateter damar içine ilerletilir. Kontrast madde verilerek damarlar görüntülenir. İşlem genelde 15–30 dakika sürer ve hasta aynı gün ayağa kalkabilir. Çoğu zaman düşünüldüğü kadar zor bir işlem değildir."
+      }, {
+        q: "Anjiyo ağrılı bir işlem midir?",
+        a: "Çoğu hasta işlem sırasında ciddi bir ağrı hissetmez. Sadece giriş yerinde hafif bir baskı veya yanma olabilir. İşlem boyunca hasta uyanıktır ama rahatlatıcı ilaçlar verilebilir. Asıl korku genelde işlemden önce olur, işlem sırasında değil. Sonrasında da genellikle hafif bir hassasiyet dışında sorun yaşanmaz."
+      }, {
+        q: "Stent nedir, ne zaman takılır?",
+        a: "Stent, tıkalı ya da daralmış damarları açık tutmak için kullanılan metal bir kafestir. Anjiyo sırasında gerekli görülürse aynı seansta takılabilir. Ama her dar damara stent takılmaz, karar hastaya göre verilir. Uygun hastada hayat kurtarıcıdır. Sonrasında ilaçların düzenli kullanılması çok önemlidir."
+      }, {
+        q: "Kalp çarpıntısı ne zaman tehlikelidir?",
+        a: "Ara sıra olan kısa süreli çarpıntılar genelde zararsızdır. Ancak uzun süren, bayılma hissiyle gelen veya göğüs ağrısı eşlik eden çarpıntılar ciddiye alınmalıdır. Altta ritim bozukluğu olabilir. Özellikle sık tekrar ediyorsa mutlaka değerlendirilmelidir. Basit stresle karıştırılmamalıdır."
+      }, {
+        q: "Tansiyon kaç olursa tehlikelidir?",
+        a: "Genel olarak 140/90 mmHg üzeri değerler yüksek kabul edilir. Ancak risk hastaya göre değişir. Sürekli yüksek seyreden tansiyon kalp, beyin ve böbreğe zarar verir. Tek bir ölçüm yerine düzenli takip önemlidir. Gerektiğinde ilaç tedavisi başlanmalıdır."
+      }, {
+        q: "Kolesterol yüksekliği ne kadar önemlidir?",
+        a: "Yüksek kolesterol damar sertliğinin en önemli nedenlerinden biridir. Özellikle LDL kolesterol yüksekliği risk oluşturur. Uzun vadede kalp krizi riskini artırır. Sadece diyetle değil, gerekirse ilaçla kontrol altına alınmalıdır. \"Bende belirti yok\" demek burada işe yaramaz."
+      }, {
+        q: "Kalp krizi genç yaşta olur mu?",
+        a: "Evet, özellikle son yıllarda daha sık görülüyor. Sigara, stres, obezite ve genetik faktörler önemli rol oynar. Genç hastalar genelde belirtileri ciddiye almadığı için geç başvurur. Bu da riski artırır. Yaş tek başına koruyucu değildir."
+      }, {
+        q: "Efor testi ne işe yarar?",
+        a: "Efor testi, kalbin yük altındaki performansını değerlendirmek için yapılır. Yürüyüş bandında yürürken kalp ritmi ve EKG takip edilir. Gizli kalp damar hastalıklarını ortaya çıkarabilir. Her hastaya yapılmaz, seçilmiş durumlarda kullanılır. Basit ama değerli bir testtir."
+      }, {
+        q: "Kalp hastaları spor yapabilir mi?",
+        a: "Doğru planlandığında çoğu hasta spor yapabilir. Hatta düzenli egzersiz kalp sağlığı için çok faydalıdır. Ancak kontrolsüz ve aşırı spor riskli olabilir. Hangi düzeyde egzersiz yapılacağı hastaya göre belirlenmelidir. Doktor önerisi olmadan yüklenmek akıllıca değil."
+      }, {
+        q: "Sigara kalbi nasıl etkiler?",
+        a: "Sigara damar yapısını bozar ve pıhtı riskini artırır. Aynı zamanda kalp krizini tetikleyen en önemli faktörlerden biridir. \"Az içiyorum\" bahanesi burada geçerli değil. Her miktar zarar verir. Bırakmak kalp sağlığı için yapılabilecek en net hamledir."
+      }, {
+        q: "Diyabet kalp hastalığı riskini artırır mı?",
+        a: "Evet, diyabet kalp hastalığı için büyük bir risk faktörüdür. Damarları zamanla hasara uğratır. Sessiz ilerlediği için fark edilmesi zor olabilir. Bu hastalarda kalp krizi daha sinsi seyreder. Kan şekeri kontrolü bu yüzden hayati önemdedir."
+      }, {
+        q: "Nefes darlığı kalp kaynaklı olabilir mi?",
+        a: "Evet, özellikle eforla artan nefes darlığı kalp yetmezliği belirtisi olabilir. Akciğer hastalıklarıyla karışabilir. Bu yüzden doğru değerlendirme önemlidir. Tek başına \"yorgunluk\" diye geçiştirilmemelidir. Altta ciddi bir durum olabilir."
+      }, {
+        q: "Kalp yetmezliği nedir?",
+        a: "Kalbin vücuda yeterli kan pompalayamaması durumudur. Nefes darlığı, halsizlik ve ödemle kendini gösterebilir. Kronik bir hastalıktır ama tedaviyle kontrol altına alınabilir. Erken tanı önemli fark yaratır. Düzenli takip gerektirir."
+      }, {
+        q: "Stent takıldıktan sonra nelere dikkat edilmeli?",
+        a: "İlaçlar kesinlikle aksatılmamalıdır. Özellikle kan sulandırıcılar hayati önem taşır. Sigara bırakılmalı ve yaşam tarzı düzeltilmelidir. Kontroller ihmal edilmemelidir. \"Stent takıldı, bitti\" diye düşünmek klasik hatadır."
+      }, {
+        q: "Kalp krizi geçiren biri tekrar geçirir mi?",
+        a: "Evet, risk devam eder. Altta yatan nedenler düzeltilmezse tekrar etme ihtimali vardır. Bu yüzden tedavi ve yaşam tarzı değişikliği şarttır. Düzenli takip çok önemlidir. İkinci kriz genelde daha ağır olabilir."
+      }, {
+        q: "Ailede kalp hastalığı olması önemli mi?",
+        a: "Genetik faktörler önemli bir rol oynar. Ailede erken yaşta kalp hastalığı varsa risk artar. Bu kişilerin daha erken taranması gerekir. Aslında önlem almak için değerli bir bilgidir. Görmezden gelmek yerine kullanın."
+      }, {
+        q: "Kalp hastalıkları tamamen iyileşir mi?",
+        a: "Bazı durumlar tamamen çözülebilir; bazıları kronik seyreder. Ama çoğu hastalık kontrol altına alınabilir. Hedef riski azaltmak ve yaşam kalitesini yükseltmektir. Düzenli takip burada kilit rol oynar. \"Tamamen geçti\" demek çoğu zaman yanıltıcıdır."
+      }, {
+        q: "Stres kalp hastalığına yol açar mı?",
+        a: "Stres tek başına neden olmayabilir ama önemli bir tetikleyicidir. Tansiyonu ve ritim sorunlarını artırabilir. Uzun vadede dolaylı etkileri büyüktür. Özellikle şehir yaşamında bu faktör göz ardı ediliyor. Ama etkisi oldukça gerçek."
+      }, {
+        q: "Kardiyologa ne zaman başvurulmalı?",
+        a: "Göğüs ağrısı, çarpıntı veya nefes darlığı varsa gecikmeden başvurun. Risk faktörü taşıyanlar düzenli kontrol yaptırmalıdır. Bekleyip geçer mi diye düşünmek bazen pahalıya patlayabilir. Erken tanı her zaman avantaj sağlar. Kalp şansa bırakılacak bir organ değil."
+      }, {
+        q: "Kalp krizi ile kalp durması aynı şey midir?",
+        a: "Hayır, aynı değil ama sürekli karıştırılıyor. Kalp krizi, damar tıkanıklığına bağlı kas hasarıdır. Kalp durması ise kalbin pompalama fonksiyonunu tamamen yitirmesidir. Kalp krizi, kalp durmasına yol açabilir ama her zaman değil. Her ikisi de acil müdahale gerektiren durumlardır."
+      }, {
+        q: "Aspirin kalp krizini önler mi?",
+        a: "Aspirin bazı hastalarda pıhtılaşmayı azaltarak koruyucu olabilir. Ama herkesin gelişigüzel alması gereken bir ilaç değildir. Gereksiz kullanım kanama riskini artırır. Bu yüzden doktor önerisi olmadan başlanmamalıdır. \"Komşuya iyi geldi\" mantığı burada tehlikelidir."
+      }, {
+        q: "Nabız kaç olmalıdır?",
+        a: "Dinlenme halinde 60–100 arası genelde normal kabul edilir. Sporcularda daha düşük olabilir, bu normaldir. Çok yüksek veya çok düşük nabız altta yatan bir soruna işaret edebilir. Özellikle şikayete eşlik ediyorsa değerlendirilmelidir. Tek ölçümle karar vermek doğru değildir."
+      }, {
+        q: "Kalp pili kimler için gereklidir?",
+        a: "Kalp ritmi çok yavaş olan hastalara kalp pili takılır. Bayılma veya baş dönmesi gibi şikayetler varsa değerlendirilir. Kalp ritmini düzenler ve yaşam kalitesini yükseltir. Küçük bir cerrahi işlemle takılır. Doğru hastada çok etkili bir tedavi yöntemidir."
+      }, {
+        q: "Ritim bozuklukları tehlikeli midir?",
+        a: "Bir kısmı tamamen zararsızdır; bir kısmı ciddi risk taşır. Bu yüzden hepsini \"önemsiz\" diye geçiştirmek hatalıdır. Süre, sıklık ve eşlik eden belirtiler önemlidir. Gerekirse ileri tetkik yapılır. Özellikle bayılma eşlik ediyorsa mutlaka ciddiye alınmalıdır."
+      }, {
+        q: "Kalp büyümesi ne anlama gelir?",
+        a: "Kalp büyümesi genellikle kalbin sürekli yük altında kalması sonucu gelişir. Yüksek tansiyon, kapak hastalıkları veya kalp yetmezliği neden olabilir. Bir bulgu, hastalık değil. Altta yatan neden bulunup tedavi edilmelidir. Aksi hâlde ilerleme gösterebilir."
+      }, {
+        q: "Enerji içecekleri kalbe zarar verir mi?",
+        a: "Evet, özellikle aşırı tüketimde ciddi etkileri olabilir. Nabzı hızlandırır ve ritim bozukluğunu tetikleyebilir. Genç yaşta bile ani sorunlara yol açtığı görülmüştür. \"Bana bir şey olmaz\" tavrı burada risklidir. Kalp hastaları özellikle uzak durmalıdır."
+      }, {
+        q: "Kalp hastaları oruç tutabilir mi (Ramazan)?",
+        a: "Hastanın durumuna göre değişir. Stabil hastalar genellikle tutabilir ama ilaç düzeni önemli bir sorundur. İleri kalp yetmezliği veya ciddi hastalıkta riskli olabilir. Bu yüzden bireysel değerlendirme gerekmektedir. Toptan bir cevap vermek doğru değildir."
+      }, {
+        q: "Göğüs ağrısı her zaman kalp krizi midir?",
+        a: "Hayır, göğüs ağrılarının büyük çoğunluğu kalp krizi değildir. Kas, mide veya stres kaynaklı olabilir. Ama ayırt etmek her zaman kolay değildir. Özellikle riskli hastalarda dikkatli olunmalıdır. Şüpheli durumlarda mutlaka kontrol yaptırılmalıdır."
+      }, {
+        q: "Kalp ultrasonografisi (EKO) nedir?",
+        a: "EKO, kalbin yapı ve fonksiyonlarını değerlendiren ultrason yöntemidir. Ağrısız ve zararsızdır. Kalp kapakları, kasılma gücü ve odacıklar incelenir. Tanıda çok önemli bir yer tutar. Birçok hastada ilk başvurulan testlerden biridir."
+      }, {
+        q: "Kalp hastalıkları tamamen önlenebilir mi?",
+        a: "Tamamen önlemek her zaman mümkün olmayabilir ama risk büyük ölçüde azaltılabilir. Sağlıklı beslenme, egzersiz ve sigara içmemek temel etkenlerdir. Genetik risk olsa bile kontrol sağlanabilir. Sorun genellikle bilmemek değil, bildiklerini uygulamamaktır."
+      }, {
+        q: "Fazla kilo kalbi nasıl etkiler?",
+        a: "Obezite kalp hastalıkları için önemli bir risk faktörüdür. Yüksek tansiyon, diyabet ve yüksek kolesterolü tetikler. Kalp üzerindeki yükü artırır. Uzun vadede damar sağlığını bozar. Kilo vermek kalp için ciddi bir kazanımdır."
+      }, {
+        q: "Tuz tüketimi neden önemlidir?",
+        a: "Fazla tuz tansiyonu yükseltir. Bu da kardiyovasküler sisteme zarar verir. Özellikle hipertansiyon hastalarında kısıtlama şarttır. Günlük tüketim çoğunlukla ihtiyacın üzerindedir. Azaltmak sandığınızdan daha etkili bir adımdır."
+      }, {
+        q: "Kalp hastaları kahve içebilir mi?",
+        a: "Çoğu hasta için makul miktarda kahve sorun oluşturmaz. Ancak aşırı tüketim çarpıntıyı artırabilir. Duyarlı kişiler dikkatli olmalıdır. Herkesin toleransı farklıdır. Ölçüyü aşmamak yeterlidir."
+      }, {
+        q: "Kalp hastalıklarında genetik test gerekli midir?",
+        a: "Her hastada gerekmez. Ama bazı özel durumlarda yararlı olabilir. Ailesel hastalık şüphesi varsa değerlendirilir. Tanı ve risk belirlenmesine yardımcı olur. Rutin bir test değildir."
+      }, {
+        q: "Kan sulandırıcı ilaçlar ne kadar kullanılmalıdır?",
+        a: "Bu tamamen hastaya ve hastalığa göre değişir. Bazı durumlarda kısa süreli, bazı durumlarda ömür boyu kullanılır. Kendi kendine kesmek ciddi risk yaratır. Özellikle stent sonrası kritik önem taşır. Takip mutlaka sürdürülmelidir."
+      }, {
+        q: "Kalp hastaları uçakla seyahat edebilir mi?",
+        a: "Çoğu hasta uygun koşullarda seyahat edebilir. Ancak yakın zamanda geçirilmiş kalp krizi veya ciddi durumlarda ertelenmelidir. Uzun uçuşlarda hareket etmek önemlidir. Yüksek riskli hastalar önceden değerlendirilmelidir. Plansız hareket etmek doğru değil."
+      }, {
+        q: "Yüksek tansiyon belirti verir mi?",
+        a: "Çoğu zaman vermez, bu yüzden \"sessiz katil\" denir. Baş ağrısı veya baş dönmesi olabilir ama şart değildir. Bu yüzden ölçmeden bilmek zordur. Düzenli takip önemlidir. Belirti beklemek yanlış bir yaklaşımdır."
+      }, {
+        q: "Kalp hastalığında beslenme nasıl olmalıdır?",
+        a: "Akdeniz tipi beslenme önerilir. Sebze, meyve, zeytinyağı ve balık ağırlıklı diyet faydalıdır. İşlenmiş gıdalardan ve aşırı yağdan kaçınılmalıdır. Tek bir mucizevi besin yoktur. Önemli olan genel alışkanlıktır."
+      }, {
+        q: "Düzenli kontrol ne sıklıkta yapılmalıdır?",
+        a: "Bu hastaya göre değişir. Sağlıklı bireylerde yıllık kontrol yeterli olabilir. Yüksek riskli veya hastalığı olan kişilerde daha sık takip gerekir. Kontrol aralığı doktor tarafından belirlenir. \"İyiyim\" deyip bırakmak genelde klasik hatadır."
+      }]
+    },
+    publications: {
+      label: "Akademik Çalışmalar",
+      title: "Bilimsel Çalışmalar",
+      subtitle: "Ulusal ve uluslararası kongrelerde sunumlar ve bilimsel yayınlar",
+      presentationsTitle: "Bilimsel Sunumlar",
+      papersTitle: "Bilimsel Yayınlar",
+      presentations: PRESENTATIONS,
+      papers: PAPERS
+    },
+    appointment: {
+      label: "Randevu",
+      title: "Randevu Alın",
+      subtitle: "Hızlı randevu için formu doldurun, en kısa sürede sizi arayalım",
+      orCall: "hemen arayın",
+      phone: "444 4 324",
+      info: "Özel Denizli Cerrahi Hastanesi'nde hafta içi ve hafta sonu randevu hizmeti sunulmaktadır."
+    },
+    contact: {
+      label: "İletişim",
+      title: "Bize Ulaşın",
+      subtitle: "Sorularınız için iletişime geçebilirsiniz",
+      hospital: "Özel Denizli Cerrahi Hastanesi",
+      address: "Denizli, Türkiye",
+      phone: "444 4 324",
+      workHours: "Çalışma Saatleri",
+      weekdays: "Pazartesi – Cuma: 09:00 – 17:00",
+      sunday: "Cumartesi: 09:00 – 12:00",
+      mapLabel: "Hastane Konumu"
+    },
+    footer: {
+      tagline: "Kalp Sağlığında Güvenilir Adresiniz",
+      quickLinks: "Hızlı Bağlantılar",
+      contactInfo: "İletişim Bilgileri",
+      copyright: "© 2026 Uzm. Dr. İbrahim OĞUZ. Tüm hakları saklıdır."
+    }
+  },
+  // ─────────────────────────────── ENGLISH ────────────────────────────────────
+  en: {
+    nav: {
+      about: "About",
+      specializations: "Specializations",
+      news: "News",
+      education: "Patient Education",
+      publications: "Publications",
+      appointment: "Appointment",
+      contact: "Contact"
+    },
+    hero: {
+      label: "Cardiologist",
+      title: "Uzm. Dr. İbrahim OĞUZ",
+      subtitle: "Cardiologist | Denizli",
+      description: "Specialist cardiologist with 10+ years of experience in interventional cardiology, angiography, cardiac pacing, and cardiac imaging.",
+      cta1: "Book Appointment",
+      cta2: "View CV",
+      stat1: "10+",
+      stat1Label: "Years Experience",
+      stat2: "3000+",
+      stat2Label: "Successful Interventions"
+    },
+    about: {
+      label: "Biography",
+      title: "About Dr. İbrahim OĞUZ",
+      description: "A graduate of Ankara University Faculty of Medicine, Dr. İbrahim OĞUZ specialized in interventional cardiology after his residency at Pamukkale University. He successfully performs complex coronary interventions, cardiac septal defect closures, mitral balloon valvuloplasty, and pacemaker implantation. Since 2024, he has been serving at Özel Denizli Cerrahi Hastanesi.",
+      educationTitle: "Education & Career",
+      education: [{
+        year: "2024 – Present",
+        place: "Özel Denizli Cerrahi Hastanesi",
+        role: "Cardiologist"
+      }, {
+        year: "2020 – 2024",
+        place: "Denizli Devlet Hastanesi",
+        role: "Cardiologist"
+      }, {
+        year: "2015 – 2020",
+        place: "Pamukkale University, Cardiology Dept.",
+        role: "Cardiology Residency"
+      }, {
+        year: "2005 – 2012",
+        place: "Ankara University Faculty of Medicine",
+        role: "Medical Degree (MD)"
+      }],
+      certsTitle: "Certifications",
+      certs: ["Turkish Society of Cardiology Competency Certificate", "Laboratory Animal Use Certificate"],
+      membTitle: "Professional Memberships",
+      memb: ["Turkish Society of Cardiology", "Turkish Medical Association", "European Society of Cardiology (ESC)"],
+      langTitle: "Language Skills",
+      langs: ["Turkish (Native)", "English (Proficient)", "Swedish (Intermediate)"]
+    },
+    spec: {
+      label: "Specializations",
+      title: "Interventional Cardiology",
+      subtitle: "Advanced cardiac procedures for diagnosis and treatment of heart diseases",
+      items: [{
+        icon: "activity",
+        image: IMG.angio,
+        title: "Angiography, Balloon & Stent",
+        desc: "Coronary angiography via wrist or groin; treatment with balloon, drug-coated balloon, and stent placement."
+      }, {
+        icon: "heart",
+        image: IMG.hole,
+        title: "Cardiac Septal Closure",
+        desc: "Percutaneous closure of ASD, PFO and other cardiac septal defects under angiographic guidance."
+      }, {
+        icon: "zap",
+        image: IMG.pace,
+        title: "Pacemaker Implantation",
+        desc: "Implantation and replacement of all types of permanent pacemakers and cardiac rhythm devices."
+      }, {
+        icon: "scan",
+        image: IMG.echo,
+        title: "Cardiac Imaging",
+        desc: "Echocardiography (Echo) and transesophageal echocardiography (TEE) for detailed cardiac assessment."
+      }, {
+        icon: "gauge",
+        image: IMG.efor,
+        title: "Holter & Stress Testing",
+        desc: "Holter monitoring and exercise stress testing for the diagnosis of arrhythmias and coronary artery disease."
+      }, {
+        icon: "shield",
+        image: IMG.tavi,
+        title: "TAVI – Transcatheter Aortic Valve Implantation",
+        desc: "Replacement of the aortic valve via catheter without open-heart surgery."
+      }, {
+        icon: "target",
+        image: IMG.cto,
+        title: "CTO – Chronic Total Occlusion",
+        desc: "Opening of completely blocked coronary arteries using advanced catheter techniques."
+      }, {
+        icon: "layers",
+        image: IMG.evar,
+        title: "EVAR & TEVAR – Endovascular Aortic Repair",
+        desc: "Treatment of aortic aneurysms and dissections without surgery using endovascular stent-graft techniques."
+      }]
+    },
+    education: {
+      label: "Patient Education",
+      title: "Frequently Asked Questions",
+      subtitle: "Information about cardiology and common cardiac procedures",
+      items: [{
+        q: "What are the symptoms of a heart attack?",
+        a: "A heart attack usually begins with pressure, burning, or tightness in the chest, possibly radiating to the left arm, neck, jaw, or back. It may be accompanied by shortness of breath, sweating, and nausea. Symptoms can be subtler in diabetic patients. If suspected, seek medical attention immediately."
+      }, {
+        q: "What is angiography and how is it performed?",
+        a: "Angiography is a procedure to visualize the coronary arteries. A thin catheter is advanced through the groin or wrist, contrast dye is injected, and the arteries are imaged. It typically takes 15–30 minutes and the patient can get up the same day. It is usually not as difficult as people imagine."
+      }, {
+        q: "Is angiography painful?",
+        a: "Most patients do not feel significant pain. There may be mild pressure or burning at the insertion site. The patient is awake but may receive mild sedation. Fear usually comes before the procedure, not during it. Afterwards, there is generally only mild tenderness."
+      }, {
+        q: "What is a stent and when is it placed?",
+        a: "A stent is a metal mesh used to keep blocked or narrowed arteries open. It can be placed in the same session as angiography if needed. Not every narrowing requires a stent — the decision is made individually. Regular medication use afterwards is very important."
+      }, {
+        q: "When is palpitation dangerous?",
+        a: "Occasional brief palpitations are generally harmless. However, prolonged palpitations accompanied by fainting or chest pain should be taken seriously. There may be an underlying arrhythmia. Evaluation is essential if they recur frequently."
+      }, {
+        q: "At what blood pressure level is it dangerous?",
+        a: "Values above 140/90 mmHg are generally considered high. Persistently high blood pressure damages the heart, brain, and kidneys. Regular monitoring is more important than a single measurement. Medication should be started when necessary."
+      }, {
+        q: "How important is high cholesterol?",
+        a: "High cholesterol is a major cause of arterial hardening. LDL elevation in particular creates risk and increases heart attack risk long-term. It must be controlled not only by diet but with medication if necessary."
+      }, {
+        q: "Can heart attacks happen at a young age?",
+        a: "Yes, increasingly so in recent years. Smoking, stress, obesity, and genetics play important roles. Young patients tend to delay seeking help because they don't take symptoms seriously, which increases risk."
+      }, {
+        q: "What does a stress test do?",
+        a: "A stress test evaluates the heart's performance under load. Heart rhythm and ECG are monitored while the patient walks on a treadmill. It can reveal hidden cardiovascular disease. It is used in selected situations."
+      }, {
+        q: "Can heart patients exercise?",
+        a: "With proper planning, most patients can exercise. Regular exercise is very beneficial for heart health. However, uncontrolled or excessive exercise can be risky. The level should be determined individually."
+      }, {
+        q: "How does smoking affect the heart?",
+        a: "Smoking damages vascular structure and increases clot risk. It is one of the most important triggers of heart attack. Every amount is harmful. Quitting is the clearest move for heart health."
+      }, {
+        q: "Does diabetes increase heart disease risk?",
+        a: "Yes, diabetes is a major risk factor. It damages blood vessels over time. Heart attacks in these patients have a more insidious course. Blood sugar control is therefore of vital importance."
+      }, {
+        q: "Can shortness of breath be heart-related?",
+        a: "Yes, shortness of breath worsening with exertion can be a sign of heart failure. It can be confused with lung disease. It should not be dismissed as mere tiredness. Proper evaluation is important."
+      }, {
+        q: "What is heart failure?",
+        a: "It is the condition in which the heart cannot pump enough blood. It manifests with shortness of breath, weakness, and edema. It is chronic but can be controlled with treatment. Early diagnosis makes a significant difference."
+      }, {
+        q: "What should be considered after stent placement?",
+        a: "Medications must never be missed, especially blood thinners. Smoking should be stopped and lifestyle corrected. Follow-up appointments must not be neglected. Thinking 'the stent is placed, it's done' is a classic mistake."
+      }, {
+        q: "Can a heart attack recur?",
+        a: "Yes, the risk continues. If underlying causes are not corrected, recurrence is possible. Treatment and lifestyle changes are essential. Regular follow-up is very important. The second attack can often be more severe."
+      }, {
+        q: "Does family history of heart disease matter?",
+        a: "Genetic factors play a significant role. If there is early-onset heart disease in the family, risk increases. These individuals should be screened earlier. Use this information rather than ignoring it."
+      }, {
+        q: "Can heart disease be completely cured?",
+        a: "Some conditions can be fully resolved; others have a chronic course. But most diseases can be controlled. The goal is to reduce risk and improve quality of life. Saying 'it's completely gone' is often misleading."
+      }, {
+        q: "Can stress cause heart disease?",
+        a: "Stress alone may not cause it, but it is an important trigger. It can increase blood pressure and rhythm problems. Its long-term indirect effects are significant. Especially in city life, this factor is underestimated."
+      }, {
+        q: "When should one see a cardiologist?",
+        a: "If symptoms such as chest pain, palpitations, or shortness of breath are present, consult without delay. People with risk factors should have regular check-ups. Early diagnosis always provides an advantage."
+      }, {
+        q: "Are heart attack and cardiac arrest the same thing?",
+        a: "No. A heart attack is damage to the heart muscle due to arterial blockage. Cardiac arrest is when the heart completely loses its pumping function. A heart attack can lead to cardiac arrest, but not always."
+      }, {
+        q: "Does aspirin prevent heart attacks?",
+        a: "Aspirin can be protective in some patients by reducing clot formation. But it is not for everyone. Unnecessary use increases bleeding risk. It should not be started without medical advice."
+      }, {
+        q: "What should the pulse rate be?",
+        a: "A resting pulse rate of 60–100 is generally normal. In athletes it can be lower. A very high or very low pulse may indicate an underlying problem. Evaluation is needed especially if accompanied by complaints."
+      }, {
+        q: "Who needs a pacemaker?",
+        a: "A pacemaker is implanted in patients whose heart rhythm is too slow. It is considered if fainting or dizziness are present. It regulates heart rhythm and improves quality of life. It is a very effective treatment in the right patient."
+      }, {
+        q: "Are arrhythmias dangerous?",
+        a: "Some are completely harmless; others carry serious risk. Duration, frequency, and accompanying symptoms are important. If accompanied by fainting in particular, it must be taken seriously."
+      }, {
+        q: "What does heart enlargement mean?",
+        a: "Heart enlargement usually develops as a result of the heart being under load. High blood pressure, valve diseases, or heart failure may be the cause. The underlying cause must be found and treated."
+      }, {
+        q: "Do energy drinks affect the heart?",
+        a: "Yes, especially with excessive consumption. They speed up the pulse and can trigger arrhythmias. They have caused sudden problems even in young people. Heart patients in particular should stay away from them."
+      }, {
+        q: "Can heart patients fast (during Ramadan)?",
+        a: "It depends on the patient's condition. Stable patients can generally fast, but medication scheduling is important. It can be risky in advanced heart failure. Individualized evaluation is necessary."
+      }, {
+        q: "Is chest pain always a heart attack?",
+        a: "No, most chest pain is not a heart attack. It can originate from muscle, the stomach, or stress. But distinguishing them is not always easy. A check-up is essential in suspicious situations."
+      }, {
+        q: "What is cardiac ultrasound (ECO)?",
+        a: "ECO is an ultrasound method for evaluating the structure and functions of the heart. It is painless and harmless. Heart valves, contraction strength, and chambers are examined. It is one of the first tests used in many patients."
+      }, {
+        q: "Can heart disease be completely prevented?",
+        a: "Complete prevention is not always possible, but risk can be significantly reduced. Healthy eating, exercise, and avoiding smoking are fundamental factors. Even with genetic risk, control can be achieved."
+      }, {
+        q: "How does excess weight affect the heart?",
+        a: "Obesity is an important risk factor. It triggers high blood pressure, diabetes, and high cholesterol. It increases the workload on the heart. Losing weight is a serious gain for the heart."
+      }, {
+        q: "Why is salt consumption important?",
+        a: "Excess salt raises blood pressure, damaging the cardiovascular system. Restriction is essential especially in hypertension patients. Reducing it is a more effective step than you might think."
+      }, {
+        q: "Can heart patients drink coffee?",
+        a: "For most patients, a reasonable amount of coffee does not cause problems. However, excessive consumption can increase palpitations. Everyone's tolerance is different. Not exceeding the measure is sufficient."
+      }, {
+        q: "Is genetic testing necessary for heart disease?",
+        a: "It is not necessary for every patient. But it can be useful in some special situations. It is evaluated if there is suspicion of familial disease. It is not a routine test."
+      }, {
+        q: "How long should blood thinners be used?",
+        a: "This depends entirely on the patient and the disease. Stopping them on their own creates serious risk. It is of critical importance especially after stenting. Follow-up must be maintained."
+      }, {
+        q: "Can heart patients travel by plane?",
+        a: "Most patients can travel under appropriate conditions. However, it should be postponed after a recent heart attack or in serious conditions. High-risk patients should be evaluated beforehand."
+      }, {
+        q: "Does high blood pressure cause symptoms?",
+        a: "Most of the time it does not, which is why it's called 'the silent killer'. Headache or dizziness may occur but it's not required. Regular follow-up is important. Waiting for symptoms is the wrong approach."
+      }, {
+        q: "What nutrition is good for heart disease?",
+        a: "A Mediterranean-type diet is recommended: vegetables, fruits, olive oil, and fish. Processed foods and excessive fats should be avoided. What matters is the overall dietary habit."
+      }, {
+        q: "How often should regular check-ups be done?",
+        a: "This varies by patient. Annual check-ups may be sufficient for healthy individuals. More frequent follow-up is required for high-risk people or those with disease. The interval should be determined by the doctor."
+      }]
+    },
+    publications: {
+      label: "Academic Work",
+      title: "Scientific Work",
+      subtitle: "Conference presentations and publications in national and international journals",
+      presentationsTitle: "Scientific Presentations",
+      papersTitle: "Scientific Publications",
+      presentations: PRESENTATIONS,
+      papers: PAPERS
+    },
+    appointment: {
+      label: "Appointment",
+      title: "Book an Appointment",
+      subtitle: "Fill out the form and we'll call you back as soon as possible",
+      orCall: "call now",
+      phone: "444 4 324",
+      info: "Appointment services available on weekdays and weekends at Özel Denizli Cerrahi Hastanesi."
+    },
+    contact: {
+      label: "Contact",
+      title: "Get in Touch",
+      subtitle: "Feel free to reach out with any questions",
+      hospital: "Özel Denizli Cerrahi Hastanesi",
+      address: "Denizli, Türkiye",
+      phone: "444 4 324",
+      workHours: "Working Hours",
+      weekdays: "Monday – Friday: 09:00 – 17:00",
+      sunday: "Saturday: 09:00 – 12:00",
+      mapLabel: "Hospital Location"
+    },
+    footer: {
+      tagline: "Your Trusted Address in Heart Health",
+      quickLinks: "Quick Links",
+      contactInfo: "Contact Information",
+      copyright: "© 2026 Uzm. Dr. İbrahim OĞUZ. All rights reserved."
+    }
+  },
+  // ─────────────────────────────── РУССКИЙ ────────────────────────────────────
+  ru: {
+    nav: {
+      about: "О враче",
+      specializations: "Специализации",
+      news: "Новости",
+      education: "Пациентам",
+      publications: "Публикации",
+      appointment: "Запись",
+      contact: "Контакты"
+    },
+    hero: {
+      label: "Кардиолог",
+      title: "Uzm. Dr. İbrahim OĞUZ",
+      subtitle: "Кардиолог | Денизли",
+      description: "Кардиолог с более чем 10-летним опытом в интервенционной кардиологии, ангиографии, имплантации кардиостимуляторов и кардиовизуализации.",
+      cta1: "Записаться",
+      cta2: "Смотреть резюме",
+      stat1: "10+",
+      stat1Label: "Лет опыта",
+      stat2: "3000+",
+      stat2Label: "Успешных вмешательств"
+    },
+    about: {
+      label: "Биография",
+      title: "О докторе İbrahim OĞUZ",
+      description: "Доктор İbrahim OĞUZ, выпускник медицинского факультета Анкарского университета, специализировался в интервенционной кардиологии после ординатуры в Университете Памуккале. Успешно выполняет сложные коронарные вмешательства, закрытие дефектов перегородки, митральную баллонную вальвулопластику и имплантацию кардиостимуляторов. С 2024 года работает в Özel Denizli Cerrahi Hastanesi.",
+      educationTitle: "Образование и карьера",
+      education: [{
+        year: "2024 – наст. вр.",
+        place: "Özel Denizli Cerrahi Hastanesi",
+        role: "Кардиолог"
+      }, {
+        year: "2020 – 2024",
+        place: "Denizli Devlet Hastanesi",
+        role: "Кардиолог"
+      }, {
+        year: "2015 – 2020",
+        place: "Кафедра кардиологии, Ун-т Памуккале",
+        role: "Ординатура по кардиологии"
+      }, {
+        year: "2005 – 2012",
+        place: "Медфакультет, Анкарский университет",
+        role: "Врач (MD)"
+      }],
+      certsTitle: "Сертификаты",
+      certs: ["Сертификат Турецкого кардиологического общества", "Сертификат по лабораторным животным"],
+      membTitle: "Профессиональные членства",
+      memb: ["Турецкое кардиологическое общество", "Турецкая медицинская ассоциация", "Европейское общество кардиологов (ESC)"],
+      langTitle: "Языки",
+      langs: ["Турецкий (родной)", "Английский (профессиональный)", "Шведский (средний)"]
+    },
+    spec: {
+      label: "Специализации",
+      title: "Интервенционная кардиология",
+      subtitle: "Современные процедуры для диагностики и лечения заболеваний сердца",
+      items: [{
+        icon: "activity",
+        image: IMG.angio,
+        title: "Ангиография, баллон и стент",
+        desc: "Коронарная ангиография через запястье или пах; лечение с помощью баллона, медикаментозного баллона и стента."
+      }, {
+        icon: "heart",
+        image: IMG.hole,
+        title: "Закрытие дефектов перегородки",
+        desc: "Чрескожное закрытие ДМПП, ООО и других дефектов под контролем ангиографии."
+      }, {
+        icon: "zap",
+        image: IMG.pace,
+        title: "Имплантация кардиостимулятора",
+        desc: "Установка и замена всех видов постоянных кардиостимуляторов и устройств ритма."
+      }, {
+        icon: "scan",
+        image: IMG.echo,
+        title: "Кардиовизуализация",
+        desc: "Эхокардиография и чреспищеводная эхокардиография (ЧПЭхо) для детальной оценки сердца."
+      }, {
+        icon: "gauge",
+        image: IMG.efor,
+        title: "Холтер и нагрузочный тест",
+        desc: "Холтеровское мониторирование и нагрузочный тест для диагностики аритмий и ИБС."
+      }, {
+        icon: "shield",
+        image: IMG.tavi,
+        title: "ТАВР – Транскатетерная замена клапана",
+        desc: "Замена аортального клапана через катетер без открытой операции на сердце."
+      }, {
+        icon: "target",
+        image: IMG.cto,
+        title: "ХТО – Хроническая тотальная окклюзия",
+        desc: "Открытие полностью заблокированных коронарных артерий с помощью современных катетерных методов."
+      }, {
+        icon: "layers",
+        image: IMG.evar,
+        title: "ЭВАР и ТЕВАР – Эндоваскулярная коррекция",
+        desc: "Лечение аневризм и диссекций аорты без операции с помощью эндоваскулярных стент-графтов."
+      }]
+    },
+    education: {
+      label: "Информация для пациентов",
+      title: "Часто задаваемые вопросы",
+      subtitle: "Информация о кардиологии и распространённых процедурах",
+      items: [{
+        q: "Каковы симптомы инфаркта?",
+        a: "Инфаркт обычно начинается с давления, жжения или стеснения в груди. Боль может отдавать в левую руку, шею, челюсть или спину, сопровождаясь одышкой, потливостью и тошнотой. У диабетиков симптомы могут быть слабее. При малейшем подозрении немедленно обратитесь за помощью."
+      }, {
+        q: "Что такое ангиография?",
+        a: "Ангиография — процедура визуализации коронарных артерий. Тонкий катетер вводится через запястье или пах, вводится контраст и делается рентгеновский снимок. Процедура занимает 15–30 минут, пациент встаёт в тот же день. Как правило, это не так страшно, как кажется."
+      }, {
+        q: "Ангиография болезненна?",
+        a: "Большинство пациентов не ощущают сильной боли. В месте введения может быть лёгкое давление или жжение. Пациент в сознании, возможна лёгкая седация. Страх обычно больше до процедуры, чем во время неё."
+      }, {
+        q: "Что такое стент?",
+        a: "Стент — металлическая сетка, удерживающая артерию открытой. Его можно установить в ту же сессию при необходимости. Не каждое сужение требует стента — решение индивидуально. После установки крайне важно принимать назначенные препараты."
+      }, {
+        q: "Когда сердцебиение опасно?",
+        a: "Кратковременные редкие эпизоды, как правило, безопасны. Длительное сердцебиение с предобморочным состоянием или болью в груди — повод серьёзного беспокойства. При частых эпизодах необходима диагностика."
+      }, {
+        q: "Какое давление опасно?",
+        a: "Значения выше 140/90 мм рт. ст. считаются повышенными. Постоянно высокое давление повреждает сердце, мозг и почки. Регулярный контроль важнее одного измерения."
+      }, {
+        q: "Насколько важен высокий холестерин?",
+        a: "Высокий холестерин — главная причина уплотнения артерий. Повышенный ЛНП увеличивает риск инфаркта. Необходим контроль не только диетой, но и при необходимости — медикаментами."
+      }, {
+        q: "Бывает ли инфаркт в молодом возрасте?",
+        a: "Да, и всё чаще. Важную роль играют курение, стресс, ожирение и наследственность. Молодые пациенты нередко игнорируют симптомы, что увеличивает риск."
+      }, {
+        q: "Что такое нагрузочный тест?",
+        a: "Нагрузочный тест оценивает работу сердца при нагрузке. Пациент идёт по беговой дорожке, контролируются ритм и ЭКГ. Позволяет выявить скрытые заболевания. Назначается в отдельных случаях."
+      }, {
+        q: "Можно ли заниматься спортом?",
+        a: "При правильном подходе большинство пациентов могут тренироваться. Умеренные нагрузки очень полезны. Однако неконтролируемые нагрузки рискованны. Уровень активности определяется индивидуально."
+      }, {
+        q: "Как курение влияет на сердце?",
+        a: "Курение разрушает сосуды и повышает риск тромбоза. Оно — важнейший провоцирующий фактор инфаркта. Вреден любой объём. Отказ от курения — лучший шаг для здоровья сердца."
+      }, {
+        q: "Увеличивает ли диабет риск?",
+        a: "Да, диабет — главный фактор риска. Со временем он повреждает сосуды. Инфаркты у диабетиков имеют более скрытное течение. Контроль сахара крови жизненно важен."
+      }, {
+        q: "Может ли одышка быть сердечной?",
+        a: "Да, одышка при нагрузке может быть признаком сердечной недостаточности. Не стоит списывать всё на усталость. Правильная диагностика важна."
+      }, {
+        q: "Что такое сердечная недостаточность?",
+        a: "Это состояние, при котором сердце не справляется с кровоснабжением. Проявляется одышкой, слабостью и отёками. Хроническое, но поддаётся лечению. Ранняя диагностика существенна."
+      }, {
+        q: "Что важно после стента?",
+        a: "Нельзя пропускать препараты, особенно антикоагулянты. Следует бросить курить и изменить образ жизни. Плановые визиты обязательны. «Стент поставили — всё позади» — распространённая ошибка."
+      }, {
+        q: "Может ли инфаркт повториться?",
+        a: "Да, риск сохраняется. Без устранения причин рецидив возможен. Лечение и изменение образа жизни необходимы. Второй инфаркт нередко тяжелее."
+      }, {
+        q: "Важен ли семейный анамнез?",
+        a: "Генетические факторы значимы. При раннем сердечном заболевании в семье риск выше. Таким людям показан более ранний скрининг."
+      }, {
+        q: "Можно ли вылечить болезни сердца?",
+        a: "Одни заболевания поддаются полному излечению, другие — хронические. Но большинство можно контролировать. Регулярное наблюдение играет ключевую роль."
+      }, {
+        q: "Стресс вызывает болезни сердца?",
+        a: "Стресс — важный провоцирующий фактор. Повышает давление и риск аритмий. Его долгосрочные косвенные эффекты значительны."
+      }, {
+        q: "Когда обратиться к кардиологу?",
+        a: "При боли в груди, сердцебиении или одышке — без промедления. Людям с факторами риска нужен регулярный осмотр. Ранняя диагностика всегда даёт преимущество."
+      }, {
+        q: "Инфаркт и остановка сердца — одно и то же?",
+        a: "Нет. Инфаркт — это повреждение мышцы из-за закупорки артерии. Остановка — полная потеря насосной функции. Оба состояния требуют экстренной помощи."
+      }, {
+        q: "Аспирин предотвращает инфаркт?",
+        a: "Для некоторых пациентов — да, снижает тромбообразование. Но нельзя принимать бесконтрольно. Нежелательное применение повышает риск кровотечений."
+      }, {
+        q: "Каким должен быть пульс?",
+        a: "В покое 60–100 ударов/мин — нормально. У спортсменов ниже. Очень высокий или низкий пульс может сигнализировать о проблеме."
+      }, {
+        q: "Кому нужен кардиостимулятор?",
+        a: "Пациентам с очень медленным ритмом при симптомах — обмороки, головокружение. Нормализует ритм и улучшает качество жизни. Устанавливается в ходе небольшой операции."
+      }, {
+        q: "Опасны ли аритмии?",
+        a: "Одни безопасны, другие несут серьёзный риск. Важны продолжительность, частота и симптомы. При обмороках — обязательное обследование."
+      }, {
+        q: "Что означает увеличение сердца?",
+        a: "Развивается при хронической перегрузке: гипертония, пороки клапанов, сердечная недостаточность. Необходимо найти и устранить первопричину."
+      }, {
+        q: "Влияют ли энергетики на сердце?",
+        a: "Да, особенно при чрезмерном употреблении. Учащают пульс, могут провоцировать аритмию. Сердечным больным противопоказаны."
+      }, {
+        q: "Могут ли сердечники поститься (Рамадан)?",
+        a: "Зависит от состояния. Стабильным пациентам, как правило, можно. При тяжёлых болезнях — рискованно. Требуется индивидуальная оценка."
+      }, {
+        q: "Любая боль в груди — инфаркт?",
+        a: "Нет, большинство болей в груди не связаны с инфарктом. Причиной могут быть мышцы, желудок или стресс. В сомнительных ситуациях — обследование обязательно."
+      }, {
+        q: "Что такое ЭхоКГ?",
+        a: "Ультразвуковой метод оценки структуры и функции сердца. Безболезненный и безвредный. Оцениваются клапаны, сократимость и полости. Один из первых тестов у многих пациентов."
+      }, {
+        q: "Можно ли предотвратить болезни сердца?",
+        a: "Полная профилактика не всегда возможна, но риск снижается. Здоровое питание, физическая активность и отказ от курения — основа."
+      }, {
+        q: "Как лишний вес влияет на сердце?",
+        a: "Ожирение провоцирует гипертонию, диабет и высокий холестерин. Увеличивает нагрузку на сердце. Снижение веса — серьёзный вклад в здоровье."
+      }, {
+        q: "Почему важно ограничение соли?",
+        a: "Избыток соли повышает давление, повреждая сосудистую систему. Особенно важно при гипертонии. Снижение потребления — эффективный шаг."
+      }, {
+        q: "Можно ли кофе?",
+        a: "Умеренное количество большинству пациентов не вредит. Чрезмерное — может усилить сердцебиение. Главное — не превышать меру."
+      }, {
+        q: "Нужна ли генетическая диагностика?",
+        a: "Не всем. Но при подозрении на наследственное заболевание — полезна. Помогает в диагностике и оценке риска."
+      }, {
+        q: "Как долго принимать антикоагулянты?",
+        a: "Зависит от пациента и заболевания. Самостоятельная отмена создаёт серьёзный риск. Особенно критично после стентирования."
+      }, {
+        q: "Можно ли летать на самолёте?",
+        a: "Большинство пациентов могут. После недавнего инфаркта — лучше отложить. При длительных перелётах важна двигательная активность."
+      }, {
+        q: "Гипертония даёт симптомы?",
+        a: "Чаще всего нет — «тихий убийца». Головная боль возможна, но необязательна. Регулярный контроль давления важен."
+      }, {
+        q: "Какое питание полезно?",
+        a: "Рекомендуется средиземноморская диета: овощи, фрукты, оливковое масло, рыба. Избегайте переработанных продуктов. Важна общая привычка питания."
+      }, {
+        q: "Как часто нужны осмотры?",
+        a: "Здоровым — раз в год достаточно. При высоком риске или заболевании — чаще. Интервал определяет врач."
+      }]
+    },
+    publications: {
+      label: "Академические работы",
+      title: "Научные работы",
+      subtitle: "Выступления на конгрессах и публикации в журналах",
+      presentationsTitle: "Научные выступления",
+      papersTitle: "Научные публикации",
+      presentations: PRESENTATIONS,
+      papers: PAPERS
+    },
+    appointment: {
+      label: "Запись",
+      title: "Запись на приём",
+      subtitle: "Заполните форму и мы вам перезвоним",
+      orCall: "позвоните сейчас",
+      phone: "444 4 324",
+      info: "Приём ведётся в будни и выходные в Özel Denizli Cerrahi Hastanesi."
+    },
+    contact: {
+      label: "Контакты",
+      title: "Свяжитесь с нами",
+      subtitle: "Задайте нам любой вопрос",
+      hospital: "Özel Denizli Cerrahi Hastanesi",
+      address: "Денизли, Турция",
+      phone: "444 4 324",
+      workHours: "Рабочие часы",
+      weekdays: "Пн – Пт: 09:00 – 17:00",
+      sunday: "Сб: 09:00 – 12:00",
+      mapLabel: "Расположение клиники"
+    },
+    footer: {
+      tagline: "Ваш надёжный адрес для здоровья сердца",
+      quickLinks: "Быстрые ссылки",
+      contactInfo: "Контактная информация",
+      copyright: "© 2026 Uzm. Dr. İbrahim OĞUZ. Все права защищены."
+    }
+  },
+  // ──────────────────────────────── 中文 ──────────────────────────────────────
+  zh: {
+    nav: {
+      about: "关于医生",
+      specializations: "专科领域",
+      news: "新闻",
+      education: "患者教育",
+      publications: "学术论著",
+      appointment: "预约",
+      contact: "联系我们"
+    },
+    hero: {
+      label: "心脏病专家",
+      title: "Uzm. Dr. İbrahim OĞUZ",
+      subtitle: "心脏病专家 | 代尼兹利",
+      description: "拥有超过10年介入心脏病学、冠状动脉造影、心脏起搏器及心脏影像经验的专业心脏科医生。",
+      cta1: "立即预约",
+      cta2: "查看简历",
+      stat1: "10+",
+      stat1Label: "年从业经验",
+      stat2: "3000+",
+      stat2Label: "成功介入治疗"
+    },
+    about: {
+      label: "个人简介",
+      title: "关于 İbrahim OĞUZ 医生",
+      description: "İbrahim OĞUZ医生毕业于安卡拉大学医学院，在帕姆卡莱大学完成住院医师培训后专攻介入心脏病学。他成功开展复杂冠状动脉介入、心脏间隔缺损封堵、二尖瓣球囊扩张术及心脏起搏器植入术。自2024年起在Özel Denizli Cerrahi Hastanesi工作。",
+      educationTitle: "教育与职业经历",
+      education: [{
+        year: "2024 – 至今",
+        place: "Özel Denizli Cerrahi Hastanesi",
+        role: "心脏病专家"
+      }, {
+        year: "2020 – 2024",
+        place: "Denizli Devlet Hastanesi",
+        role: "心脏病专家"
+      }, {
+        year: "2015 – 2020",
+        place: "帕姆卡莱大学心脏病学系",
+        role: "心脏病学住院医师"
+      }, {
+        year: "2005 – 2012",
+        place: "安卡拉大学医学院",
+        role: "医学博士（MD）"
+      }],
+      certsTitle: "资格证书",
+      certs: ["土耳其心脏病学会资格认证证书", "实验动物使用证书"],
+      membTitle: "专业会员资格",
+      memb: ["土耳其心脏病学会", "土耳其医学协会", "欧洲心脏病学会（ESC）"],
+      langTitle: "语言技能",
+      langs: ["土耳其语（母语）", "英语（熟练）", "瑞典语（中级）"]
+    },
+    spec: {
+      label: "专科领域",
+      title: "介入心脏病学",
+      subtitle: "用于诊断和治疗心脏病的高级心脏手术",
+      items: [{
+        icon: "activity",
+        image: IMG.angio,
+        title: "冠状动脉造影、球囊与支架",
+        desc: "通过腕部或腹股沟进行冠状动脉造影；使用球囊、药物涂层球囊和支架治疗。"
+      }, {
+        icon: "heart",
+        image: IMG.hole,
+        title: "心脏间隔缺损封堵术",
+        desc: "在造影引导下，经皮封堵房间隔缺损（ASD）、卵圆孔未闭（PFO）等心脏间隔缺损。"
+      }, {
+        icon: "zap",
+        image: IMG.pace,
+        title: "心脏起搏器植入",
+        desc: "各类永久性心脏起搏器及心脏节律装置的植入与更换。"
+      }, {
+        icon: "scan",
+        image: IMG.echo,
+        title: "心脏影像检查",
+        desc: "超声心动图（Echo）及经食管超声心动图（TEE）详细评估心脏状态。"
+      }, {
+        icon: "gauge",
+        image: IMG.efor,
+        title: "动态心电图与运动负荷试验",
+        desc: "用于心律失常和冠心病诊断的动态心电图监测及运动负荷试验。"
+      }, {
+        icon: "shield",
+        image: IMG.tavi,
+        title: "TAVI – 经导管主动脉瓣置换术",
+        desc: "无需开胸手术，通过导管替换主动脉瓣，适用于重度瓣膜病患者。"
+      }, {
+        icon: "target",
+        image: IMG.cto,
+        title: "CTO – 慢性完全闭塞病变介入",
+        desc: "采用先进导管技术开通完全阻塞的冠状动脉（慢性完全闭塞）。"
+      }, {
+        icon: "layers",
+        image: IMG.evar,
+        title: "EVAR与TEVAR – 血管内主动脉修复",
+        desc: "无需手术，采用血管内支架移植物技术治疗主动脉瘤和夹层。"
+      }]
+    },
+    education: {
+      label: "患者教育",
+      title: "常见问题解答",
+      subtitle: "关于心脏病学和常见心脏手术的信息",
+      items: [{
+        q: "心脏病发作有哪些症状？",
+        a: "心脏病发作通常表现为胸部压迫感、灼烧感或紧绷感，可能放射至左臂、颈部、下颌或背部，并伴有呼吸困难、出汗和恶心。糖尿病患者症状可能较轻。如有任何怀疑，请立即就医。"
+      }, {
+        q: "什么是冠状动脉造影？",
+        a: "冠状动脉造影是一种显像冠状动脉的检查。通过腕部或腹股沟插入细导管，注射造影剂后进行X线成像。通常需15-30分钟，当天可下床活动。一般没有想象中那么可怕。"
+      }, {
+        q: "冠状动脉造影疼痛吗？",
+        a: "大多数患者不会感到明显疼痛。插管部位可能有轻微压迫感或灼热感。患者保持清醒，可能给予轻度镇静。恐惧通常在手术前而非手术中。"
+      }, {
+        q: "什么是支架，何时需要？",
+        a: "支架是一种金属网管，用于保持阻塞或狭窄的动脉畅通。必要时可在造影同一次手术中放置。并非每个狭窄都需要支架，决定因人而异。术后坚持按时服药非常重要。"
+      }, {
+        q: "心悸何时危险？",
+        a: "偶发的短暂心悸通常无害。但持续性心悸伴头晕或胸痛应认真对待。可能存在潜在心律失常。如果频繁复发，必须就医评估。"
+      }, {
+        q: "血压多高才危险？",
+        a: "通常140/90 mmHg以上被认为偏高。持续高血压会损害心脏、大脑和肾脏。定期监测比单次测量更重要。必要时应开始药物治疗。"
+      }, {
+        q: "高胆固醇有多重要？",
+        a: "高胆固醇是动脉硬化的主要原因之一。LDL升高会长期增加心脏病发作风险。不仅需要饮食控制，必要时还需药物治疗。"
+      }, {
+        q: "年轻人会心脏病发作吗？",
+        a: "会，近年来越来越常见。吸烟、压力、肥胖和遗传起重要作用。年轻患者常因不重视症状而延误就医，这会增加风险。"
+      }, {
+        q: "负荷试验是什么？",
+        a: "负荷试验评估心脏在运动负荷下的表现。患者在跑步机上行走，同时监测心律和心电图。可揭示隐匿性心血管疾病，用于特定情况。"
+      }, {
+        q: "心脏病患者可以运动吗？",
+        a: "适当计划下，大多数患者可以运动。定期运动对心脏健康非常有益。但不受控制的过度运动有风险。运动强度应个体化确定。"
+      }, {
+        q: "吸烟如何影响心脏？",
+        a: "吸烟破坏血管结构，增加血栓风险，是心脏病发作的重要诱因。任何量都有害。戒烟是对心脏健康最明确的举措。"
+      }, {
+        q: "糖尿病增加心脏病风险吗？",
+        a: "是的，糖尿病是主要风险因素。它会随时间损害血管，且进展隐匿。糖尿病患者的心脏病发作更加隐蔽。血糖控制至关重要。"
+      }, {
+        q: "气短可能与心脏有关吗？",
+        a: "是的，运动时加重的气短可能是心力衰竭的症状。不应仅仅归因于疲劳。正确评估很重要，可能存在严重的潜在疾病。"
+      }, {
+        q: "什么是心力衰竭？",
+        a: "心脏无法泵送足够血液的状态。表现为气短、虚弱和水肿。是慢性疾病，但可通过治疗控制。早期诊断意义重大。"
+      }, {
+        q: "放置支架后应注意什么？",
+        a: "绝对不能漏服药物，尤其是抗凝药。应戒烟并改变生活方式。随访不可忽视。认为『放了支架就万事大吉』是常见错误。"
+      }, {
+        q: "心脏病发作会复发吗？",
+        a: "是的，风险持续存在。不纠正潜在原因，复发是可能的。治疗和生活方式改变至关重要。第二次发作通常更严重。"
+      }, {
+        q: "家族史重要吗？",
+        a: "遗传因素起重要作用。家族中有早发心脏病，风险增加。这些人应更早进行筛查。请充分利用这一信息而非忽视它。"
+      }, {
+        q: "心脏病能完全治愈吗？",
+        a: "有些可以完全解决，有些是慢性病。但大多数可以控制。目标是降低风险、提高生活质量。定期随访是关键。"
+      }, {
+        q: "压力会导致心脏病吗？",
+        a: "压力本身可能不会直接导致，但是重要的触发因素。它会增高血压和心律问题。长期间接影响显著。城市生活中这个因素常被低估。"
+      }, {
+        q: "何时应就诊心脏科？",
+        a: "出现胸痛、心悸或气短时，请立即就医。有危险因素的人应定期检查。早期诊断总能带来优势。"
+      }, {
+        q: "心脏病发作和心脏骤停是一回事吗？",
+        a: "不是。心脏病发作是动脉阻塞导致的心肌损伤。心脏骤停是心脏完全丧失泵血功能。前者可能导致后者，但并非总是如此。两者均需紧急处理。"
+      }, {
+        q: "阿司匹林能预防心脏病发作吗？",
+        a: "对某些患者，阿司匹林可通过减少血栓形成发挥保护作用。但不适合所有人随意服用。不必要的使用会增加出血风险。"
+      }, {
+        q: "脉搏应该是多少？",
+        a: "静息脉搏60-100次/分钟通常正常。运动员可能更低。非常高或低的脉搏可能表明存在问题。如伴有症状，需要评估。"
+      }, {
+        q: "谁需要心脏起搏器？",
+        a: "心律过慢伴有晕厥或头晕症状的患者。起搏器调节心律，改善生活质量。通过小型手术植入，是合适患者的有效治疗方法。"
+      }, {
+        q: "心律失常危险吗？",
+        a: "有些完全无害，有些有严重风险。持续时间、频率和伴随症状很重要。特别是伴有晕厥时，必须认真对待。"
+      }, {
+        q: "心脏扩大意味着什么？",
+        a: "心脏扩大通常是心脏长期负荷过重的结果。高血压、瓣膜病或心力衰竭可能是原因。必须找到并治疗根本原因。"
+      }, {
+        q: "能量饮料影响心脏吗？",
+        a: "是的，尤其是过量饮用时。它们加速脉搏，可能触发心律失常。甚至在年轻人中也出现过突发问题。心脏病患者应远离。"
+      }, {
+        q: "心脏病患者可以斋戒（斋月）吗？",
+        a: "取决于患者状况。稳定患者通常可以，但用药时间安排很重要。严重心力衰竭时有风险。需要个体化评估。"
+      }, {
+        q: "胸痛一定是心脏病发作吗？",
+        a: "不，大多数胸痛不是心脏病发作。可能来自肌肉、胃或压力。但区分并不总是容易。在可疑情况下必须检查。"
+      }, {
+        q: "什么是心脏超声（ECO）？",
+        a: "心脏超声是评估心脏结构和功能的超声方法。无痛、无害。检查心脏瓣膜、收缩力和心腔。是许多患者首选的检查之一。"
+      }, {
+        q: "心脏病可以完全预防吗？",
+        a: "完全预防并不总是可能的，但风险可以大幅降低。健康饮食、运动和不吸烟是基本要素。即使有遗传风险，也可以实现控制。"
+      }, {
+        q: "超重如何影响心脏？",
+        a: "肥胖是重要风险因素。它触发高血压、糖尿病和高胆固醇。增加心脏负荷。减重是对心脏的重要贡献。"
+      }, {
+        q: "为什么盐摄入量很重要？",
+        a: "过多的盐会升高血压，损害心血管系统。高血压患者尤其需要限制。减少摄入比你想象的更有效。"
+      }, {
+        q: "心脏病患者可以喝咖啡吗？",
+        a: "对大多数患者，适量咖啡不会造成问题。但过量可能增加心悸。不超量即可。"
+      }, {
+        q: "心脏病需要基因检测吗？",
+        a: "不是每个患者都需要。但在某些特殊情况下有用。怀疑家族性疾病时可进行评估。不是常规检查。"
+      }, {
+        q: "抗凝药需要服用多长时间？",
+        a: "完全取决于患者和疾病。自行停药有严重风险。支架术后尤为重要。必须维持随访。"
+      }, {
+        q: "心脏病患者可以乘飞机吗？",
+        a: "大多数患者可以在适当条件下旅行。近期心脏病发作或病情严重时应推迟。长途飞行中活动很重要。"
+      }, {
+        q: "高血压有症状吗？",
+        a: "大多数情况下没有，这就是为什么它被称为'沉默的杀手'。可能出现头痛或头晕，但不是必然的。定期监测血压很重要。"
+      }, {
+        q: "心脏病的饮食建议？",
+        a: "推荐地中海饮食：蔬菜、水果、橄榄油和鱼类。避免加工食品和过多脂肪。重要的是整体饮食习惯。"
+      }, {
+        q: "多久应该定期检查一次？",
+        a: "因人而异。健康人每年一次可能足够。高风险或有病症者需要更频繁。间隔由医生决定。"
+      }]
+    },
+    publications: {
+      label: "学术工作",
+      title: "科学研究",
+      subtitle: "国内外学术会议报告及期刊论文",
+      presentationsTitle: "学术报告",
+      papersTitle: "学术论文",
+      presentations: PRESENTATIONS,
+      papers: PAPERS
+    },
+    appointment: {
+      label: "预约",
+      title: "立即预约",
+      subtitle: "填写表格，我们将尽快回电",
+      orCall: "立即致电",
+      phone: "444 4 324",
+      info: "Özel Denizli Cerrahi Hastanesi工作日及周末均提供预约服务。"
+    },
+    contact: {
+      label: "联系方式",
+      title: "联系我们",
+      subtitle: "如有疑问，请随时与我们联系",
+      hospital: "Özel Denizli Cerrahi Hastanesi",
+      address: "代尼兹利，土耳其",
+      phone: "444 4 324",
+      workHours: "工作时间",
+      weekdays: "周一至周五：09:00 – 17:00",
+      sunday: "周六：09:00 – 12:00",
+      mapLabel: "医院位置"
+    },
+    footer: {
+      tagline: "您心脏健康的可靠之选",
+      quickLinks: "快速链接",
+      contactInfo: "联系信息",
+      copyright: "© 2026 Uzm. Dr. İbrahim OĞUZ. 保留所有权利。"
+    }
+  },
+  // ────────────────────────────── العربية ─────────────────────────────────────
+  ar: {
+    nav: {
+      about: "عن الطبيب",
+      specializations: "التخصصات",
+      news: "أخبار",
+      education: "تثقيف المرضى",
+      publications: "المنشورات",
+      appointment: "حجز موعد",
+      contact: "اتصل بنا"
+    },
+    hero: {
+      label: "طبيب قلب",
+      title: "Uzm. Dr. İbrahim OĞUZ",
+      subtitle: "أخصائي قلب | دنيزلي",
+      description: "طبيب متخصص في أمراض القلب التداخلية بخبرة تزيد على 10 سنوات في القسطرة القلبية والتصوير القلبي وتركيب أجهزة تنظيم ضربات القلب.",
+      cta1: "احجز موعداً",
+      cta2: "عرض السيرة الذاتية",
+      stat1: "10+",
+      stat1Label: "سنوات خبرة",
+      stat2: "3000+",
+      stat2Label: "تدخل قلبي ناجح"
+    },
+    about: {
+      label: "السيرة الذاتية",
+      title: "عن الدكتور إبراهيم أوغوز",
+      description: "الدكتور إبراهيم أوغوز خريج كلية الطب بجامعة أنقرة، تخصص في طب القلب التداخلي بعد إقامته في جامعة باموكالي. يُجري بنجاح تدخلات الشريان التاجي المعقدة، وإغلاق عيوب الحاجز القلبي، وتوسيع صمام التاجي بالبالون، وتركيب أجهزة تنظيم ضربات القلب. يعمل منذ 2024 في Özel Denizli Cerrahi Hastanesi.",
+      educationTitle: "التعليم والمسيرة المهنية",
+      education: [{
+        year: "2024 – حتى الآن",
+        place: "Özel Denizli Cerrahi Hastanesi",
+        role: "أخصائي أمراض القلب"
+      }, {
+        year: "2020 – 2024",
+        place: "Denizli Devlet Hastanesi",
+        role: "أخصائي أمراض القلب"
+      }, {
+        year: "2015 – 2020",
+        place: "قسم أمراض القلب – جامعة باموكالي",
+        role: "إقامة طبية في أمراض القلب"
+      }, {
+        year: "2005 – 2012",
+        place: "كلية الطب – جامعة أنقرة",
+        role: "درجة الطب (MD)"
+      }],
+      certsTitle: "الشهادات",
+      certs: ["شهادة الكفاءة من الجمعية التركية لأمراض القلب", "شهادة استخدام الحيوانات المخبرية"],
+      membTitle: "العضويات المهنية",
+      memb: ["الجمعية التركية لأمراض القلب", "نقابة الأطباء الأتراك", "الجمعية الأوروبية لأمراض القلب (ESC)"],
+      langTitle: "المهارات اللغوية",
+      langs: ["التركية (لغة الأم)", "الإنجليزية (مستوى متقدم)", "السويدية (مستوى متوسط)"]
+    },
+    spec: {
+      label: "التخصصات",
+      title: "طب القلب التداخلي",
+      subtitle: "إجراءات قلبية متقدمة لتشخيص وعلاج أمراض القلب",
+      items: [{
+        icon: "activity",
+        image: IMG.angio,
+        title: "القسطرة والبالون والدعامة",
+        desc: "قسطرة الشريان التاجي عبر الرسغ أو الفخذ؛ والعلاج بالبالون والبالون الدوائي والدعامة."
+      }, {
+        icon: "heart",
+        image: IMG.hole,
+        title: "إغلاق عيوب الحاجز القلبي",
+        desc: "إغلاق عيوب الحاجز الأذيني والثقبة البيضوية السالكة وغيرها عبر القسطرة دون جراحة."
+      }, {
+        icon: "zap",
+        image: IMG.pace,
+        title: "تركيب جهاز تنظيم ضربات القلب",
+        desc: "تركيب وتغيير جميع أنواع أجهزة تنظيم ضربات القلب الدائمة."
+      }, {
+        icon: "scan",
+        image: IMG.echo,
+        title: "تصوير القلب",
+        desc: "تخطيط صدى القلب (EKO) والموجات فوق الصوتية عبر المريء (TEE) لتقييم القلب بدقة."
+      }, {
+        icon: "gauge",
+        image: IMG.efor,
+        title: "هولتر واختبار الجهد",
+        desc: "مراقبة هولتر واختبار الجهد لتشخيص اضطرابات النظم وأمراض الشريان التاجي."
+      }, {
+        icon: "shield",
+        image: IMG.tavi,
+        title: "TAVI – استبدال الصمام الأبهري بالقسطرة",
+        desc: "استبدال الصمام الأبهري عبر القسطرة دون جراحة مفتوحة على القلب."
+      }, {
+        icon: "target",
+        image: IMG.cto,
+        title: "CTO – الانسداد التاجي التام المزمن",
+        desc: "فتح الشرايين التاجية المسدودة كلياً باستخدام تقنيات قسطرة متقدمة."
+      }, {
+        icon: "layers",
+        image: IMG.evar,
+        title: "EVAR وTEVAR – إصلاح الأبهر بالقسطرة",
+        desc: "علاج تمدد الأوعية الدموية الأبهرية وتشريحها دون جراحة."
+      }]
+    },
+    education: {
+      label: "تثقيف المرضى",
+      title: "الأسئلة الشائعة",
+      subtitle: "معلومات حول أمراض القلب والإجراءات القلبية الشائعة",
+      items: [{
+        q: "ما هي أعراض النوبة القلبية؟",
+        a: "تبدأ النوبة القلبية بشعور بالضغط أو الحرقة أو الضيق في الصدر، قد ينتشر إلى الذراع الأيسر والرقبة والفك والظهر، مصحوباً بضيق التنفس والتعرق والغثيان. قد تكون الأعراض أخف لدى مرضى السكري. عند الاشتباه، اطلب الرعاية فوراً."
+      }, {
+        q: "ما هي القسطرة القلبية وكيف تُجرى؟",
+        a: "القسطرة هي إجراء لتصوير الشرايين التاجية. يُدخَل أنبوب رفيع عبر الرسغ أو الفخذ، يُحقن صبغة تباين وتُلتقط صور بالأشعة. تستغرق عادةً 15-30 دقيقة ويمكن للمريض المشي في نفس اليوم."
+      }, {
+        q: "هل القسطرة مؤلمة؟",
+        a: "لا يشعر معظم المرضى بألم شديد. قد يكون هناك ضغط خفيف في موضع الإدخال. المريض واعٍ ويمكن إعطاؤه تخديراً خفيفاً. الخوف عادةً قبل الإجراء لا أثناءه."
+      }, {
+        q: "ما هي الدعامة ومتى توضع؟",
+        a: "الدعامة شبكة معدنية تُبقي الشريان مفتوحاً. يمكن وضعها في نفس جلسة القسطرة إذا لزم. ليس كل تضيق يستلزم دعامة، القرار فردي. من الضروري الالتزام بالأدوية بعدها."
+      }, {
+        q: "متى يكون الخفقان خطيراً؟",
+        a: "النوبات القصيرة المتقطعة عادةً غير ضارة. لكن الخفقان المستمر المصحوب بإغماء أو ألم صدر يستوجب الاهتمام. قد يكون هناك اضطراب في النظم يستدعي التقييم."
+      }, {
+        q: "ما مستوى ضغط الدم الخطير؟",
+        a: "تُعدّ قيم تزيد على 140/90 مم زئبق مرتفعة. ارتفاع الضغط المستمر يضر بالقلب والدماغ والكليتين. المتابعة الدورية أهم من قياس واحد."
+      }, {
+        q: "ما أهمية ارتفاع الكوليسترول؟",
+        a: "الكوليسترول المرتفع من أهم أسباب تصلب الشرايين. ارتفاع LDL يزيد خطر الإصابة بالنوبة القلبية على المدى البعيد. قد يستلزم علاجاً دوائياً بالإضافة للنظام الغذائي."
+      }, {
+        q: "هل تحدث النوبات القلبية في سن مبكرة؟",
+        a: "نعم، وتتزايد في السنوات الأخيرة. التدخين والتوتر والسمنة والوراثة تلعب دوراً مهماً. الشباب غالباً يتأخرون في طلب المساعدة مما يزيد الخطر."
+      }, {
+        q: "ما فائدة اختبار الجهد؟",
+        a: "يقيّم اختبار الجهد أداء القلب تحت الحمل. يمشي المريض على جهاز المشي بينما يُراقب إيقاع القلب ورسمه الكهربائي. يكشف أمراض القلب والأوعية المخفية."
+      }, {
+        q: "هل يمكن لمرضى القلب ممارسة الرياضة؟",
+        a: "مع التخطيط الصحيح، معظمهم يستطيع. الرياضة المنتظمة مفيدة جداً لصحة القلب. لكن الإفراط غير الخاضع للرقابة خطر. يُحدَّد المستوى بشكل فردي."
+      }, {
+        q: "كيف يؤثر التدخين على القلب؟",
+        a: "التدخين يُلحق الضرر بجدران الأوعية ويزيد خطر الجلطات. هو أحد أهم مسببات النوبة القلبية. كل كمية تضر. الإقلاع هو الخطوة الأوضح لصحة القلب."
+      }, {
+        q: "هل يزيد السكري من خطر أمراض القلب؟",
+        a: "نعم، السكري عامل خطر رئيسي. يضر بالأوعية تدريجياً ويتقدم بصمت. النوبات القلبية لدى مرضى السكري أكثر خبثاً. ضبط السكر أمر حيوي."
+      }, {
+        q: "هل يمكن أن يكون ضيق التنفس قلبياً؟",
+        a: "نعم، ضيق التنفس المتزايد بالمجهود قد يكون علامة فشل قلبي. لا ينبغي إهماله على أنه مجرد إرهاق. التقييم الصحيح مهم."
+      }, {
+        q: "ما هو الفشل القلبي؟",
+        a: "هو حالة عجز القلب عن ضخ الدم الكافي. يتجلى بضيق التنفس والضعف والوذمة. مرض مزمن لكن يمكن السيطرة عليه بالعلاج. التشخيص المبكر مهم."
+      }, {
+        q: "ما الذي يجب مراعاته بعد وضع الدعامة؟",
+        a: "لا يجوز إهمال الأدوية أبداً، خاصة المضادات التخثرية. يجب الإقلاع عن التدخين وتصحيح نمط الحياة. عدم إهمال المتابعة ضروري. الاعتقاد بأن «الدعامة وُضعت وانتهى الأمر» خطأ شائع."
+      }, {
+        q: "هل تتكرر النوبة القلبية؟",
+        a: "نعم، الخطر مستمر. إن لم تُعالَج الأسباب يمكن التكرار. العلاج وتغيير نمط الحياة ضروريان. النوبة الثانية غالباً أشد."
+      }, {
+        q: "هل التاريخ العائلي مهم؟",
+        a: "العوامل الوراثية تلعب دوراً مهماً. الإصابة المبكرة في الأسرة تزيد الخطر. يجب فحص هؤلاء مبكراً. استخدم هذه المعلومة بدلاً من تجاهلها."
+      }, {
+        q: "هل يمكن شفاء أمراض القلب تماماً؟",
+        a: "بعضها يُحل كلياً وبعضها مزمن. لكن معظمها يمكن السيطرة عليه. الهدف تقليل الخطر وتحسين جودة الحياة. المتابعة الدورية أساسية."
+      }, {
+        q: "هل يسبب التوتر أمراض القلب؟",
+        a: "قد لا يسببها وحده لكنه محفز مهم. يرفع ضغط الدم ويزيد مشكلات النظم. آثاره غير المباشرة طويلة الأمد كبيرة."
+      }, {
+        q: "متى يجب زيارة طبيب القلب؟",
+        a: "عند وجود ألم صدر أو خفقان أو ضيق تنفس، راجع دون تأخير. أصحاب عوامل الخطر بحاجة لفحوصات دورية. التشخيص المبكر يمنح ميزة دائماً."
+      }, {
+        q: "هل النوبة القلبية والسكتة القلبية متماثلتان؟",
+        a: "لا. النوبة القلبية تلف في عضلة القلب بسبب انسداد الشريان. السكتة القلبية هي توقف القلب عن الضخ كلياً. كلتاهما تستوجبان تدخلاً عاجلاً."
+      }, {
+        q: "هل يمنع الأسبرين النوبات القلبية؟",
+        a: "يمكنه أن يكون وقائياً لبعض المرضى بتقليل تخثر الدم. لكنه ليس دواءً للجميع. الاستخدام غير الضروري يزيد خطر النزيف."
+      }, {
+        q: "ما المعدل الطبيعي لضربات القلب؟",
+        a: "60-100 ضربة/دقيقة في الراحة طبيعي عموماً. يمكن أن يكون أقل عند الرياضيين. ضربات مرتفعة أو منخفضة جداً تستدعي التقييم."
+      }, {
+        q: "من يحتاج إلى جهاز تنظيم ضربات القلب؟",
+        a: "المرضى الذين تكون ضربات قلوبهم بطيئة جداً مع أعراض كالإغماء أو الدوار. ينظم إيقاع القلب ويحسن جودة الحياة. يُركَّب بعملية بسيطة."
+      }, {
+        q: "هل اضطرابات النظم خطيرة؟",
+        a: "بعضها غير ضار وبعضها يحمل خطراً جدياً. المدة والتكرار والأعراض المصاحبة مهمة. الإغماء المصاحب يستدعي التقييم الفوري."
+      }, {
+        q: "ماذا يعني تضخم القلب؟",
+        a: "يتطور عادةً نتيجة تحميل القلب باستمرار. ارتفاع الضغط أو أمراض الصمامات أو الفشل القلبي قد تكون السبب. يجب البحث عن السبب الجذري وعلاجه."
+      }, {
+        q: "هل تؤثر مشروبات الطاقة على القلب؟",
+        a: "نعم، خاصة عند الإفراط. تسرّع النبض وقد تحفز اضطرابات النظم. تسببت في مشكلات مفاجئة لدى الشباب. مرضى القلب يجب أن يبتعدوا عنها."
+      }, {
+        q: "هل يمكن لمرضى القلب الصيام في رمضان؟",
+        a: "يعتمد على حالة المريض. المرضى المستقرون يستطيعون عموماً، لكن توقيت الأدوية مهم. يكون خطيراً في الفشل القلبي الشديد. التقييم الفردي ضروري."
+      }, {
+        q: "هل كل ألم في الصدر نوبة قلبية؟",
+        a: "لا، معظم آلام الصدر ليست نوبات قلبية. قد تنشأ من العضلات أو المعدة أو التوتر. التمييز لا يكون سهلاً دائماً. في الحالات المشبوهة الفحص ضروري."
+      }, {
+        q: "ما هو الإيكو القلبي؟",
+        a: "الإيكو طريقة تصوير بالموجات فوق الصوتية لتقييم بنية القلب ووظائفه. غير مؤلم وآمن. يفحص الصمامات وقوة الانقباض والتجاويف. من أولى الفحوصات لدى كثير من المرضى."
+      }, {
+        q: "هل يمكن الوقاية الكاملة من أمراض القلب؟",
+        a: "الوقاية الكاملة ليست دائماً ممكنة، لكن يمكن تقليل الخطر بشكل كبير. التغذية الصحية والرياضة وعدم التدخين أساسية."
+      }, {
+        q: "كيف يؤثر الوزن الزائد على القلب؟",
+        a: "السمنة عامل خطر مهم. تحفز ارتفاع الضغط والسكري وارتفاع الكوليسترول. تزيد العبء على القلب. خسارة الوزن مكسب حقيقي للقلب."
+      }, {
+        q: "لماذا يهم تناول الملح؟",
+        a: "الملح الزائد يرفع ضغط الدم، مما يضر بالجهاز القلبي الوعائي. الحد منه ضروري لمرضى ضغط الدم. تقليله أكثر فاعلية مما تتخيل."
+      }, {
+        q: "هل يمكن لمرضى القلب شرب القهوة؟",
+        a: "الكمية المعتدلة لا تسبب مشكلة لمعظم المرضى. لكن الإفراط قد يزيد الخفقان. المهم عدم تجاوز الحد المعقول."
+      }, {
+        q: "هل الاختبار الجيني ضروري؟",
+        a: "ليس لكل مريض. لكنه مفيد في حالات خاصة. يُقيَّم عند الاشتباه بمرض عائلي. ليس فحصاً روتينياً."
+      }, {
+        q: "كم من الوقت يجب تناول مضادات التخثر؟",
+        a: "يعتمد على المريض والمرض. قطعها ذاتياً خطر جدي. حيوي بشكل خاص بعد الدعامة. المتابعة يجب أن تستمر."
+      }, {
+        q: "هل يمكن لمرضى القلب السفر بالطائرة؟",
+        a: "معظم المرضى يستطيعون في ظروف مناسبة. ينبغي التأجيل بعد نوبة قلبية حديثة أو في الحالات الخطيرة. في الرحلات الطويلة الحركة مهمة."
+      }, {
+        q: "هل يسبب ارتفاع الضغط أعراضاً؟",
+        a: "في أغلب الأحيان لا، لهذا يُسمى «القاتل الصامت». قد يحدث صداع أو دوار لكنه غير مشروط. المتابعة الدورية مهمة."
+      }, {
+        q: "ما التغذية المناسبة لأمراض القلب؟",
+        a: "يُنصح بالنظام الغذائي المتوسطي: خضروات وفواكه وزيت زيتون وأسماك. يُتجنب الغذاء المعالج والدهون المفرطة. العادة الغذائية العامة هي الأهم."
+      }, {
+        q: "كم مرة يجب إجراء الفحوصات الدورية؟",
+        a: "يعتمد على المريض. الأصحاء قد يكفيهم فحص سنوي. الأكثر خطورة أو المصابون بأمراض يحتاجون متابعة أكثر. الطبيب يحدد الفترة."
+      }]
+    },
+    publications: {
+      label: "الأعمال الأكاديمية",
+      title: "الأعمال العلمية",
+      subtitle: "عروض في المؤتمرات الوطنية والدولية والمنشورات العلمية",
+      presentationsTitle: "العروض العلمية",
+      papersTitle: "المنشورات العلمية",
+      presentations: PRESENTATIONS,
+      papers: PAPERS
+    },
+    appointment: {
+      label: "الموعد",
+      title: "احجز موعداً",
+      subtitle: "املأ النموذج وسنتصل بك في أقرب وقت",
+      orCall: "اتصل الآن",
+      phone: "444 4 324",
+      info: ".تتوفر خدمة المواعيد في أيام الأسبوع وعطل نهاية الأسبوع في Özel Denizli Cerrahi Hastanesi"
+    },
+    contact: {
+      label: "التواصل",
+      title: "تواصل معنا",
+      subtitle: "لا تتردد في التواصل لأي استفسار",
+      hospital: "Özel Denizli Cerrahi Hastanesi",
+      address: "دنيزلي، تركيا",
+      phone: "444 4 324",
+      workHours: "ساعات العمل",
+      weekdays: "الاثنين – الجمعة: 09:00 – 17:00",
+      sunday: "السبت: 09:00 – 12:00",
+      mapLabel: "موقع المستشفى"
+    },
+    footer: {
+      tagline: "عنوانك الموثوق لصحة القلب",
+      quickLinks: "روابط سريعة",
+      contactInfo: "معلومات الاتصال",
+      copyright: ".© 2026 Uzm. Dr. İbrahim OĞUZ. جميع الحقوق محفوظة"
+    }
+  }
+};
+
+const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
+const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
+	$ReactRefreshModuleId$
+);
+
+function $ReactRefreshModuleRuntime$(exports) {
+	if (true) {
+		let errorOverlay;
+		if (true) {
+			errorOverlay = false;
+		}
+		let testMode;
+		if (typeof __react_refresh_test__ !== 'undefined') {
+			testMode = __react_refresh_test__;
+		}
+		return __react_refresh_utils__.executeRuntime(
+			exports,
+			$ReactRefreshModuleId$,
+			module.hot,
+			errorOverlay,
+			testMode
+		);
+	}
+}
+
+if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {
+	$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);
+} else {
+	$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);
+}
+
 /***/ }
 
 /******/ 	});
@@ -40492,7 +41772,7 @@ if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Pr
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("252bc161fd3712f027e1")
+/******/ 		__webpack_require__.h = () => ("621b7cd7a4124d34dfc7")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

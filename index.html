@@ -1,48 +1,6 @@
 <!doctype html>
 <html lang="tr">
     <head>
-<!-- Profil Foto Slider Başlangıç -->
-<div class="profile-slider">
-  <div class="slides">
-    <img src="foto1.jpg" alt="Profil 1">
-    <img src="foto2.jpg" alt="Profil 2">
-    <img src="foto3.jpg" alt="Profil 3">
-  </div>
-</div>
-
-<style>
-.profile-slider {
-  width: 420px; /* Mevcut profil foto genişliği */
-  height: 510px; /* Mevcut profil foto yüksekliği */
-  overflow: hidden;
-  border-radius: 10px; /* Köşeleri yuvarlak istiyorsan 50% yap */
-  position: relative;
-}
-
-.profile-slider .slides {
-  display: flex;
-  width: 1260px; /* 3 resim × 420px */
-  transition: transform 0.8s ease;
-}
-
-.profile-slider .slides img {
-  width: 420px;
-  height: 510px;
-  object-fit: cover;
-}
-</style>
-
-<script>
-let idx = 0,
-    slidesEl = document.querySelector('.profile-slider .slides'),
-    totalSlides = slidesEl.children.length;
-
-setInterval(() => {
-  idx = (idx + 1) % totalSlides;
-  slidesEl.style.transform = `translateX(-${idx * 420}px)`; // 420px kaydır
-}, 10000); // 10 saniye
-</script>
-<!-- Profil Foto Slider Bitiş -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#0f2d5c" />
@@ -116,6 +74,49 @@ if(window.self!==window.top){
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
+        <!-- Profil Foto Slider Başlangıç -->
+<div class="profile-slider">
+  <div class="slides">
+    <img src="foto1.jpg" alt="Profil 1">
+    <img src="foto2.jpg" alt="Profil 2">
+    <img src="foto3.jpg" alt="Profil 3">
+  </div>
+</div>
+
+<style>
+.profile-slider {
+  width: 420px;       /* Profil fotoğrafının gerçek genişliği */
+  height: 510px;      /* Profil fotoğrafının gerçek yüksekliği */
+  overflow: hidden;
+  border-radius: 10px; /* Yuvarlak istiyorsan 50% yap */
+  position: relative;
+  margin: 0 auto;      /* Ortalamak için */
+}
+
+.profile-slider .slides {
+  display: flex;
+  width: 1260px;      /* 3 fotoğraf × 420px */
+  transition: transform 0.8s ease;
+}
+
+.profile-slider .slides img {
+  width: 420px;
+  height: 510px;
+  object-fit: cover;   /* Fotoğraf alanı doldursun */
+}
+</style>
+
+<script>
+let idx = 0;
+const slidesEl = document.querySelector('.profile-slider .slides');
+const totalSlides = slidesEl.children.length;
+
+setInterval(() => {
+  idx = (idx + 1) % totalSlides;
+  slidesEl.style.transform = `translateX(-${idx * 420}px)`; // 420px kaydır
+}, 10000); // 10 saniye
+</script>
+<!-- Profil Foto Slider Bitiş -->
         <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

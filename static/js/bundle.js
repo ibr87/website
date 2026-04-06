@@ -37558,7 +37558,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../App */ "./src/App.js");
 /* harmony import */ var _ui_accordion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ui/accordion */ "./src/components/ui/accordion.jsx");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/chevron-left.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/chevron-right.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
@@ -37568,13 +37570,24 @@ var _jsxFileName = "/app/frontend/src/components/PatientEducation.js",
 
 
 
+
+const PAGE_SIZE = 10;
 function PatientEducation() {
   _s();
   const {
-    t
+    t,
+    lang
   } = (0,_App__WEBPACK_IMPORTED_MODULE_1__.useLang)();
   const e = t.education;
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("section", {
+  const [page, setPage] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0);
+
+  // Reset to first page when language changes
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    setPage(0);
+  }, [lang]);
+  const totalPages = Math.ceil(e.items.length / PAGE_SIZE);
+  const pageItems = e.items.slice(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE);
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("section", {
     id: "education",
     className: "section-light py-24",
     style: {
@@ -37582,34 +37595,36 @@ function PatientEducation() {
     },
     "data-testid": "education-section",
     "x-file-name": "PatientEducation",
-    "x-line-number": "10",
+    "x-line-number": "20",
     "x-column": "4",
     "x-component": "section",
-    "x-id": "PatientEducation_10_4",
+    "x-id": "PatientEducation_20_4",
     "x-dynamic": "false",
-    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("div", {
       className: "max-w-4xl mx-auto px-4 sm:px-6 lg:px-8",
       "x-file-name": "PatientEducation",
-      "x-line-number": "16",
+      "x-line-number": "26",
       "x-column": "6",
       "x-component": "div",
-      "x-id": "PatientEducation_16_6",
-      "x-dynamic": "false",
-      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+      "x-id": "PatientEducation_26_6",
+      "x-dynamic": "true",
+      "x-source-type": "computed",
+      "x-source-editable": "false",
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("div", {
         className: "text-center mb-16",
         "x-file-name": "PatientEducation",
-        "x-line-number": "18",
+        "x-line-number": "28",
         "x-column": "8",
         "x-component": "div",
-        "x-id": "PatientEducation_18_8",
+        "x-id": "PatientEducation_28_8",
         "x-dynamic": "false",
-        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("div", {
           className: "section-label",
           "x-file-name": "PatientEducation",
-          "x-line-number": "19",
+          "x-line-number": "29",
           "x-column": "10",
           "x-component": "div",
-          "x-id": "PatientEducation_19_10",
+          "x-id": "PatientEducation_29_10",
           "x-dynamic": "true",
           "x-source-type": "unknown",
           "x-source-var": "e",
@@ -37618,9 +37633,9 @@ function PatientEducation() {
           children: e.label
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 19,
+          lineNumber: 29,
           columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("h2", {
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("h2", {
           style: {
             fontFamily: "Outfit,sans-serif",
             fontWeight: 700,
@@ -37630,10 +37645,10 @@ function PatientEducation() {
             marginBottom: 12
           },
           "x-file-name": "PatientEducation",
-          "x-line-number": "20",
+          "x-line-number": "30",
           "x-column": "10",
           "x-component": "h2",
-          "x-id": "PatientEducation_20_10",
+          "x-id": "PatientEducation_30_10",
           "x-dynamic": "true",
           "x-source-type": "unknown",
           "x-source-var": "e",
@@ -37642,24 +37657,24 @@ function PatientEducation() {
           children: e.title
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 20,
+          lineNumber: 30,
           columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("div", {
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("div", {
           className: "divider-navy mx-auto",
           style: {
             margin: "12px auto 20px"
           },
           "x-file-name": "PatientEducation",
-          "x-line-number": "32",
+          "x-line-number": "42",
           "x-column": "10",
           "x-component": "div",
-          "x-id": "PatientEducation_32_10",
+          "x-id": "PatientEducation_42_10",
           "x-dynamic": "false"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 32,
+          lineNumber: 42,
           columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)("p", {
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("p", {
           style: {
             fontFamily: "Manrope,sans-serif",
             fontSize: 16,
@@ -37668,10 +37683,10 @@ function PatientEducation() {
             margin: "0 auto"
           },
           "x-file-name": "PatientEducation",
-          "x-line-number": "33",
+          "x-line-number": "43",
           "x-column": "10",
           "x-component": "p",
-          "x-id": "PatientEducation_33_10",
+          "x-id": "PatientEducation_43_10",
           "x-dynamic": "true",
           "x-source-type": "unknown",
           "x-source-var": "e",
@@ -37680,27 +37695,27 @@ function PatientEducation() {
           children: e.subtitle
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 33,
+          lineNumber: 43,
           columnNumber: 11
         }, this)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 18,
+        lineNumber: 28,
         columnNumber: 9
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_ui_accordion__WEBPACK_IMPORTED_MODULE_2__.Accordion, {
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)(_ui_accordion__WEBPACK_IMPORTED_MODULE_2__.Accordion, {
         type: "single",
         collapsible: true,
         className: "w-full space-y-3",
         "data-testid": "patient-accordion",
         "x-file-name": "PatientEducation",
-        "x-line-number": "47",
+        "x-line-number": "49",
         "x-column": "8",
         "x-component": "Accordion",
-        "x-id": "PatientEducation_47_8",
+        "x-id": "PatientEducation_49_8",
         "x-dynamic": "true",
         "x-source-type": "computed",
         "x-source-editable": "false",
-        children: e.items.map((item, i) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_ui_accordion__WEBPACK_IMPORTED_MODULE_2__.AccordionItem, {
+        children: pageItems.map((item, i) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)(_ui_accordion__WEBPACK_IMPORTED_MODULE_2__.AccordionItem, {
           value: `item-${i}`,
           "data-testid": `accordion-item-${i}`,
           style: {
@@ -37711,17 +37726,17 @@ function PatientEducation() {
             marginBottom: 0
           },
           "x-file-name": "PatientEducation",
-          "x-line-number": "49",
+          "x-line-number": "51",
           "x-column": "12",
           "x-component": "AccordionItem",
-          "x-id": "PatientEducation_49_12",
+          "x-id": "PatientEducation_51_12",
           "x-dynamic": "true",
           "x-source-type": "external",
-          "x-source-var": "e",
+          "x-source-var": "pageItems",
           "x-source-editable": "false",
-          "x-array-var": "e",
+          "x-array-var": "pageItems",
           "x-array-item-param": "item",
-          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_ui_accordion__WEBPACK_IMPORTED_MODULE_2__.AccordionTrigger, {
+          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)(_ui_accordion__WEBPACK_IMPORTED_MODULE_2__.AccordionTrigger, {
             className: "accordion-trigger",
             style: {
               padding: "18px 24px",
@@ -37732,24 +37747,24 @@ function PatientEducation() {
               textAlign: "left"
             },
             "x-file-name": "PatientEducation",
-            "x-line-number": "61",
+            "x-line-number": "57",
             "x-column": "14",
             "x-component": "AccordionTrigger",
-            "x-id": "PatientEducation_61_14",
+            "x-id": "PatientEducation_57_14",
             "x-dynamic": "true",
             "x-excluded": "true",
             "x-source-type": "static-imported",
-            "x-source-var": "e",
-            "x-source-path": "items.q",
+            "x-source-var": "pageItems",
+            "x-source-path": "q",
             "x-source-editable": "false",
-            "x-array-var": "e",
+            "x-array-var": "pageItems",
             "x-array-item-param": "item",
             children: item.q
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 61,
+            lineNumber: 57,
             columnNumber: 15
-          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxDEV)(_ui_accordion__WEBPACK_IMPORTED_MODULE_2__.AccordionContent, {
+          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)(_ui_accordion__WEBPACK_IMPORTED_MODULE_2__.AccordionContent, {
             style: {
               padding: "0 24px 20px",
               fontFamily: "Manrope,sans-serif",
@@ -37758,46 +37773,204 @@ function PatientEducation() {
               color: "#475569"
             },
             "x-file-name": "PatientEducation",
-            "x-line-number": "74",
+            "x-line-number": "63",
             "x-column": "14",
             "x-component": "AccordionContent",
-            "x-id": "PatientEducation_74_14",
+            "x-id": "PatientEducation_63_14",
             "x-dynamic": "true",
             "x-excluded": "true",
             "x-source-type": "static-imported",
-            "x-source-var": "e",
-            "x-source-path": "items.a",
+            "x-source-var": "pageItems",
+            "x-source-path": "a",
             "x-source-editable": "false",
-            "x-array-var": "e",
+            "x-array-var": "pageItems",
             "x-array-item-param": "item",
             children: item.a
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 74,
+            lineNumber: 63,
             columnNumber: 15
           }, this)]
-        }, i, true, {
+        }, `${page}-${i}`, true, {
           fileName: _jsxFileName,
-          lineNumber: 49,
+          lineNumber: 51,
           columnNumber: 13
         }, this))
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 47,
+        lineNumber: 49,
         columnNumber: 9
+      }, this), totalPages > 1 && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("div", {
+        style: {
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: 16,
+          marginTop: 36
+        },
+        "x-file-name": "PatientEducation",
+        "x-line-number": "74",
+        "x-column": "10",
+        "x-component": "div",
+        "x-id": "PatientEducation_74_10",
+        "x-dynamic": "false",
+        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("button", {
+          onClick: () => {
+            setPage(p => Math.max(0, p - 1));
+            window.scrollTo({
+              top: document.getElementById("education").offsetTop - 80,
+              behavior: "smooth"
+            });
+          },
+          disabled: page === 0,
+          "data-testid": "faq-prev-btn",
+          style: {
+            display: "flex",
+            alignItems: "center",
+            gap: 6,
+            padding: "10px 20px",
+            borderRadius: 10,
+            border: "1px solid #e2e8f0",
+            background: page === 0 ? "#f8fafc" : "white",
+            color: page === 0 ? "#cbd5e1" : "#0f2d5c",
+            fontFamily: "Outfit,sans-serif",
+            fontWeight: 600,
+            fontSize: 14,
+            cursor: page === 0 ? "not-allowed" : "pointer",
+            transition: "all 0.2s"
+          },
+          "x-file-name": "PatientEducation",
+          "x-line-number": "75",
+          "x-column": "12",
+          "x-component": "button",
+          "x-id": "PatientEducation_75_12",
+          "x-dynamic": "false",
+          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
+            size: 18
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 90,
+            columnNumber: 15
+          }, this), " \xD6nceki"]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 75,
+          columnNumber: 13
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("div", {
+          style: {
+            display: "flex",
+            gap: 8
+          },
+          "x-file-name": "PatientEducation",
+          "x-line-number": "93",
+          "x-column": "12",
+          "x-component": "div",
+          "x-id": "PatientEducation_93_12",
+          "x-dynamic": "true",
+          "x-source-type": "computed",
+          "x-source-editable": "false",
+          children: Array.from({
+            length: totalPages
+          }).map((_, i) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("button", {
+            onClick: () => {
+              setPage(i);
+              window.scrollTo({
+                top: document.getElementById("education").offsetTop - 80,
+                behavior: "smooth"
+              });
+            },
+            "data-testid": `faq-page-${i}`,
+            style: {
+              width: 36,
+              height: 36,
+              borderRadius: 8,
+              border: i === page ? "none" : "1px solid #e2e8f0",
+              background: i === page ? "#0f2d5c" : "white",
+              color: i === page ? "white" : "#64748b",
+              fontFamily: "Outfit,sans-serif",
+              fontWeight: 700,
+              fontSize: 14,
+              cursor: "pointer",
+              transition: "all 0.2s"
+            },
+            "x-file-name": "PatientEducation",
+            "x-line-number": "95",
+            "x-column": "16",
+            "x-component": "button",
+            "x-id": "PatientEducation_95_16",
+            "x-dynamic": "true",
+            "x-source-type": "computed",
+            "x-source-editable": "false",
+            children: i + 1
+          }, i, false, {
+            fileName: _jsxFileName,
+            lineNumber: 95,
+            columnNumber: 17
+          }, this))
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 93,
+          columnNumber: 13
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)("button", {
+          onClick: () => {
+            setPage(p => Math.min(totalPages - 1, p + 1));
+            window.scrollTo({
+              top: document.getElementById("education").offsetTop - 80,
+              behavior: "smooth"
+            });
+          },
+          disabled: page === totalPages - 1,
+          "data-testid": "faq-next-btn",
+          style: {
+            display: "flex",
+            alignItems: "center",
+            gap: 6,
+            padding: "10px 20px",
+            borderRadius: 10,
+            border: "1px solid #e2e8f0",
+            background: page === totalPages - 1 ? "#f8fafc" : "white",
+            color: page === totalPages - 1 ? "#cbd5e1" : "#0f2d5c",
+            fontFamily: "Outfit,sans-serif",
+            fontWeight: 600,
+            fontSize: 14,
+            cursor: page === totalPages - 1 ? "not-allowed" : "pointer",
+            transition: "all 0.2s"
+          },
+          "x-file-name": "PatientEducation",
+          "x-line-number": "113",
+          "x-column": "12",
+          "x-component": "button",
+          "x-id": "PatientEducation_113_12",
+          "x-dynamic": "false",
+          children: ["Sonraki ", /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            size: 18
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 128,
+            columnNumber: 23
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 113,
+          columnNumber: 13
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 74,
+        columnNumber: 11
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 26,
       columnNumber: 7
     }, this)
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 10,
+    lineNumber: 20,
     columnNumber: 5
   }, this);
 }
-_s(PatientEducation, "p2BMN842WmXaElEn1NQnTw7gg40=", false, function () {
+_s(PatientEducation, "dSymvAKEpDi+1tVCyOuUM1SbRAU=", false, function () {
   return [_App__WEBPACK_IMPORTED_MODULE_1__.useLang];
 });
 _c = PatientEducation;
@@ -41911,7 +42084,7 @@ if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Pr
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("9f635eda54aa674d15f2")
+/******/ 		__webpack_require__.h = () => ("2249ecc6f10412451989")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

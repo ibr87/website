@@ -8744,39 +8744,6 @@ const Presentation = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["defau
 
 /***/ },
 
-/***/ "./node_modules/lucide-react/dist/esm/icons/quote.js"
-/*!***********************************************************!*\
-  !*** ./node_modules/lucide-react/dist/esm/icons/quote.js ***!
-  \***********************************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
-/* harmony export */   "default": () => (/* binding */ Quote)
-/* harmony export */ });
-/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
-/**
- * @license lucide-react v0.507.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-
-
-const __iconNode = [["path", {
-  d: "M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z",
-  key: "rib7q0"
-}], ["path", {
-  d: "M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z",
-  key: "1ymkrd"
-}]];
-const Quote = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("quote", __iconNode);
-
-
-/***/ },
-
 /***/ "./node_modules/lucide-react/dist/esm/icons/scan.js"
 /*!**********************************************************!*\
   !*** ./node_modules/lucide-react/dist/esm/icons/scan.js ***!
@@ -8842,36 +8809,6 @@ const __iconNode = [["path", {
   key: "oel41y"
 }]];
 const Shield = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("shield", __iconNode);
-
-
-/***/ },
-
-/***/ "./node_modules/lucide-react/dist/esm/icons/star.js"
-/*!**********************************************************!*\
-  !*** ./node_modules/lucide-react/dist/esm/icons/star.js ***!
-  \**********************************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
-/* harmony export */   "default": () => (/* binding */ Star)
-/* harmony export */ });
-/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
-/**
- * @license lucide-react v0.507.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-
-
-const __iconNode = [["path", {
-  d: "M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z",
-  key: "r04s7s"
-}]];
-const Star = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("star", __iconNode);
 
 
 /***/ },
@@ -32975,7 +32912,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   LangContext: () => (/* binding */ LangContext),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   translations: () => (/* reexport safe */ _translations__WEBPACK_IMPORTED_MODULE_12__.translations),
+/* harmony export */   translations: () => (/* reexport safe */ _translations__WEBPACK_IMPORTED_MODULE_11__.translations),
 /* harmony export */   useLang: () => (/* binding */ useLang)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
@@ -32987,19 +32924,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Specializations__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Specializations */ "./src/components/Specializations.js");
 /* harmony import */ var _components_PatientEducation__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/PatientEducation */ "./src/components/PatientEducation.js");
 /* harmony import */ var _components_Publications__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Publications */ "./src/components/Publications.js");
-/* harmony import */ var _components_PatientReviews__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/PatientReviews */ "./src/components/PatientReviews.js");
-/* harmony import */ var _components_Appointment__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/Appointment */ "./src/components/Appointment.js");
-/* harmony import */ var _components_Contact__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/Contact */ "./src/components/Contact.js");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/Footer */ "./src/components/Footer.js");
-/* harmony import */ var _translations__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./translations */ "./src/translations.js");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var _components_Appointment__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/Appointment */ "./src/components/Appointment.js");
+/* harmony import */ var _components_Contact__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/Contact */ "./src/components/Contact.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/Footer */ "./src/components/Footer.js");
+/* harmony import */ var _translations__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./translations */ "./src/translations.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
 
 var _jsxFileName = "/app/frontend/src/App.js",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
-
 
 
 
@@ -33023,7 +32958,7 @@ _s(useLang, "gDsCjeeItUuvgOWf1v4qoK9RF6k=");
 function App() {
   _s2();
   const [lang, setLang] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("tr");
-  const t = _translations__WEBPACK_IMPORTED_MODULE_12__.translations[lang];
+  const t = _translations__WEBPACK_IMPORTED_MODULE_11__.translations[lang];
 
   // Remove Emergent badge if injected
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
@@ -33041,13 +32976,13 @@ function App() {
     document.title = "Dr. İbrahim OĞUZ | Kardiyoloji Uzmanı | Denizli";
   }, []);
   const isRtl = lang === "ar";
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)(LangContext.Provider, {
+  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(LangContext.Provider, {
     value: {
       lang,
       setLang,
       t
     },
-    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)("div", {
+    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("div", {
       className: "App",
       dir: isRtl ? "rtl" : "ltr",
       "x-file-name": "App",
@@ -33056,7 +32991,7 @@ function App() {
       "x-component": "div",
       "x-id": "App_45_6",
       "x-dynamic": "false",
-      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)(_components_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_components_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
         "x-file-name": "App",
         "x-line-number": "46",
         "x-column": "8",
@@ -33067,14 +33002,14 @@ function App() {
         fileName: _jsxFileName,
         lineNumber: 46,
         columnNumber: 9
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)("main", {
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("main", {
         "x-file-name": "App",
         "x-line-number": "47",
         "x-column": "8",
         "x-component": "main",
         "x-id": "App_47_8",
         "x-dynamic": "false",
-        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)(_components_Hero__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_components_Hero__WEBPACK_IMPORTED_MODULE_3__["default"], {
           "x-file-name": "App",
           "x-line-number": "48",
           "x-column": "10",
@@ -33085,7 +33020,7 @@ function App() {
           fileName: _jsxFileName,
           lineNumber: 48,
           columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)(_components_About__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_components_About__WEBPACK_IMPORTED_MODULE_4__["default"], {
           "x-file-name": "App",
           "x-line-number": "49",
           "x-column": "10",
@@ -33096,7 +33031,7 @@ function App() {
           fileName: _jsxFileName,
           lineNumber: 49,
           columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)(_components_Specializations__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_components_Specializations__WEBPACK_IMPORTED_MODULE_5__["default"], {
           "x-file-name": "App",
           "x-line-number": "50",
           "x-column": "10",
@@ -33107,7 +33042,7 @@ function App() {
           fileName: _jsxFileName,
           lineNumber: 50,
           columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)(_components_PatientEducation__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_components_PatientEducation__WEBPACK_IMPORTED_MODULE_6__["default"], {
           "x-file-name": "App",
           "x-line-number": "51",
           "x-column": "10",
@@ -33119,7 +33054,7 @@ function App() {
           fileName: _jsxFileName,
           lineNumber: 51,
           columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)(_components_Publications__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_components_Publications__WEBPACK_IMPORTED_MODULE_7__["default"], {
           "x-file-name": "App",
           "x-line-number": "52",
           "x-column": "10",
@@ -33130,7 +33065,7 @@ function App() {
           fileName: _jsxFileName,
           lineNumber: 52,
           columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)(_components_Appointment__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_components_Appointment__WEBPACK_IMPORTED_MODULE_8__["default"], {
           "x-file-name": "App",
           "x-line-number": "53",
           "x-column": "10",
@@ -33141,7 +33076,7 @@ function App() {
           fileName: _jsxFileName,
           lineNumber: 53,
           columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)(_components_Contact__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_components_Contact__WEBPACK_IMPORTED_MODULE_9__["default"], {
           "x-file-name": "App",
           "x-line-number": "54",
           "x-column": "10",
@@ -33157,7 +33092,7 @@ function App() {
         fileName: _jsxFileName,
         lineNumber: 47,
         columnNumber: 9
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)(_components_Footer__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)(_components_Footer__WEBPACK_IMPORTED_MODULE_10__["default"], {
         "x-file-name": "App",
         "x-line-number": "56",
         "x-column": "8",
@@ -33168,7 +33103,7 @@ function App() {
         fileName: _jsxFileName,
         lineNumber: 56,
         columnNumber: 9
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)("div", {
+      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("div", {
         style: {
           position: "fixed",
           bottom: "20px",
@@ -33184,7 +33119,7 @@ function App() {
         "x-component": "div",
         "x-id": "App_58_8",
         "x-dynamic": "false",
-        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)("a", {
+        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("a", {
           href: "https://www.instagram.com/dr_ibrahim_oguz/",
           target: "_blank",
           rel: "noopener noreferrer",
@@ -33209,7 +33144,7 @@ function App() {
           "x-component": "a",
           "x-id": "App_60_10",
           "x-dynamic": "false",
-          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)("svg", {
+          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("svg", {
             width: "26",
             height: "26",
             viewBox: "0 0 24 24",
@@ -33224,7 +33159,7 @@ function App() {
             "x-component": "svg",
             "x-id": "App_76_12",
             "x-dynamic": "false",
-            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)("rect", {
+            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("rect", {
               x: "2",
               y: "2",
               width: "20",
@@ -33241,7 +33176,7 @@ function App() {
               fileName: _jsxFileName,
               lineNumber: 77,
               columnNumber: 15
-            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)("path", {
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("path", {
               d: "M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z",
               "x-file-name": "App",
               "x-line-number": "77",
@@ -33253,7 +33188,7 @@ function App() {
               fileName: _jsxFileName,
               lineNumber: 77,
               columnNumber: 71
-            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)("line", {
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("line", {
               x1: "17.5",
               y1: "6.5",
               x2: "17.51",
@@ -33278,7 +33213,7 @@ function App() {
           fileName: _jsxFileName,
           lineNumber: 60,
           columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)("a", {
+        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("a", {
           href: "https://wa.me/905051736910",
           target: "_blank",
           rel: "noopener noreferrer",
@@ -33303,7 +33238,7 @@ function App() {
           "x-component": "a",
           "x-id": "App_81_10",
           "x-dynamic": "false",
-          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)("svg", {
+          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("svg", {
             width: "28",
             height: "28",
             viewBox: "0 0 24 24",
@@ -33314,7 +33249,7 @@ function App() {
             "x-component": "svg",
             "x-id": "App_97_12",
             "x-dynamic": "false",
-            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_13__.jsxDEV)("path", {
+            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_12__.jsxDEV)("path", {
               d: "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z",
               "x-file-name": "App",
               "x-line-number": "98",
@@ -37467,26 +37402,39 @@ function Navbar() {
               fileName: _jsxFileName,
               lineNumber: 149,
               columnNumber: 15
-            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("button", {
-              onClick: () => scrollTo("appointment"),
-              "data-testid": "nav-appointment-btn",
-              className: "hidden sm:flex btn-primary",
-              style: {
-                padding: "8px 18px",
-                fontSize: 14,
-                borderRadius: 9
-              },
+            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
+              className: "hidden sm:block",
               "x-file-name": "Navbar",
               "x-line-number": "176",
               "x-column": "14",
-              "x-component": "button",
+              "x-component": "div",
               "x-id": "Navbar_176_14",
-              "x-dynamic": "true",
-              "x-source-type": "unknown",
-              "x-source-var": "t",
-              "x-source-path": "nav.appointment",
-              "x-source-editable": "false",
-              children: t.nav.appointment
+              "x-dynamic": "false",
+              children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("button", {
+                onClick: () => scrollTo("appointment"),
+                "data-testid": "nav-appointment-btn",
+                className: "btn-primary",
+                style: {
+                  padding: "8px 18px",
+                  fontSize: 14,
+                  borderRadius: 9
+                },
+                "x-file-name": "Navbar",
+                "x-line-number": "177",
+                "x-column": "16",
+                "x-component": "button",
+                "x-id": "Navbar_177_16",
+                "x-dynamic": "true",
+                "x-source-type": "unknown",
+                "x-source-var": "t",
+                "x-source-path": "nav.appointment",
+                "x-source-editable": "false",
+                children: t.nav.appointment
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 177,
+                columnNumber: 17
+              }, this)
             }, void 0, false, {
               fileName: _jsxFileName,
               lineNumber: 176,
@@ -37503,10 +37451,10 @@ function Navbar() {
                 cursor: "pointer"
               },
               "x-file-name": "Navbar",
-              "x-line-number": "186",
+              "x-line-number": "188",
               "x-column": "14",
               "x-component": "button",
-              "x-id": "Navbar_186_14",
+              "x-id": "Navbar_188_14",
               "x-dynamic": "true",
               "x-source-type": "computed",
               "x-source-editable": "false",
@@ -37514,18 +37462,18 @@ function Navbar() {
                 size: 24
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 192,
+                lineNumber: 194,
                 columnNumber: 31
               }, this) : /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
                 size: 24
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 192,
+                lineNumber: 194,
                 columnNumber: 49
               }, this)
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 186,
+              lineNumber: 188,
               columnNumber: 15
             }, this)]
           }, void 0, true, {
@@ -37551,10 +37499,10 @@ function Navbar() {
       className: "mobile-menu",
       "data-testid": "mobile-menu",
       "x-file-name": "Navbar",
-      "x-line-number": "201",
+      "x-line-number": "203",
       "x-column": "8",
       "x-component": "div",
-      "x-id": "Navbar_201_8",
+      "x-id": "Navbar_203_8",
       "x-dynamic": "true",
       "x-source-type": "computed",
       "x-source-editable": "false",
@@ -37570,21 +37518,21 @@ function Navbar() {
           cursor: "pointer"
         },
         "x-file-name": "Navbar",
-        "x-line-number": "202",
+        "x-line-number": "204",
         "x-column": "10",
         "x-component": "button",
-        "x-id": "Navbar_202_10",
+        "x-id": "Navbar_204_10",
         "x-dynamic": "false",
         children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
           size: 28
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 206,
+          lineNumber: 208,
           columnNumber: 13
         }, this)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 202,
+        lineNumber: 204,
         columnNumber: 11
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
         style: {
@@ -37595,10 +37543,10 @@ function Navbar() {
           marginBottom: 24
         },
         "x-file-name": "Navbar",
-        "x-line-number": "210",
+        "x-line-number": "212",
         "x-column": "10",
         "x-component": "div",
-        "x-id": "Navbar_210_10",
+        "x-id": "Navbar_212_10",
         "x-dynamic": "true",
         "x-source-type": "computed",
         "x-source-editable": "false",
@@ -37619,10 +37567,10 @@ function Navbar() {
             cursor: "pointer"
           },
           "x-file-name": "Navbar",
-          "x-line-number": "212",
+          "x-line-number": "214",
           "x-column": "14",
           "x-component": "button",
-          "x-id": "Navbar_212_14",
+          "x-id": "Navbar_214_14",
           "x-dynamic": "true",
           "x-source-type": "static-imported",
           "x-source-var": "LANGS",
@@ -37636,12 +37584,12 @@ function Navbar() {
           children: l.label
         }, l.code, false, {
           fileName: _jsxFileName,
-          lineNumber: 212,
+          lineNumber: 214,
           columnNumber: 15
         }, this))
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 210,
+        lineNumber: 212,
         columnNumber: 11
       }, this), navLinks.map(link => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("button", {
         onClick: () => scrollTo(link.id),
@@ -37656,10 +37604,10 @@ function Navbar() {
           transition: "opacity 0.2s"
         },
         "x-file-name": "Navbar",
-        "x-line-number": "229",
+        "x-line-number": "231",
         "x-column": "12",
         "x-component": "button",
-        "x-id": "Navbar_229_12",
+        "x-id": "Navbar_231_12",
         "x-dynamic": "true",
         "x-source-type": "static-imported",
         "x-source-var": "navLinks",
@@ -37673,7 +37621,7 @@ function Navbar() {
         children: link.label
       }, link.id, false, {
         fileName: _jsxFileName,
-        lineNumber: 229,
+        lineNumber: 231,
         columnNumber: 13
       }, this)), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("button", {
         onClick: () => {
@@ -37685,10 +37633,10 @@ function Navbar() {
           marginTop: 16
         },
         "x-file-name": "Navbar",
-        "x-line-number": "238",
+        "x-line-number": "240",
         "x-column": "10",
         "x-component": "button",
-        "x-id": "Navbar_238_10",
+        "x-id": "Navbar_240_10",
         "x-dynamic": "true",
         "x-source-type": "unknown",
         "x-source-var": "t",
@@ -37697,7 +37645,7 @@ function Navbar() {
         children: t.nav.appointment
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 238,
+        lineNumber: 240,
         columnNumber: 11
       }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("div", {
         style: {
@@ -37707,10 +37655,10 @@ function Navbar() {
           marginTop: 20
         },
         "x-file-name": "Navbar",
-        "x-line-number": "247",
+        "x-line-number": "249",
         "x-column": "10",
         "x-component": "div",
-        "x-id": "Navbar_247_10",
+        "x-id": "Navbar_249_10",
         "x-dynamic": "false",
         children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("a", {
           href: "https://www.instagram.com/dr_ibrahim_oguz/",
@@ -37726,10 +37674,10 @@ function Navbar() {
             fontSize: 14
           },
           "x-file-name": "Navbar",
-          "x-line-number": "248",
+          "x-line-number": "250",
           "x-column": "12",
           "x-component": "a",
-          "x-id": "Navbar_248_12",
+          "x-id": "Navbar_250_12",
           "x-dynamic": "false",
           children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("svg", {
             width: "20",
@@ -37741,10 +37689,10 @@ function Navbar() {
             strokeLinecap: "round",
             strokeLinejoin: "round",
             "x-file-name": "Navbar",
-            "x-line-number": "250",
+            "x-line-number": "252",
             "x-column": "14",
             "x-component": "svg",
-            "x-id": "Navbar_250_14",
+            "x-id": "Navbar_252_14",
             "x-dynamic": "false",
             children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("rect", {
               x: "2",
@@ -37754,26 +37702,26 @@ function Navbar() {
               rx: "5",
               ry: "5",
               "x-file-name": "Navbar",
-              "x-line-number": "251",
+              "x-line-number": "253",
               "x-column": "16",
               "x-component": "rect",
-              "x-id": "Navbar_251_16",
+              "x-id": "Navbar_253_16",
               "x-dynamic": "false"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 251,
+              lineNumber: 253,
               columnNumber: 17
             }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("path", {
               d: "M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z",
               "x-file-name": "Navbar",
-              "x-line-number": "251",
+              "x-line-number": "253",
               "x-column": "72",
               "x-component": "path",
-              "x-id": "Navbar_251_72",
+              "x-id": "Navbar_253_72",
               "x-dynamic": "false"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 251,
+              lineNumber: 253,
               columnNumber: 73
             }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("line", {
               x1: "17.5",
@@ -37781,24 +37729,24 @@ function Navbar() {
               x2: "17.51",
               y2: "6.5",
               "x-file-name": "Navbar",
-              "x-line-number": "251",
+              "x-line-number": "253",
               "x-column": "131",
               "x-component": "line",
-              "x-id": "Navbar_251_131",
+              "x-id": "Navbar_253_131",
               "x-dynamic": "false"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 251,
+              lineNumber: 253,
               columnNumber: 132
             }, this)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 250,
+            lineNumber: 252,
             columnNumber: 15
           }, this), "Instagram"]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 248,
+          lineNumber: 250,
           columnNumber: 13
         }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("a", {
           href: "https://www.facebook.com/dr.ibrahimoguz",
@@ -37814,10 +37762,10 @@ function Navbar() {
             fontSize: 14
           },
           "x-file-name": "Navbar",
-          "x-line-number": "255",
+          "x-line-number": "257",
           "x-column": "12",
           "x-component": "a",
-          "x-id": "Navbar_255_12",
+          "x-id": "Navbar_257_12",
           "x-dynamic": "false",
           children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("svg", {
             width: "20",
@@ -37825,42 +37773,42 @@ function Navbar() {
             viewBox: "0 0 24 24",
             fill: "white",
             "x-file-name": "Navbar",
-            "x-line-number": "257",
+            "x-line-number": "259",
             "x-column": "14",
             "x-component": "svg",
-            "x-id": "Navbar_257_14",
+            "x-id": "Navbar_259_14",
             "x-dynamic": "false",
             children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxDEV)("path", {
               d: "M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z",
               "x-file-name": "Navbar",
-              "x-line-number": "258",
+              "x-line-number": "260",
               "x-column": "16",
               "x-component": "path",
-              "x-id": "Navbar_258_16",
+              "x-id": "Navbar_260_16",
               "x-dynamic": "false"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 258,
+              lineNumber: 260,
               columnNumber: 17
             }, this)
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 257,
+            lineNumber: 259,
             columnNumber: 15
           }, this), "Facebook"]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 255,
+          lineNumber: 257,
           columnNumber: 13
         }, this)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 247,
+        lineNumber: 249,
         columnNumber: 11
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 201,
+      lineNumber: 203,
       columnNumber: 9
     }, this)]
   }, void 0, true);
@@ -38332,804 +38280,6 @@ _s(PatientEducation, "dSymvAKEpDi+1tVCyOuUM1SbRAU=", false, function () {
 _c = PatientEducation;
 var _c;
 __webpack_require__.$Refresh$.register(_c, "PatientEducation");
-
-const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
-const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
-	$ReactRefreshModuleId$
-);
-
-function $ReactRefreshModuleRuntime$(exports) {
-	if (true) {
-		let errorOverlay;
-		if (true) {
-			errorOverlay = false;
-		}
-		let testMode;
-		if (typeof __react_refresh_test__ !== 'undefined') {
-			testMode = __react_refresh_test__;
-		}
-		return __react_refresh_utils__.executeRuntime(
-			exports,
-			$ReactRefreshModuleId$,
-			module.hot,
-			errorOverlay,
-			testMode
-		);
-	}
-}
-
-if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {
-	$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);
-} else {
-	$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);
-}
-
-/***/ },
-
-/***/ "./src/components/PatientReviews.js"
-/*!******************************************!*\
-  !*** ./src/components/PatientReviews.js ***!
-  \******************************************/
-(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ PatientReviews)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../App */ "./src/App.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/chevron-left.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/chevron-right.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/quote.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/star.js");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
-/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
-__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
-
-var _jsxFileName = "/app/frontend/src/components/PatientReviews.js",
-  _s = __webpack_require__.$Refresh$.signature();
-
-
-
-
-const reviews = [{
-  initial: "M.D.",
-  date: "15.04.2025",
-  tr: "İbrahim hocamda babamı anjiyo işlemi yaptırdık. İlgi, alaka, samimiyet için çok teşekkür ederiz. Babam sağlığına kavuştu. Bundan sonra sürekli İbrahim Hocama geleceğiz.",
-  en: "We had my father's angiography procedure done by Dr. Ibrahim. We are very grateful for his interest, attention and sincerity. My father has recovered. We will always come to Dr. Ibrahim from now on.",
-  stars: 5
-}, {
-  initial: "B.E.",
-  date: "02.04.2025",
-  tr: "Doktor İbrahim Oğuz beye babam için geldik. Sol kolunda uyuşma ve nefes darlığı şikayeti vardı, ilk aklımıza gelen doktor zaten İbrahim bey oldu. Kendisinden çok memnunuz, ilgili ve başarılı bir doktor.",
-  en: "We came to Dr. İbrahim Oğuz for my father. He had complaints of numbness in his left arm and shortness of breath. Dr. Ibrahim was the first doctor we thought of. We are very satisfied; he is an attentive and successful doctor.",
-  stars: 5
-}, {
-  initial: "Z.E.",
-  date: "03.04.2025",
-  tr: "Doktor İbrahim Beye göğüste sıkışma, çarpıntı şikayeti ile geldim. Kendisinden çok memnunum. Damarlarımda tıkanıklık olup olmadığını anlamak için efor testi istedi. Test sonucuna göre tedavi yöntemlerini anlattı. Doktoruma ilgisinden dolayı çok teşekkür ederim.",
-  en: "I came to Dr. Ibrahim with complaints of chest tightness and palpitations. I am very satisfied with him. He requested a stress test to check for blockages. He explained the treatment options based on the results. I am very grateful for his attention.",
-  stars: 5
-}, {
-  initial: "M.K.",
-  date: "05.04.2025",
-  tr: "Kalbimde başlayan sıkışmalardan tedirgin olduğum için hastaneniz doktorlarından İbrahim beyden randevu aldım. Hastanenize ilk defa geliyorum, gözle görülür tertip ve düzen var, çok memnun kaldım. Bu hizmeti sağlayan herkese teşekkür ederim.",
-  en: "I made an appointment with Dr. Ibrahim due to concerning chest tightness. It was my first visit to the hospital. There is visible order and organization; I was very satisfied. Thank you to everyone who provides this service.",
-  stars: 5
-}, {
-  initial: "A.B.",
-  date: "07.04.2025",
-  tr: "Annem bugün İbrahim beye anjiyo oldu. Durumu şuan gayet iyi. Operasyon başarılı geçti. İbrahim beye ve hastanenize hizmetlerinizden dolayı çok teşekkür ediyorum.",
-  en: "My mother had her angiography done by Dr. Ibrahim today. She is doing very well. The operation was successful. I am very grateful to Dr. Ibrahim and your hospital for your services.",
-  stars: 5
-}, {
-  initial: "M.S.D.",
-  date: "10.12.2024",
-  tr: "Sayın Hocam, 2016 yılından beri sizi tanıyorum. PAÜ Kardiyoloji bölümündeki tedavim sürecinde ve Denizli Devlet Hastanesindeki göreviniz sırasında sizi sık sık hasta olarak ziyaret etmiştim. Şimdi sizi bu hastanede görmek beni memnun etti. Mesleğinizde başarılar dilerim.",
-  en: "Dear Doctor, I have known you since 2016. I frequently visited you as a patient during your time at PAU Cardiology and Denizli State Hospital. Seeing you at this hospital now made me happy. I wish you continued success in your profession.",
-  stars: 5
-}, {
-  initial: "A.K.",
-  date: "14.03.2025",
-  tr: "İbrahim hocaya anjiyo oldum, açıkçası çok korkuyordum ama işlem düşündüğüm kadar zor geçmedi. İşlem öncesi o kadar sakin ve açıklayıcı konuştu ki baya rahatladım. Eli hafifmiş gerçekten, işlem sırasında neredeyse hiçbir şey hissetmedim. Sonrasında da sürekli gelip kontrol etti, bu da güven verdi. Ertesi gün yürüyordum, bu kadar çabuk toparlanacağımı beklemiyordum. Allah razı olsun.",
-  en: "I had an angiography with Dr. Ibrahim. Honestly, I was very scared but the procedure wasn't as difficult as I imagined. He spoke so calmly and clearly beforehand that I relaxed quite a bit. He truly has a light touch — I felt almost nothing during the procedure. He kept coming to check on me afterwards, which was very reassuring. I was walking the next day; I didn't expect to recover that quickly. God bless him.",
-  stars: 5
-}, {
-  initial: "M.T.",
-  date: "22.11.2024",
-  tr: "Babamın damarları tıkalıydı, doktor İbrahim çok yakından ilgilendi. Yaşından dolayı çok endişeliydik ama hocamız süreci baştan sona anlattı, ne yapacağını tek tek söyledi, kafamızdaki soru işaretlerini giderdi. Anjiyo sonrası da ilgisini kesmedi, sürekli kontrol etti. Babamın durumu şu an çok şükür iyiye gidiyor. Hem bilgisi hem yaklaşımı çok iyi bir doktor.",
-  en: "My father had blocked arteries, and Dr. Ibrahim took very close care of him. We were very worried about his age, but the doctor explained the entire process step by step and answered all our questions. He kept checking on him after the angiography. My father is now thankfully doing much better. He is an excellent doctor both in terms of knowledge and bedside manner.",
-  stars: 5
-}, {
-  initial: "S.Y.",
-  date: "05.07.2025",
-  tr: "Anjiyo deyince insanın ödü kopuyor ama İbrahim hoca sakinliğiyle rahatlattı. Ben zaten hastanelerden çok korkan biriyim, içeri girerken bile elim ayağım titriyordu. Ama o kadar normal bir şeymiş gibi anlattı ki ister istemez sakinleştim. İşlem kısa sürdü, hiç beklediğim gibi değilmiş. Sonrasında da ağrım sızım olmadı. Boşuna bu kadar korkmuşum dedim kendi kendime.",
-  en: "The word 'angiography' alone is frightening, but Dr. Ibrahim's calm manner put me at ease. I'm someone who is very afraid of hospitals — I was trembling even when I walked in. But he explained it so matter-of-factly that I couldn't help but calm down. The procedure was quick, nothing like I expected. I had no pain afterwards. I told myself I worried for nothing.",
-  stars: 5
-}, {
-  initial: "H.D.",
-  date: "18.01.2026",
-  tr: "Kalp çarpıntısı için gittim, gerekli tetkikleri yaptı. Direkt ağır bir işlem yapacak diye düşünmüştüm ama önce detaylı inceleyip ona göre karar verdi. Gereksiz işlem yapmaması hoşuma gitti, ticari yaklaşmıyor. Sorularımı da sabırla cevapladı, geçiştirmedi. Güven veren bir doktor, insan kendini rahat hissediyor.",
-  en: "I went for palpitations and he conducted the necessary tests. I thought he would immediately proceed with a major procedure, but he first examined thoroughly before deciding. I appreciated that he doesn't do unnecessary procedures — his approach is not commercial. He also patiently answered all my questions without brushing them aside. He is a trustworthy doctor who makes you feel at ease.",
-  stars: 5
-}, {
-  initial: "E.Ç.",
-  date: "29.09.2024",
-  tr: "Eşim anjiyo oldu İbrahim Beye. Süreç boyunca çok tedirgindik çünkü ilk defa böyle bir şey yaşadık. Ama işlem öncesinde uzun uzun bilgi verdi, bizi de psikolojik olarak rahatlattı. Sonrasında da gelip nasıl olduğunu kontrol etti. Hastayla iletişimi iyi, kibirli değil, gayet mütevazı. Bu da ayrı bir artı bence.",
-  en: "My husband had an angiography with Dr. Ibrahim. We were very anxious throughout the process as it was our first experience with this. But he gave us extensive information beforehand and put us at ease psychologically. He also came to check on him afterwards. His communication with patients is excellent, not arrogant at all — very humble. That's a big plus in my opinion.",
-  stars: 5
-}, {
-  initial: "R.A.",
-  date: "11.02.2025",
-  tr: "Göğüs ağrısı şikayetiyle gittim, hızlı şekilde yönlendirdi. Beklemeden gerekli işlemler yapıldı, bu da benim için çok önemliydi çünkü ağrım ciddiydi. Anjiyo sonrası ciddi anlamda rahatladım. Süreç boyunca ilgisini eksik etmedi. Hastane süreci de sorunsuz geçti, ekip de uyumluydu. Genel olarak memnun kaldım.",
-  en: "I went with chest pain complaints and he directed me quickly. The necessary procedures were done without delay, which was very important to me as my pain was serious. I genuinely felt relief after the angiography. He remained attentive throughout the entire process. The hospital process went smoothly and the team worked well together. I was generally very satisfied.",
-  stars: 5
-}, {
-  initial: "B.K.",
-  date: "03.12.2025",
-  tr: "İlk defa böyle bir işlem yaşadım, korkudan titriyordum resmen. İnternetten okuduklarım daha da panik yapmama sebep olmuştu. Ama İbrahim hoca 'korkacak bir şey yok' dedi ve gerçekten de öyle oldu. İşlem sırasında sürekli bilgilendirdi, bu da çok rahatlattı. Sonrasında hızlı toparladım. Gereksiz korku yaptığımı anladım.",
-  en: "It was my first experience with such a procedure — I was literally trembling with fear. What I'd read online had made me even more panicked. But Dr. Ibrahim said 'there's nothing to be afraid of' and it really turned out that way. He kept me informed throughout the procedure, which was very reassuring. I recovered quickly afterwards. I realized I had worried unnecessarily.",
-  stars: 5
-}, {
-  initial: "T.U.",
-  date: "09.08.2025",
-  tr: "Anjiyo sonrası hemen taburcu olmam beni şaşırttı. Günlerce yatacağımı sanıyordum. Ama işlemden sonra kısa sürede toparlandım. İbrahim hoca süreci çok iyi yönetti, her aşamada bilgi verdi. Beklediğimden daha kolay geçti. Kendisine teşekkür ederim.",
-  en: "Being discharged so quickly after the angiography surprised me. I thought I would be in hospital for days. But I recovered in a short time after the procedure. Dr. Ibrahim managed the process very well and provided information at every stage. It went easier than I expected. I am very grateful to him.",
-  stars: 5
-}, {
-  initial: "G.P.",
-  date: "16.06.2024",
-  tr: "İnternetten yorumlara bakarak gittim, iyi ki gitmişim. İlk başta çok kararsızdım, kime gideceğimi bilmiyordum. Ama burada yazılanlar doğruymuş. İşini bilen bir doktor, gereksiz panik yaptığımı anladım. Açıklamaları sade ve anlaşılır. Hastayla iletişimi de gayet iyi. Gönül rahatlığıyla tavsiye ederim.",
-  en: "I went based on online reviews and I'm very glad I did. I was very undecided at first and didn't know who to go to. But what was written here turned out to be true. He is a knowledgeable doctor — I realized I had panicked unnecessarily. His explanations are clear and simple. His communication with patients is also very good. I recommend him wholeheartedly.",
-  stars: 5
-}, {
-  initial: "A.K.",
-  date: "05.10.2025",
-  tr: "Bir süredir göğüs ağrım vardı, açıkçası biraz endişeliydim. Denizli'de araştırma yaparken kendisine ulaştım. İlk muayenede detaylı anlatımı beni rahatlattı. Anjiyo olmam gerekti ama süreç düşündüğüm kadar zor geçmedi. Denizli kardiyoloji ve anjiyo konusunda gerçekten tecrübeli bir doktor.",
-  en: "I had been having chest pain for a while and was honestly a bit worried. I came across him while researching in Denizli. His detailed explanation during the first consultation put me at ease. I needed an angiography but the process wasn't as difficult as I had imagined. He is truly an experienced doctor in Denizli cardiology and angiography.",
-  stars: 5
-}, {
-  initial: "M.Y.",
-  date: "21.03.2026",
-  tr: "Babam için Denizli'de doktor arayışındaydık. Tavsiye üzerine randevu aldık. Muayene sırasında her şeyi tek tek anlatması çok güven verdi. Anjiyo sürecinde de sürekli bilgilendirme yaptı. Denizli kardiyoloji ve anjiyo alanında ilgili ve güven veren bir hekim.",
-  en: "We were looking for a doctor in Denizli for my father. We made an appointment on recommendation. His detailed step-by-step explanations during the examination were very reassuring. He kept us informed throughout the angiography process as well. A caring and trustworthy physician in Denizli cardiology and angiography.",
-  stars: 5
-}, {
-  initial: "S.T.",
-  date: "14.07.2025",
-  tr: "Kalp çarpıntısı şikayetiyle gittim, biraz tedirgindim açıkçası. Denizli'de öneri üzerine gittim. Önce detaylı inceleme yaptı, sonrasında anjiyo gerektiğini söyledi. Süreç beklediğimden daha rahat geçti. Denizli kardiyoloji ve anjiyo konusunda hem bilgili hem de hastaya yaklaşımı çok iyi.",
-  en: "I went with a heart palpitation complaint, honestly feeling a bit anxious. I was referred in Denizli. He first did a thorough examination, then informed me that angiography was needed. The process went more comfortably than I expected. He is both very knowledgeable and has an excellent patient approach in Denizli cardiology and angiography.",
-  stars: 5
-}];
-function StarRating({
-  count
-}) {
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-    className: "flex gap-0.5",
-    "x-file-name": "PatientReviews",
-    "x-line-number": "136",
-    "x-column": "4",
-    "x-component": "div",
-    "x-id": "PatientReviews_136_4",
-    "x-dynamic": "true",
-    "x-source-type": "computed",
-    "x-source-editable": "false",
-    children: Array.from({
-      length: count
-    }).map((_, i) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      size: 14,
-      fill: "#f59e0b",
-      color: "#f59e0b",
-      "x-file-name": "PatientReviews",
-      "x-line-number": "138",
-      "x-column": "8",
-      "x-component": "Star",
-      "x-id": "PatientReviews_138_8",
-      "x-dynamic": "true",
-      "x-source-type": "external",
-      "x-source-editable": "false",
-      "x-array-item-param": "_"
-    }, i, false, {
-      fileName: _jsxFileName,
-      lineNumber: 138,
-      columnNumber: 9
-    }, this))
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 136,
-    columnNumber: 5
-  }, this);
-}
-_c = StarRating;
-function PatientReviews() {
-  _s();
-  const {
-    t,
-    lang
-  } = (0,_App__WEBPACK_IMPORTED_MODULE_1__.useLang)();
-  const [current, setCurrent] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0);
-  const total = reviews.length;
-  const prev = () => setCurrent(c => (c - 1 + total) % total);
-  const next = () => setCurrent(c => (c + 1) % total);
-  const label = lang === "tr" ? "Hasta Yorumları" : "Patient Reviews";
-  const title = lang === "tr" ? "Hastalarımız Ne Diyor?" : "What Our Patients Say";
-  const subtitle = lang === "tr" ? "Özel Denizli Cerrahi Hastanesi'nden gerçek hasta yorumları" : "Real patient reviews from Özel Denizli Cerrahi Hastanesi";
-  const sourceLabel = lang === "tr" ? "Kaynak: cerrahi.com.tr" : "Source: cerrahi.com.tr";
-
-  // Show 3 at a time on desktop, 1 on mobile via scroll
-  const visible = [reviews[current % total], reviews[(current + 1) % total], reviews[(current + 2) % total]];
-  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("section", {
-    id: "reviews",
-    className: "section-light py-24",
-    style: {
-      scrollMarginTop: 70
-    },
-    "data-testid": "reviews-section",
-    "x-file-name": "PatientReviews",
-    "x-line-number": "168",
-    "x-column": "4",
-    "x-component": "section",
-    "x-id": "PatientReviews_168_4",
-    "x-dynamic": "false",
-    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-      className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
-      "x-file-name": "PatientReviews",
-      "x-line-number": "174",
-      "x-column": "6",
-      "x-component": "div",
-      "x-id": "PatientReviews_174_6",
-      "x-dynamic": "false",
-      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-        className: "text-center mb-14",
-        "x-file-name": "PatientReviews",
-        "x-line-number": "176",
-        "x-column": "8",
-        "x-component": "div",
-        "x-id": "PatientReviews_176_8",
-        "x-dynamic": "false",
-        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-          className: "section-label",
-          "x-file-name": "PatientReviews",
-          "x-line-number": "177",
-          "x-column": "10",
-          "x-component": "div",
-          "x-id": "PatientReviews_177_10",
-          "x-dynamic": "true",
-          "x-source-type": "unknown",
-          "x-source-var": "label",
-          "x-source-editable": "false",
-          children: label
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 177,
-          columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("h2", {
-          style: {
-            fontFamily: "Outfit,sans-serif",
-            fontWeight: 700,
-            fontSize: "clamp(1.8rem, 3vw, 2.5rem)",
-            color: "#0f2d5c",
-            lineHeight: 1.2,
-            marginBottom: 12
-          },
-          "x-file-name": "PatientReviews",
-          "x-line-number": "178",
-          "x-column": "10",
-          "x-component": "h2",
-          "x-id": "PatientReviews_178_10",
-          "x-dynamic": "true",
-          "x-source-type": "unknown",
-          "x-source-var": "title",
-          "x-source-editable": "false",
-          children: title
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 178,
-          columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-          className: "divider-navy mx-auto",
-          style: {
-            margin: "12px auto 20px"
-          },
-          "x-file-name": "PatientReviews",
-          "x-line-number": "190",
-          "x-column": "10",
-          "x-component": "div",
-          "x-id": "PatientReviews_190_10",
-          "x-dynamic": "false"
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 190,
-          columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
-          style: {
-            fontFamily: "Manrope,sans-serif",
-            fontSize: 16,
-            color: "#64748b",
-            maxWidth: 480,
-            margin: "0 auto"
-          },
-          "x-file-name": "PatientReviews",
-          "x-line-number": "191",
-          "x-column": "10",
-          "x-component": "p",
-          "x-id": "PatientReviews_191_10",
-          "x-dynamic": "true",
-          "x-source-type": "unknown",
-          "x-source-var": "subtitle",
-          "x-source-editable": "false",
-          children: subtitle
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 191,
-          columnNumber: 11
-        }, this)]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 176,
-        columnNumber: 9
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-        className: "grid grid-cols-1 md:grid-cols-3 gap-6 mb-10",
-        "x-file-name": "PatientReviews",
-        "x-line-number": "197",
-        "x-column": "8",
-        "x-component": "div",
-        "x-id": "PatientReviews_197_8",
-        "x-dynamic": "true",
-        "x-source-type": "computed",
-        "x-source-editable": "false",
-        children: visible.map((review, i) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-          className: "card-hover",
-          "data-testid": `review-card-${i}`,
-          style: {
-            background: "white",
-            borderRadius: 20,
-            padding: "28px 24px",
-            border: "1px solid #e2e8f0",
-            display: "flex",
-            flexDirection: "column",
-            gap: 16,
-            position: "relative",
-            overflow: "hidden",
-            animation: "fadeInUp 0.4s ease forwards"
-          },
-          "x-file-name": "PatientReviews",
-          "x-line-number": "199",
-          "x-column": "12",
-          "x-component": "div",
-          "x-id": "PatientReviews_199_12",
-          "x-dynamic": "false",
-          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-            style: {
-              position: "absolute",
-              top: 16,
-              right: 20,
-              opacity: 0.06
-            },
-            "x-file-name": "PatientReviews",
-            "x-line-number": "217",
-            "x-column": "14",
-            "x-component": "div",
-            "x-id": "PatientReviews_217_14",
-            "x-dynamic": "false",
-            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_4__["default"], {
-              size: 56,
-              color: "#0f2d5c",
-              "x-file-name": "PatientReviews",
-              "x-line-number": "225",
-              "x-column": "16",
-              "x-component": "Quote",
-              "x-id": "PatientReviews_225_16",
-              "x-dynamic": "true",
-              "x-source-type": "static-imported",
-              "x-source-var": "visible",
-              "x-source-file-abs": "/app/frontend/src/components/PatientReviews.js",
-              "x-source-line": "161",
-              "x-source-editable": "true",
-              "x-array-var": "visible",
-              "x-array-line": "161",
-              "x-array-item-param": "review"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 225,
-              columnNumber: 17
-            }, this)
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 217,
-            columnNumber: 15
-          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-            className: "flex items-center justify-between",
-            "x-file-name": "PatientReviews",
-            "x-line-number": "229",
-            "x-column": "14",
-            "x-component": "div",
-            "x-id": "PatientReviews_229_14",
-            "x-dynamic": "false",
-            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(StarRating, {
-              count: review.stars,
-              "x-file-name": "PatientReviews",
-              "x-line-number": "230",
-              "x-column": "16",
-              "x-component": "StarRating",
-              "x-id": "PatientReviews_230_16",
-              "x-dynamic": "true",
-              "x-source-type": "static-imported",
-              "x-source-var": "visible",
-              "x-source-file-abs": "/app/frontend/src/components/PatientReviews.js",
-              "x-source-line": "161",
-              "x-source-editable": "true",
-              "x-array-var": "visible",
-              "x-array-line": "161",
-              "x-array-item-param": "review"
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 230,
-              columnNumber: 17
-            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("span", {
-              style: {
-                fontFamily: "Manrope,sans-serif",
-                fontSize: 12,
-                color: "#94a3b8"
-              },
-              "x-file-name": "PatientReviews",
-              "x-line-number": "231",
-              "x-column": "16",
-              "x-component": "span",
-              "x-id": "PatientReviews_231_16",
-              "x-dynamic": "true",
-              "x-source-type": "static-imported",
-              "x-source-var": "visible",
-              "x-source-file-abs": "/app/frontend/src/components/PatientReviews.js",
-              "x-source-line": "161",
-              "x-source-path": "date",
-              "x-source-editable": "true",
-              "x-array-var": "visible",
-              "x-array-line": "161",
-              "x-array-item-param": "review",
-              children: review.date
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 231,
-              columnNumber: 17
-            }, this)]
-          }, void 0, true, {
-            fileName: _jsxFileName,
-            lineNumber: 229,
-            columnNumber: 15
-          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
-            style: {
-              fontFamily: "Manrope,sans-serif",
-              fontSize: 14,
-              lineHeight: 1.75,
-              color: "#475569",
-              flex: 1
-            },
-            "x-file-name": "PatientReviews",
-            "x-line-number": "237",
-            "x-column": "14",
-            "x-component": "p",
-            "x-id": "PatientReviews_237_14",
-            "x-dynamic": "true",
-            "x-source-type": "computed",
-            "x-source-editable": "false",
-            children: lang === "tr" ? review.tr : review.en
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 237,
-            columnNumber: 15
-          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-            className: "flex items-center gap-3 pt-2",
-            style: {
-              borderTop: "1px solid #f1f5f9"
-            },
-            "x-file-name": "PatientReviews",
-            "x-line-number": "250",
-            "x-column": "14",
-            "x-component": "div",
-            "x-id": "PatientReviews_250_14",
-            "x-dynamic": "false",
-            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-              style: {
-                width: 40,
-                height: 40,
-                borderRadius: "50%",
-                background: "#0f2d5c",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexShrink: 0
-              },
-              "x-file-name": "PatientReviews",
-              "x-line-number": "251",
-              "x-column": "16",
-              "x-component": "div",
-              "x-id": "PatientReviews_251_16",
-              "x-dynamic": "false",
-              children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("span", {
-                style: {
-                  fontFamily: "Outfit,sans-serif",
-                  fontWeight: 700,
-                  fontSize: 13,
-                  color: "white"
-                },
-                "x-file-name": "PatientReviews",
-                "x-line-number": "259",
-                "x-column": "18",
-                "x-component": "span",
-                "x-id": "PatientReviews_259_18",
-                "x-dynamic": "true",
-                "x-source-type": "static-imported",
-                "x-source-var": "visible",
-                "x-source-file-abs": "/app/frontend/src/components/PatientReviews.js",
-                "x-source-line": "161",
-                "x-source-path": "initial",
-                "x-source-editable": "true",
-                "x-array-var": "visible",
-                "x-array-line": "161",
-                "x-array-item-param": "review",
-                children: review.initial
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 259,
-                columnNumber: 19
-              }, this)
-            }, void 0, false, {
-              fileName: _jsxFileName,
-              lineNumber: 251,
-              columnNumber: 17
-            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-              "x-file-name": "PatientReviews",
-              "x-line-number": "263",
-              "x-column": "16",
-              "x-component": "div",
-              "x-id": "PatientReviews_263_16",
-              "x-dynamic": "false",
-              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-                style: {
-                  fontFamily: "Outfit,sans-serif",
-                  fontWeight: 700,
-                  fontSize: 14,
-                  color: "#0f2d5c"
-                },
-                "x-file-name": "PatientReviews",
-                "x-line-number": "264",
-                "x-column": "18",
-                "x-component": "div",
-                "x-id": "PatientReviews_264_18",
-                "x-dynamic": "true",
-                "x-source-type": "static-imported",
-                "x-source-var": "visible",
-                "x-source-file-abs": "/app/frontend/src/components/PatientReviews.js",
-                "x-source-line": "161",
-                "x-source-path": "initial",
-                "x-source-editable": "true",
-                "x-array-var": "visible",
-                "x-array-line": "161",
-                "x-array-item-param": "review",
-                children: review.initial
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 264,
-                columnNumber: 19
-              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-                style: {
-                  fontFamily: "Manrope,sans-serif",
-                  fontSize: 12,
-                  color: "#94a3b8"
-                },
-                "x-file-name": "PatientReviews",
-                "x-line-number": "267",
-                "x-column": "18",
-                "x-component": "div",
-                "x-id": "PatientReviews_267_18",
-                "x-dynamic": "true",
-                "x-source-type": "computed",
-                "x-source-editable": "false",
-                children: lang === "tr" ? "Doğrulanmış Hasta" : "Verified Patient"
-              }, void 0, false, {
-                fileName: _jsxFileName,
-                lineNumber: 267,
-                columnNumber: 19
-              }, this)]
-            }, void 0, true, {
-              fileName: _jsxFileName,
-              lineNumber: 263,
-              columnNumber: 17
-            }, this)]
-          }, void 0, true, {
-            fileName: _jsxFileName,
-            lineNumber: 250,
-            columnNumber: 15
-          }, this)]
-        }, `${current}-${i}`, true, {
-          fileName: _jsxFileName,
-          lineNumber: 199,
-          columnNumber: 13
-        }, this))
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 197,
-        columnNumber: 9
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-        className: "flex items-center justify-center gap-4",
-        "x-file-name": "PatientReviews",
-        "x-line-number": "277",
-        "x-column": "8",
-        "x-component": "div",
-        "x-id": "PatientReviews_277_8",
-        "x-dynamic": "false",
-        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("button", {
-          onClick: prev,
-          "data-testid": "review-prev-btn",
-          style: {
-            width: 44,
-            height: 44,
-            borderRadius: "50%",
-            border: "1px solid #e2e8f0",
-            background: "white",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            cursor: "pointer",
-            transition: "all 0.2s ease",
-            color: "#0f2d5c"
-          },
-          onMouseEnter: e => {
-            e.currentTarget.style.background = "#0f2d5c";
-            e.currentTarget.style.color = "white";
-            e.currentTarget.style.borderColor = "#0f2d5c";
-          },
-          onMouseLeave: e => {
-            e.currentTarget.style.background = "white";
-            e.currentTarget.style.color = "#0f2d5c";
-            e.currentTarget.style.borderColor = "#e2e8f0";
-          },
-          "x-file-name": "PatientReviews",
-          "x-line-number": "278",
-          "x-column": "10",
-          "x-component": "button",
-          "x-id": "PatientReviews_278_10",
-          "x-dynamic": "false",
-          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_2__["default"], {
-            size: 18
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 291,
-            columnNumber: 13
-          }, this)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 278,
-          columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("div", {
-          className: "flex gap-2",
-          "x-file-name": "PatientReviews",
-          "x-line-number": "295",
-          "x-column": "10",
-          "x-component": "div",
-          "x-id": "PatientReviews_295_10",
-          "x-dynamic": "true",
-          "x-source-type": "computed",
-          "x-source-editable": "false",
-          children: reviews.map((_, i) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("button", {
-            onClick: () => setCurrent(i),
-            "data-testid": `review-dot-${i}`,
-            style: {
-              width: i === current ? 24 : 8,
-              height: 8,
-              borderRadius: 4,
-              background: i === current ? "#0f2d5c" : "#cbd5e1",
-              border: "none",
-              cursor: "pointer",
-              transition: "all 0.3s ease",
-              padding: 0
-            },
-            "x-file-name": "PatientReviews",
-            "x-line-number": "297",
-            "x-column": "14",
-            "x-component": "button",
-            "x-id": "PatientReviews_297_14",
-            "x-dynamic": "false"
-          }, i, false, {
-            fileName: _jsxFileName,
-            lineNumber: 297,
-            columnNumber: 15
-          }, this))
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 295,
-          columnNumber: 11
-        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("button", {
-          onClick: next,
-          "data-testid": "review-next-btn",
-          style: {
-            width: 44,
-            height: 44,
-            borderRadius: "50%",
-            border: "1px solid #e2e8f0",
-            background: "white",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            cursor: "pointer",
-            transition: "all 0.2s ease",
-            color: "#0f2d5c"
-          },
-          onMouseEnter: e => {
-            e.currentTarget.style.background = "#0f2d5c";
-            e.currentTarget.style.color = "white";
-            e.currentTarget.style.borderColor = "#0f2d5c";
-          },
-          onMouseLeave: e => {
-            e.currentTarget.style.background = "white";
-            e.currentTarget.style.color = "#0f2d5c";
-            e.currentTarget.style.borderColor = "#e2e8f0";
-          },
-          "x-file-name": "PatientReviews",
-          "x-line-number": "315",
-          "x-column": "10",
-          "x-component": "button",
-          "x-id": "PatientReviews_315_10",
-          "x-dynamic": "false",
-          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)(lucide_react__WEBPACK_IMPORTED_MODULE_3__["default"], {
-            size: 18
-          }, void 0, false, {
-            fileName: _jsxFileName,
-            lineNumber: 328,
-            columnNumber: 13
-          }, this)
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 315,
-          columnNumber: 11
-        }, this)]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 277,
-        columnNumber: 9
-      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxDEV)("p", {
-        className: "text-center mt-6",
-        style: {
-          fontFamily: "Manrope,sans-serif",
-          fontSize: 12,
-          color: "#94a3b8"
-        },
-        "x-file-name": "PatientReviews",
-        "x-line-number": "333",
-        "x-column": "8",
-        "x-component": "p",
-        "x-id": "PatientReviews_333_8",
-        "x-dynamic": "true",
-        "x-source-type": "unknown",
-        "x-source-var": "sourceLabel",
-        "x-source-editable": "false",
-        children: sourceLabel
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 333,
-        columnNumber: 9
-      }, this)]
-    }, void 0, true, {
-      fileName: _jsxFileName,
-      lineNumber: 174,
-      columnNumber: 7
-    }, this)
-  }, void 0, false, {
-    fileName: _jsxFileName,
-    lineNumber: 168,
-    columnNumber: 5
-  }, this);
-}
-_s(PatientReviews, "9pi/Qw17tep98dIU8QDSCjNt9O4=", false, function () {
-  return [_App__WEBPACK_IMPORTED_MODULE_1__.useLang];
-});
-_c2 = PatientReviews;
-var _c, _c2;
-__webpack_require__.$Refresh$.register(_c, "StarRating");
-__webpack_require__.$Refresh$.register(_c2, "PatientReviews");
 
 const $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
 const $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
@@ -42440,7 +41590,7 @@ if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Pr
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("131357e6e272006023e6")
+/******/ 		__webpack_require__.h = () => ("56e00c2c81105e26f43f")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
